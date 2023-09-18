@@ -11,14 +11,14 @@ header:
 Nanomechanical sensors have emerged as powerful tools for detecting surface stress changes at the nanoscale. Their unparalleled sensitivity and precision have paved the way for advancements in fields such as material science, biology, and medicine. However, accurately modeling their behavior, particularly when dealing with nonlinearities, can be intricate. This tutorial delves into the process of modeling the nonlinear mechanical behavior of these sensors using Finite Element Analysis (FEA) in COMSOL. It serves as a foundational guide to understanding the modeling and implementation of the thin film-based [stiffness tuning methods](https://doi.org/10.1021/acsaenm.3c00034).
 
 ## Understanding Sensor Behavior
-Nanomechanical sensors consist of two primary layers: the immobilization layer, often made of gold or polymer, and the silicon layer. When the immobilization layer interacts with external molecules, it can cause a strain mismatch with the silicon layer. This mismatch is associated with the surface stress in the layer, which causes the silicon layer to bend, producing piezoresistive signals at the embedded piezoresistor. These signals can then be harnessed to quantify the extent of the chemical interaction.
+Nanomechanical sensors consist of two primary layers: the immobilization layer, often made of gold or polymer, and the silicon layer. When the immobilization layer interacts with external molecules, it can cause a strain mismatch with the silicon layer. This mismatch is associated with the surface stress in the layer, which causes the silicon layer to bend, producing piezoresistive signals at the embedded piezoresistor. These signals can then be harnessed to quantify the extent of the chemical interaction. An example can be found [here](https://www.science.org/doi/10.1126/science.288.5464.316).
 
 <figure style="width: 500px" class="align-center">
 
   <a href="/assets/images/fea-tutorial/cantilever.jpeg">
   <img src="/assets/images/fea-tutorial/cantilever.jpeg"></a>
 
-  <figcaption>A SEM image of a typical cantilever. Reproduced from [here](https://www.science.org/doi/10.1126/science.288.5464.316) with permission from The American Association for the Advancement of Science.</figcaption>
+  <figcaption>A SEM image of a typical cantilever. Reproduced with permission from The American Association for the Advancement of Science.</figcaption>
 </figure>
 
 The sensor performance can be enhanced by manipulating its stiffness. One effective method involves introducing prestress into the sensor using a highly stressed thin film. While tensile prestress can increase the device's stiffness, as seen in the fabrication of [resonantors with high natural frequency](https://link.aps.org/doi/10.1103/PhysRevLett.116.147202), compressive prestress can reduce the stiffness, enhancing its sensitivity to surface stress-induced bending.
