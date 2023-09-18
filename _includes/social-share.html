@@ -1,0 +1,9 @@
+<section class="page__share">
+  {% if site.data.ui-text[site.locale].share_on_label %}
+    <h4 class="page__share-title">{{ site.data.ui-text[site.locale].share_on_label | default: "Share on" }}</h4>
+  {% endif %}
+
+  <a href="https://www.linkedin.com/in/chao-zhuang-2a636825a/" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} LinkedIn"><i class="fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+
+  <a href="https://github.com/Chaozhuang22" class="btn btn--github" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share on' }} Github"><i class="fa-github" aria-hidden="true"></i><span> Github</span></a>
+</section>
