@@ -22,7 +22,7 @@ repository: "Chaozhuang22/Chaozhuang22.github.io"
 words_per_minute: 200
 search: true
 teaser: "/assets/images/default-teaser.png"
-logo: "/assets/images/logo.png"
+logo: "apple-touch-icon.png"
 atom_feed:
   hide: true
 og_image: # Open Graph/Twitter default site image
