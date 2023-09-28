@@ -7,6 +7,7 @@ header:
   teaser: /assets/images/fea-tutorial/disp-2.png
 ---
 > Keywords: MEMS sensors, Nanomechanical sensors, Nonlienar mechancial analysis, FEA
+> 
 ## Introduction
 Nanomechanical sensors have emerged as powerful tools for detecting surface stress changes at the nanoscale. Their unparalleled sensitivity and precision have paved the way for advancements in fields such as material science, biology, and medicine. However, accurately modeling their behavior, particularly when dealing with nonlinearities, can be intricate. This tutorial delves into the process of modeling the nonlinear mechanical behavior of these sensors using Finite Element Analysis (FEA) in COMSOL. It serves as a foundational guide to understanding the modeling and implementation of the thin film-based [stiffness tuning methods](https://doi.org/10.1021/acsaenm.3c00034).
 
