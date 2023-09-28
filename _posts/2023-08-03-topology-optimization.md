@@ -5,7 +5,7 @@ category: FEA
 tag: Tutorials
 ---
 
-> This post is derived from my reading notes and is published here with the aim of providing a reference list for the basics of topology optimization.
+> A short introduction to topology optimization.
 
 ## Overview
 Structural optimization, in its simplest form, is achieved through size and shape optimization. Here, design parameters such as feature sizes or boundary shapes are parameterized to formulate the optimization problem. However, these methods have a significant limitation: they do not allow changes in the design topology. To address this issue, topology optimization (TO), also known as the [homogenization approach](http://www.sciencedirect.com/science/article/pii/0045782588900862). Topology optimization can be formulated as gradient-based methods such as the density model (famous [top99 code](https://doi.org/10.1007/s001580050176) and [the optimized 88 lines code](https://doi.org/10.1007/s00158-010-0594-7)), [level set method](https://link.springer.com/article/10.1007/s00158-009-0430-0), phase field, topology derivative, and others for a review [here](https://doi.org/10.1007/s00158-013-0978-6).
