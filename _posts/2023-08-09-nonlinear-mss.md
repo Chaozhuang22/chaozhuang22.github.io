@@ -6,7 +6,7 @@ tag: Projects
 header:
   teaser: /assets/images/fea-tutorial/disp-2.png
 ---
-> Keywords: MEMS sensors, Nanomechanical sensors, Nonlienar mechancial analysis, FEA
+> Keywords: MEMS sensors, Nanomechanical sensors, Nonlinear mechanical analysis, FEA
 > 
 ## Introduction
 Nanomechanical sensors have emerged as powerful tools for detecting surface stress changes at the nanoscale. Their unparalleled sensitivity and precision have paved the way for advancements in fields such as material science, biology, and medicine. However, accurately modeling their behavior, particularly when dealing with nonlinearities, can be intricate. This tutorial delves into the process of modeling the nonlinear mechanical behavior of these sensors using Finite Element Analysis (FEA) in COMSOL. It serves as a foundational guide to understanding the modeling and implementation of the thin film-based [stiffness tuning methods](https://doi.org/10.1021/acsaenm.3c00034).
@@ -28,7 +28,7 @@ The sensor performance can be enhanced by manipulating its stiffness. One effect
 
 ### Geometry
 
-This model is built using COMSOL Multiphysics 6.1. The .m file of the model can be found in this [repo](https://github.com/Chaozhuang22/sensor-modeling-with-prestress) and it can be built through MATLAB livelink.
+This model is built using COMSOL Multiphysics 6.1. The .m file of the model can be found in this [repo](https://github.com/Chaozhuang22/sensor-modeling-with-prestress) and it can be built through MATLAB Livelink.
 
 Our focus will be on the membrane-type surface stress sensor (MSS), which serves as a demonstration in this [paper](https://doi.org/10.1021/acsaenm.3c00034). This sensor features four piezoresistive sensing beams linked to a suspended silicon membrane, both having a thickness of 3 microns as modeled by the solid mechanics interface.
 
@@ -102,7 +102,7 @@ First of all, let's make an animation.
   <a href="/assets/images/fea-tutorial/animation.gif">
   <img src="/assets/images/fea-tutorial/animation.gif"></a>
 
-  <figcaption>Sensor deformatino as a function of surface stress.</figcaption>
+  <figcaption>Sensor deformation as a function of surface stress.</figcaption>
 </figure>
 
 Once the simulation is complete, one can look at the displacement profile of the sensor. The membrane deforms differently depending on the level of prestrain in the silicon. When there is no prestrain, the profile contour is circular; when there is a high prestrain, the profile contour is a square shape.
@@ -130,7 +130,7 @@ The piezoresistive signal profiles are similar with signals concentrated at the 
   <figcaption>Piezoresistive signal profile.</figcaption>
 </figure>
 
-The following line graphs show the dependence of sensor deformation and piezoresistive signal as a function of surface stress under different prestress levels. As prestress increases, both curves become increasingly nonlinear, where the stiffness of the sensor transits from positive to negative values, entering post-buckling regimes. The increasing slopes at the inflection points indicate that the sensor stiffness decreases from positive to zero, and to negative as the prestrain/prestress increases, which is accompanied with a drastic change in sensitivity to surface stress. When the stiffness is zero, the sensor is buckled and the sensivity goes to infinity, above which the sensor will exhibit snap-through instability as the stiffness reduces below zero.
+The following line graphs show the dependence of sensor deformation and piezoresistive signal as a function of surface stress under different prestress levels. As prestress increases, both curves become increasingly nonlinear, where the stiffness of the sensor transits from positive to negative values, entering post-buckling regimes. The increasing slopes at the inflection points indicate that the sensor stiffness decreases from positive to zero, and to negative as the prestrain/prestress increases, which is accompanied by a drastic change in sensitivity to surface stress. When the stiffness is zero, the sensor is buckled and the sensitivity goes to infinity, above which the sensor will exhibit snap-through instability as the stiffness reduces below zero.
 
 <figure class="half">
 
@@ -153,6 +153,6 @@ If nothing works, consider reducing the number of parameters of the sweep. Try r
 
 ## Conclusion
 
-Modeling the nonlinear behavior of nanomechanical sensors using FEA is a powerful approach to understanding their behaviors under high stress. With the understanding on the stiffness control using thin film processes, one can now tackle the nonlinear aspect of mechanical modeling, allowing one to utilize nonlinearity and the associated post-buckling behaviors for better sensor designs.
+Modeling the nonlinear behavior of nanomechanical sensors using FEA is a powerful approach to understanding their behaviors under high stress. With the understanding of stiffness control using thin film processes, one can now tackle the nonlinear aspect of mechanical modeling, allowing one to utilize nonlinearity and the associated post-buckling behaviors for better sensor designs.
 
-<strong>Funding</strong>: This work is funded by National Institute for Materials Science (NIMS) and the University of Tsukuba, Japan.
+<strong>Funding</strong>: This work is funded by the National Institute for Materials Science (NIMS) and the University of Tsukuba, Japan.
