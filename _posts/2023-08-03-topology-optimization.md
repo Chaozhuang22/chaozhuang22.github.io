@@ -2,7 +2,7 @@
 title: "A Brief Introduction to Topology Optimization"
 date: 2023-08-03T16:30:00+09:00
 category: FEA
-tag: Tutorials
+tag: Notes
 ---
 > Keywords: Applied mathematics.
 > A short introduction to topology optimization.
