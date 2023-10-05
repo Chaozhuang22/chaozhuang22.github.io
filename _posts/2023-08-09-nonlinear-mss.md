@@ -1,5 +1,5 @@
 ---
-title: "Numerical Simulation of Nonlinearity in MEMS Sensors"
+title: "Stiffness Tuning Using Nonlinearity in MEMS Sensors: A COMSOL Tutorial"
 date: 2023-08-09T16:30:00+09:00
 category: FEA
 tag: Projects
