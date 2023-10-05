@@ -8,13 +8,13 @@ header:
   teaser: /assets/images/20230524-error.PNG
 ---
 > Keywords: COMSOL, debugging
+
 Recently, I stumbled upon an unusual error while tweaking an optimization model in COMSOL when I was turning a model from a quarter-symmetry to its full geometry. This modification was necessary as I was switching the material model from isotropy to anisotropy.
 
 During the process, an unexpected error occurred. Unlike typical errors that highlight relevant nodes with little red markers, this one provided no such convenience. It gave no further information about its origin within the Graphical User Interface.
 
 <figure style="width: 600px" class="align-center">
-  <a href="/assets/images/20230524-error.PNG" alt="An unexpected error occurred.">
-  <img src="/assets/images/20230524-error.PNG" alt=""></a>
+  <img src="/assets/images/error.png">
   <figcaption>The error popup.</figcaption>
 </figure>
 
