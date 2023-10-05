@@ -2,7 +2,7 @@
 title: "Topology Optimization of MEMS Sensor: A COMSOL Tutorial"
 date: 2023-10-02T08:30:00+09:00
 category: FEA
-tag: Porjects
+tag: Projects
 header:
   teaser: /assets/images/to/teaser.jpg
 ---

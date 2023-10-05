@@ -46,10 +46,10 @@ feature_row2:
     btn_class: "btn--primary"
 feature_row3:
   - image_path: /assets/images/japanese/teaser.jpg
-    alt: "Beneath the Surface: Understanding Wrinkle Formation"
-    title: "Beneath the Surface: Understanding Wrinkle Formation"
-    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Right aligned with `type="right"`'
-    url: "#test-link"
+    alt: "From Zero to Fluent: My 1300-Hour Commitment to Learning Japanese"
+    title: "From Zero to Fluent: My 1300-Hour Commitment to Learning Japanese"
+    excerpt: 'A review on my journey of learning Japanese.'
+    url: "https://chaozhuang22.github.io/language/japanese/"
     btn_label: "Read More"
     btn_class: "btn--primary"
 ---
