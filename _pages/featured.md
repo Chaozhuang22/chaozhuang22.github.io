@@ -18,15 +18,15 @@ intro:
   Check out [About](https://chaozhuang22.github.io/about/) page for more information.'
 feature_row:
   - image_path: assets/images/to/teaser.jpg
-    alt: "Topology Optimization of MEMS Sensor"
+    alt: "MEMS Sensor Optimization"
     image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
-    title: "Topology Optimization of MEMS Sensor: A COMSOL Tutorial"
+    title: "MEMS Sensor Optimization: A COMSOL Walkthrough"
     excerpt: "A guide for setting up a topology optimization model for MEMS sensor design."
     url: "https://chaozhuang22.github.io/fea/to-detailed/"
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: /assets/images/japanese/teaser.jpg
-    alt: "From Zero to Fluent: My 1300-Hour Commitment to Learning Japanese"
+    alt: "From Zero to Fluent:   My 1300-Hour Commitment to Learning Japanese"
     image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
     title: "From Zero to Fluent: My 1300-Hour Commitment to Learning Japanese"
     excerpt: 'A review on my journey in learning Japanese from Duolingo to active/passive immersion.'
