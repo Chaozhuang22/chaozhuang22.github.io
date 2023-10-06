@@ -45,7 +45,7 @@ feature_row1:
   - image_path: assets/images/fea-tutorial/animation.gif
     alt: "Stiffness Fine-tuning in MEMS Sensors"
     title: "Stiffness Fine-tuning in MEMS Sensors"
-    excerpt: "A numerical demonstration of utilizing nonlinear mechanics to fine-tune the mechanical performance of MEMS sensors."
+    excerpt: "The article explains the structure and behavior of these sensors, emphasizing the role of stiffness manipulation for enhanced performance. By introducing prestress, the sensor's sensitivity to surface stress-induced bending can be optimized. The tutorial offers a step-by-step guide on setting up, solving, and analyzing the model, highlighting the importance of understanding nonlinearity for improved sensor designs."
     url: "https://chaozhuang22.github.io/fea/nonlinear-mss/"
     btn_label: "Read More"
     btn_class: "btn--primary"
