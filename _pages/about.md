@@ -4,8 +4,7 @@ title: "About me"
 ---
 
 <figure style="width: 300px" class="align-center">
-  <a href="/assets/images/bio-photo-1.png" alt="Me">
-  <img src="/assets/images/bio-photo-1.png" alt=""></a>
+  <img src="/assets/images/bio-photo-1.png" alt="Me.">
 </figure>
 
 <strong style="font-size: 1.15em;">Hi there!</strong>

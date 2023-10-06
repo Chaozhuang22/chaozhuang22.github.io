@@ -17,6 +17,31 @@ intro:
   It also serves as a personal portfolio showcasing projects that I have beening working on.
   Check out About page for more information.'
 feature_row:
+  - image_path: assets/images/to/teaser.jpg
+    alt: "Topology Optimization of MEMS Sensor"
+    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
+    title: "Topology Optimization of MEMS Sensor: A COMSOL Tutorial"
+    excerpt: "A in-depth setup guide for the topology optimization model for MEMS sensor optimization."
+    url: "https://chaozhuang22.github.io/fea/to-detailed/"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/japanese/teaser.jpg
+    alt: "From Zero to Fluent: My 1300-Hour Commitment to Learning Japanese"
+    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
+    title: "From Zero to Fluent: My 1300-Hour Commitment to Learning Japanese"
+    excerpt: 'A review on my journey in learning Japanese.'
+    url: "https://chaozhuang22.github.io/language/japanese/"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/japanese/solidstatephysics.jpg
+    alt: "Solid State Physics Fundamentals"
+    title: "Solid State Physics Fundamentals"
+    excerpt: 'A summarized study note on solid state physics.'
+    url: "https://chaozhuang22.github.io/physics/solid-state-physics/"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+
+feature_row1:
   - image_path: assets/images/fea-tutorial/animation.gif
     alt: "Stiffness Fine-tuning in MEMS Sensors"
     title: "Stiffness Fine-tuning in MEMS Sensors"
@@ -46,34 +71,22 @@ feature_row3:
     btn_class: "btn--primary"
 
 feature_row4:
-  - image_path: assets/images/to/teaser.jpg
-    alt: "Topology Optimization of MEMS Sensor"
-    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
-    title: "Topology Optimization of MEMS Sensor: A COMSOL Tutorial"
-    excerpt: "A in-depth setup guide for the topology optimization model for MEMS sensor optimization."
-    url: "https://chaozhuang22.github.io/fea/to-detailed/"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
+
 
 feature_row5:
-  - image_path: /assets/images/japanese/teaser.jpg
-    alt: "From Zero to Fluent: My 1300-Hour Commitment to Learning Japanese"
-    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
-    title: "From Zero to Fluent: My 1300-Hour Commitment to Learning Japanese"
-    excerpt: 'A review on my journey in learning Japanese.'
-    url: "https://chaozhuang22.github.io/language/japanese/"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
+
 ---
 
 {% include feature_row id="intro" type="center" %}
 
 {% include feature_row %}
 
-{% include feature_row id="feature_row2" type="left" %}
+{% include feature_row id="feature_row1" type="left" %}
 
-{% include feature_row id="feature_row3" type="right" %}
+{% include feature_row id="feature_row2" type="right" %}
 
-{% include feature_row id="feature_row4" type="left" %}
+{% include feature_row id="feature_row3" type="left" %}
 
-{% include feature_row id="feature_row5" type="right" %}
+{% include feature_row id="feature_row4" type="right" %}
+
+{% include feature_row id="feature_row5" type="center" %}

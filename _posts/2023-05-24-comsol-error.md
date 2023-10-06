@@ -3,9 +3,8 @@ title: "Solution to 'SelectionOutOfBoundsException' in COMSOL"
 date: 2023-05-24T16:30:00+09:00
 category: FEA
 tag: Debug
-to
 header:
-  teaser: /assets/images/20230524-error.PNG
+  teaser: /assets/images/error.png
 ---
 > Keywords: COMSOL, debugging
 
