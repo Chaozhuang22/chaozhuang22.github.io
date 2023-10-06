@@ -16,7 +16,7 @@
 locale: "en-US"
 title: "Chao ZHUANG"
 email: "zhuang.chao95@gmail.com"
-description: "This is a personal website of Chao, a Ph.D. in Materials Science and Engineering. Here I talk about my work on the simulation and optimization of MEMS, and my other learning activities."
+description: "This is a personal website of Chao, a Ph.D. in Materials Science and Engineering. Here I talk about my work on the simulation and optimization of mechanical structures, and my other learning activities."
 url: "https://chaozhuang22.github.io/"
 repository: "Chaozhuang22/Chaozhuang22.github.io"
 words_per_minute: 200
@@ -25,7 +25,7 @@ teaser: "/assets/images/default-teaser.png"
 logo: "apple-touch-icon.png"
 atom_feed:
   hide: true
-og_image: # Open Graph/Twitter default site image
+og_image: "apple-touch-icon.png"
 
 # Build settings
 markdown: kramdown
@@ -34,7 +34,7 @@ minimal_mistakes_skin: "dirt" # "default" "air", "aqua", "contrast", "dark", "di
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 6 # amount of posts to show
 paginate_path: /page:num/
 timezone: Japan
 
@@ -76,8 +76,8 @@ analytics:
 author:
   name   : "Chao Zhuang"
   avatar : "/assets/images/bio-photo-1.png"
-  bio    : "Materials Science Ph.D. at the University of Tsukuba."
-  location: "Tsukuba, Japan"
+  bio    : "Ph.D. in Materials Science and Engineering"
+  location: "Île-de-France, France"
   links:
     - label: "Google Scholar"
       icon: "fas fa-graduation-cap"
@@ -91,7 +91,6 @@ author:
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/Chaozhuang22"
-
 
 footer:
   links:
