@@ -36,7 +36,7 @@ feature_row:
   - image_path: /assets/images/solidstatephysics.jpg
     alt: "Solid State Physics: Fundamentals and Modern Developments"
     title: "Solid State Physics: Fundamentals and Modern Developments"
-    excerpt: 'A summarized study note introducing the fundamental formulations in solid state physics.'
+    excerpt: 'A summarized study note introducing the fundamentals in solid state physics.'
     url: "https://chaozhuang22.github.io/physics/solid-state-physics/"
     btn_label: "Read More"
     btn_class: "btn--primary"
