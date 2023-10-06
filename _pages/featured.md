@@ -10,7 +10,7 @@ header:
   actions:
     - label: "Read More"
       url: "https://chaozhuang22.github.io/fea/to/"
-  caption: "Beyond Trial-and-Error: A Scientific Approach to MEMS Sensor Design"
+  caption: "The optimization history of surface stress sensing MEMS sensor."
 excerpt: "A Topology Optimization Study on Piezoresistive MEMS Sensors."
 intro: 
   - excerpt: 'This site is used to publish notes about topics that I have learned and read.
@@ -45,7 +45,7 @@ feature_row1:
   - image_path: assets/images/fea-tutorial/animation.gif
     alt: "Stiffness Fine-tuning in MEMS Sensors"
     title: "Stiffness Fine-tuning in MEMS Sensors"
-    excerpt: "- Nonlinear behavior in MEMS sensor is modeled using FEA in COMSOL Multiphysics.<br />- The stiffness of these sensors can be altered using a highly stressed thin film, pallowing access to zero stiffness and bistability."
+    excerpt: "Nonlinear behavior in MEMS sensor is modeled using FEA in COMSOL Multiphysics. The stiffness of these sensors can be altered using a highly stressed thin film, pallowing access to zero stiffness and bistability."
     url: "https://chaozhuang22.github.io/fea/nonlinear-mss/"
     btn_label: "Read More"
     btn_class: "btn--primary"
@@ -54,7 +54,7 @@ feature_row2:
   - image_path: /assets/images/flow-channel/deformation.gif
     alt: "Microfluidic Fluid-Structure Interaction"
     title: "Microfluidic Fluid-Structure Interaction Modeling"
-    excerpt: "- The tutorial provides a detailed COMSOL setup for fluid-structure interaction modeling, simulating the deformation of a microfluidic channel under constant flow rate.<br />- The model can be extended to study channel deformation by different vapors, offering potential as a viscosity sensor and aiding in experimental flow measurement validation."
+    excerpt: "The tutorial provides a detailed COMSOL setup for fluid-structure interaction modeling, simulating the deformation of a microfluidic channel under constant flow rate. The model can be extended to study channel deformation by different vapors, offering potential as a viscosity sensor and aiding in experimental flow measurement validation."
     url: "https://chaozhuang22.github.io/fea/flow-channel/"
     btn_label: "Read More"
     btn_class: "btn--primary"
@@ -62,7 +62,7 @@ feature_row2:
 feature_row3:
   - image_path: /assets/images/wrinkle/anime.gif
     title: "Nonlinear Mechanics in Wrinkle Formation"
-    excerpt: "- The formation mechanics of wrinkles in bilayer systems is explored through FEA using COMSOL Multiphysics.<br />s- The presented basic model can serve as a base model for advanced simulations, potentially exploring wrinkles on curved surfaces and intricate wrinkle patterns."
+    excerpt: "The formation mechanics of wrinkles in bilayer systems is explored through FEA using COMSOL Multiphysics. The presented basic model can serve as a base model for advanced simulations, potentially exploring wrinkles on curved surfaces and intricate wrinkle patterns."
     url: "https://chaozhuang22.github.io/fea/wrinkle/"
     btn_label: "Read More"
     btn_class: "btn--primary"
