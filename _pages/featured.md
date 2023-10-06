@@ -15,7 +15,7 @@ excerpt: "A Topology Optimization Study on Piezoresistive MEMS Sensors."
 intro: 
   - excerpt: 'This site is used to publish notes about topics that I have learned and read.
   It also serves as a personal portfolio showcasing projects that I have beening working on.
-  Check out About page for more information.'
+  Check out [About](https://chaozhuang22.github.io/about/) page for more information.'
 feature_row:
   - image_path: assets/images/to/teaser.jpg
     alt: "Topology Optimization of MEMS Sensor"
