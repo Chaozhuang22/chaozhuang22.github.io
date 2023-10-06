@@ -4,4 +4,4 @@ permalink: /tags/
 layout: tags
 author_profile: true
 ---
-An alternative categorization is [here](https://chaozhuang22.github.io/categories/).
+Categorization by subject can be found [here](https://chaozhuang22.github.io/categories/).
