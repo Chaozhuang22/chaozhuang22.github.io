@@ -45,9 +45,10 @@ feature_row1:
   - image_path: assets/images/fea-tutorial/animation.gif
     alt: "Stiffness Fine-tuning in MEMS Sensors"
     title: "Stiffness Fine-tuning in MEMS Sensors"
-    excerpt: "- Nanomechanical sensors, known for their exceptional sensitivity at the nanoscale, can detect surface stress changes, and their nonlinear behavior can be modeled using Finite Element Analysis (FEA) in COMSOL.
-    - Manipulating the stiffness of these sensors, especially through introducing prestress using a highly stressed thin film, can enhance their performance, allowing them to respond differently to surface stress-induced bending.
-    - By understanding and modeling the nonlinearities and post-buckling behaviors, researchers can leverage these insights for improved sensor designs, especially in applications requiring high stress."
+    excerpt: 
+    "- Nonlinear behavior in MEMS sensor is modeled using FEA in COMSOL Multiphysics.
+
+    - The stiffness of these sensors can be altered using a highly stressed thin film, pallowing access to zero stiffness and bistability."
     url: "https://chaozhuang22.github.io/fea/nonlinear-mss/"
     btn_label: "Read More"
     btn_class: "btn--primary"
@@ -56,7 +57,10 @@ feature_row2:
   - image_path: /assets/images/flow-channel/deformation.gif
     alt: "Microfluidic Fluid-Structure Interaction"
     title: "Microfluidic Fluid-Structure Interaction Modeling"
-    excerpt: "A guide to model fluid-structure interactions in microfluidic channel made with soft materials. A sister article to wrinkle formation demonstration."
+    excerpt: 
+    "- The tutorial provides a detailed COMSOL setup for fluid-structure interaction modeling, simulating the deformation of a microfluidic channel under constant flow rate.
+    
+    - The model can be extended to study channel deformation by different vapors, offering potential as a viscosity sensor and aiding in experimental flow measurement validation."
     url: "https://chaozhuang22.github.io/fea/flow-channel/"
     btn_label: "Read More"
     btn_class: "btn--primary"
@@ -64,7 +68,10 @@ feature_row2:
 feature_row3:
   - image_path: /assets/images/wrinkle/anime.gif
     title: "Nonlinear Mechanics in Wrinkle Formation"
-    excerpt: "A numerical demonstration on the non-linear mechanical analysis of wrinkle formation, a universal mechanical phenomenon that occurs across length scales."
+    excerpt: 
+    "- The formation mechanics of wrinkles in bilayer systems is explored through FEA using COMSOL Multiphysics.
+
+    - The presented basic model can serve as a base model for advanced simulations, potentially exploring wrinkles on curved surfaces and intricate wrinkle patterns."
     url: "https://chaozhuang22.github.io/fea/wrinkle/"
     btn_label: "Read More"
     btn_class: "btn--primary"
