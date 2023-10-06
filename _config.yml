@@ -16,7 +16,7 @@
 locale: "en-US"
 title: "Chao ZHUANG"
 email: "zhuang.chao95@gmail.com"
-description: "Portfolio of Chao Zhuang."
+description: "Portfolio of Chao Zhuang"
 url: "https://chaozhuang22.github.io/"
 repository: "Chaozhuang22/Chaozhuang22.github.io"
 words_per_minute: 200
@@ -80,8 +80,8 @@ author:
   location: "Paris, France"
   links:
     - label: "Email"
-    icon: "fas fa-fw fa-envelope-square"
-    url: "mailto:zhuang.chao95@gmail.com"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:zhuang.chao95@gmail.com"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/cz4"
@@ -95,8 +95,8 @@ author:
 footer:
   links:
     - label: "Email"
-    icon: "fas fa-fw fa-envelope-square"
-    url: "mailto:zhuang.chao95@gmail.com"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:zhuang.chao95@gmail.com"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/cz4"
