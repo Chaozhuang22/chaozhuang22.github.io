@@ -33,10 +33,10 @@ feature_row:
     url: "https://chaozhuang22.github.io/language/japanese/"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: solidstatephysics.jpg
-    alt: "Solid State Physics Fundamentals"
-    title: "Solid State Physics Fundamentals"
-    excerpt: 'A summarized study note on solid state physics.'
+  - image_path: /assets/images/solidstatephysics.jpg
+    alt: "Solid State Physics: Fundamentals and Modern Developments"
+    title: "Solid State Physics: Fundamentals and Modern Developments"
+    excerpt: 'A summarized study note introducing the fundamental formulations in solid state physics.'
     url: "https://chaozhuang22.github.io/physics/solid-state-physics/"
     btn_label: "Read More"
     btn_class: "btn--primary"
