@@ -3,6 +3,7 @@ permalink: /publications/
 title: Publication List
 layout: single
 ---
+For a complete list, check out my [Google Scholar](https://scholar.google.com/citations?user=fBhceO8AAAAJ&hl=en) page.
 
 1. [Linear Stiffness Tuning in MEMS Devices via Prestress Introduced by TiN Thin Films](https://doi.org/10.1021/acsaenm.3c00034)
     <p style="font-size: 0.9em;"><strong>Zhuang C.</strong>, Minami K., Shiba K., Yoshikawa G. <i>ACS Applied Engineering Materials</i> 1, 1213 (2023)</p>

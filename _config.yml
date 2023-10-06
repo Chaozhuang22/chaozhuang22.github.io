@@ -77,17 +77,17 @@ author:
   name   : "Chao Zhuang"
   avatar : "/assets/images/bio-photo-1.png"
   bio    : "Ph.D. in Materials Science and Engineering"
-  location: "Île-de-France, France"
+  location: "Paris, France"
   links:
-    - label: "Google Scholar"
-      icon: "fas fa-graduation-cap"
-      url: "https://scholar.google.com/citations?user=fBhceO8AAAAJ&hl=en"
+    - label: "Email"
+    icon: "fas fa-fw fa-envelope-square"
+    url: "mailto:zhuang.chao95@gmail.com"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/cz4"
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:zhuang.chao95@gmail.com"
+    - label: "Google Scholar"
+      icon: "fas fa-graduation-cap"
+      url: "https://scholar.google.com/citations?user=fBhceO8AAAAJ&hl=en"
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/Chaozhuang22"
@@ -95,17 +95,18 @@ author:
 footer:
   links:
     - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:zhuang.chao95@gmail.com"
+    icon: "fas fa-fw fa-envelope-square"
+    url: "mailto:zhuang.chao95@gmail.com"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/cz4"
-    - label: "GitHub"
-      icon: "fab fa-github"
-      url: "https://github.com/Chaozhuang22"
     - label: "Google Scholar"
       icon: "fas fa-graduation-cap"
       url: "https://scholar.google.com/citations?user=fBhceO8AAAAJ&hl=en"
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/Chaozhuang22"
+
 
 # Defaults
 defaults:
