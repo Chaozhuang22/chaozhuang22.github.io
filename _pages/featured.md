@@ -21,7 +21,7 @@ feature_row:
     alt: "Topology Optimization of MEMS Sensor"
     image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
     title: "Topology Optimization of MEMS Sensor: A COMSOL Tutorial"
-    excerpt: "A in-depth setup guide for the topology optimization model for MEMS sensor optimization."
+    excerpt: "A guide for setting up a topology optimization model for MEMS sensor design."
     url: "https://chaozhuang22.github.io/fea/to-detailed/"
     btn_label: "Read More"
     btn_class: "btn--primary"
@@ -29,11 +29,11 @@ feature_row:
     alt: "From Zero to Fluent: My 1300-Hour Commitment to Learning Japanese"
     image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
     title: "From Zero to Fluent: My 1300-Hour Commitment to Learning Japanese"
-    excerpt: 'A review on my journey in learning Japanese.'
+    excerpt: 'A review on my journey in learning Japanese from Duolingo to active/passive immersion.'
     url: "https://chaozhuang22.github.io/language/japanese/"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: /assets/images/japanese/solidstatephysics.jpg
+  - image_path: solidstatephysics.jpg
     alt: "Solid State Physics Fundamentals"
     title: "Solid State Physics Fundamentals"
     excerpt: 'A summarized study note on solid state physics.'
@@ -45,18 +45,16 @@ feature_row1:
   - image_path: assets/images/fea-tutorial/animation.gif
     alt: "Stiffness Fine-tuning in MEMS Sensors"
     title: "Stiffness Fine-tuning in MEMS Sensors"
-    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
-    excerpt: "A numerical demonstration of utilizing nonlinear mechanics to fine-tune MEMS sensors."
+    excerpt: "A numerical demonstration of utilizing nonlinear mechanics to fine-tune the mechanical performance of MEMS sensors."
     url: "https://chaozhuang22.github.io/fea/nonlinear-mss/"
     btn_label: "Read More"
     btn_class: "btn--primary"
 
 feature_row2:
   - image_path: /assets/images/flow-channel/deformation.gif
-    alt: "Microfluidic Fluid-Structure Interaction Modeling"
+    alt: "Microfluidic Fluid-Structure Interaction"
     title: "Microfluidic Fluid-Structure Interaction Modeling"
-    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
-    excerpt: "A guide to model fluid-structure interactions in microfluidic channel in COMSOL."
+    excerpt: "A guide to model fluid-structure interactions in microfluidic channel made with soft materials. A sister article to wrinkle formation demonstration."
     url: "https://chaozhuang22.github.io/fea/flow-channel/"
     btn_label: "Read More"
     btn_class: "btn--primary"
@@ -64,17 +62,10 @@ feature_row2:
 feature_row3:
   - image_path: /assets/images/wrinkle/anime.gif
     title: "Nonlinear Mechanics in Wrinkle Formation"
-    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
-    excerpt: "A finite element simulation on the non-linear mechanical analysis of wrinkle formation."
+    excerpt: "A numerical demonstration on the non-linear mechanical analysis of wrinkle formation, a universal mechanical phenomenon that occurs across length scales."
     url: "https://chaozhuang22.github.io/fea/wrinkle/"
     btn_label: "Read More"
     btn_class: "btn--primary"
-
-feature_row4:
-
-
-feature_row5:
-
 ---
 
 {% include feature_row id="intro" type="center" %}
@@ -86,7 +77,3 @@ feature_row5:
 {% include feature_row id="feature_row2" type="right" %}
 
 {% include feature_row id="feature_row3" type="left" %}
-
-{% include feature_row id="feature_row4" type="right" %}
-
-{% include feature_row id="feature_row5" type="center" %}
