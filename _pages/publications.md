@@ -5,8 +5,8 @@ layout: single
 ---
 
 1. [Linear Stiffness Tuning in MEMS Devices via Prestress Introduced by TiN Thin Films](https://doi.org/10.1021/acsaenm.3c00034)
-<p style="font-size: 0.9em;"><strong>Zhuang C.</strong>, Minami K., Shiba K., Yoshikawa G.
-<i>ACS Applied Engineering Materials</i> 1, 1213 (2023)</p>
+    <p style="font-size: 0.9em;"><strong>Zhuang C.</strong>, Minami K., Shiba K., Yoshikawa G.
+    <i>ACS Applied Engineering Materials</i> 1, 1213 (2023)</p>
 
 2. [Tailoring Stresses in Piezoresistive Microcantilevers for Enhanced Surface Stress Sensing: Insights from Topology Optimization](https://ui.adsabs.harvard.edu/abs/2023arXiv230811143Z)
 <p style="font-size: 0.9em;"><strong>Zhuang C.</strong>, Minami K., Shiba K., Yoshikawa G.
