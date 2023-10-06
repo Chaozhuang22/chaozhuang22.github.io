@@ -46,8 +46,7 @@ feature_row1:
     alt: "Stiffness Fine-tuning in MEMS Sensors"
     title: "Stiffness Fine-tuning in MEMS Sensors"
     excerpt: 
-    "- Nonlinear behavior in MEMS sensor is modeled using FEA in COMSOL Multiphysics.
-
+    "- Nonlinear behavior in MEMS sensor is modeled using FEA in COMSOL Multiphysics.  
     - The stiffness of these sensors can be altered using a highly stressed thin film, pallowing access to zero stiffness and bistability."
     url: "https://chaozhuang22.github.io/fea/nonlinear-mss/"
     btn_label: "Read More"
@@ -58,8 +57,7 @@ feature_row2:
     alt: "Microfluidic Fluid-Structure Interaction"
     title: "Microfluidic Fluid-Structure Interaction Modeling"
     excerpt: 
-    "- The tutorial provides a detailed COMSOL setup for fluid-structure interaction modeling, simulating the deformation of a microfluidic channel under constant flow rate.
-    
+    "- The tutorial provides a detailed COMSOL setup for fluid-structure interaction modeling, simulating the deformation of a microfluidic channel under constant flow rate.  
     - The model can be extended to study channel deformation by different vapors, offering potential as a viscosity sensor and aiding in experimental flow measurement validation."
     url: "https://chaozhuang22.github.io/fea/flow-channel/"
     btn_label: "Read More"
@@ -69,8 +67,7 @@ feature_row3:
   - image_path: /assets/images/wrinkle/anime.gif
     title: "Nonlinear Mechanics in Wrinkle Formation"
     excerpt: 
-    "- The formation mechanics of wrinkles in bilayer systems is explored through FEA using COMSOL Multiphysics.
-
+    "- The formation mechanics of wrinkles in bilayer systems is explored through FEA using COMSOL Multiphysics.  
     - The presented basic model can serve as a base model for advanced simulations, potentially exploring wrinkles on curved surfaces and intricate wrinkle patterns."
     url: "https://chaozhuang22.github.io/fea/wrinkle/"
     btn_label: "Read More"
