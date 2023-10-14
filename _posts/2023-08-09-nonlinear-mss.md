@@ -1,12 +1,11 @@
 ---
-title: "Stiffness Tuning Using Nonlinearity in MEMS Sensors: A COMSOL Tutorial"
+title: "Stiffness Tuning Using Nonlinearity in MEMS Sensors"
 date: 2023-08-09T16:30:00+09:00
 category: FEA
 tag: Projects
 header:
   teaser: /assets/images/fea-tutorial/disp-2.png
 ---
-> Keywords: MEMS sensors, Nanomechanical sensors, Nonlinear mechanical analysis, FEA
 
 ## Introduction
 Nanomechanical sensors have emerged as powerful tools for detecting surface stress changes at the nanoscale. Their unparalleled sensitivity and precision have paved the way for advancements in fields such as material science, biology, and medicine. However, accurately modeling their behavior, particularly when dealing with nonlinearities, can be intricate. This tutorial delves into the process of modeling the nonlinear mechanical behavior of these sensors using Finite Element Analysis (FEA) in COMSOL. It serves as a foundational guide to understanding the modeling and implementation of the thin film-based [stiffness tuning methods](https://doi.org/10.1021/acsaenm.3c00034).
@@ -16,8 +15,8 @@ Nanomechanical sensors consist of two primary layers: the immobilization layer, 
 
 <figure style="width: 500px" class="align-center">
 
-  <a href="/assets/images/fea-tutorial/cantilever.jpeg">
-  <img src="/assets/images/fea-tutorial/cantilever.jpeg"></a>
+  <a href="/assets/images/fea-tutorial/cantilever.jpeg" alt="cantilever SEM">
+  <img src="/assets/images/fea-tutorial/cantilever.jpeg" alt="cantilever SEM"></a>
 
   <figcaption>A SEM image of a typical cantilever. Reproduced with permission from The American Association for the Advancement of Science.</figcaption>
 </figure>
@@ -40,11 +39,11 @@ Due to the symmetrical design of the sensor, only a quarter of its geometry is m
 
 <figure class="half">
 
-  <a href="/assets/images/fea-tutorial/solid.png">
-  <img src="/assets/images/fea-tutorial/solid.png"></a>
+  <a href="/assets/images/fea-tutorial/solid.png" alt="solid selection">
+  <img src="/assets/images/fea-tutorial/solid.png" alt="solid selection"></a>
 
-  <a href="/assets/images/fea-tutorial/shell.png">
-  <img src="/assets/images/fea-tutorial/shell.png"></a>
+  <a href="/assets/images/fea-tutorial/shell.png" alt="shell selection">
+  <img src="/assets/images/fea-tutorial/shell.png" alt="shell selection"></a>
 
   <figcaption>Physics interface setup.</figcaption>
 </figure>
@@ -61,14 +60,14 @@ The end of four piezoresistive sensing beams are fixed, and the two-fold symmetr
 
 <figure class="third">
 
-  <a href="/assets/images/fea-tutorial/fixed.png">
-  <img src="/assets/images/fea-tutorial/fixed.png"></a>
+  <a href="/assets/images/fea-tutorial/fixed.png" alt="fixed boundary condition">
+  <img src="/assets/images/fea-tutorial/fixed.png" alt="fixed boundary condition"></a>
 
-  <a href="/assets/images/fea-tutorial/sym1.png">
-  <img src="/assets/images/fea-tutorial/sym1.png"></a>
+  <a href="/assets/images/fea-tutorial/sym1.png" alt="sym1 boundary condition">
+  <img src="/assets/images/fea-tutorial/sym1.png" alt="sym1 boundary condition"></a>
 
-  <a href="/assets/images/fea-tutorial/sym2.png">
-  <img src="/assets/images/fea-tutorial/sym2.png"></a>
+  <a href="/assets/images/fea-tutorial/sym2.png" alt="sym2 boundary condition">
+  <img src="/assets/images/fea-tutorial/sym2.png" alt="sym2 boundary condition"></a>
 
   <figcaption>Physics interface setup.</figcaption>
 </figure>
@@ -99,8 +98,8 @@ First of all, let's make an animation.
 
 <figure style="width: 500px" class="align-center">
 
-  <a href="/assets/images/fea-tutorial/animation.gif">
-  <img src="/assets/images/fea-tutorial/animation.gif"></a>
+  <a href="/assets/images/fea-tutorial/animation.gif" alt="simulation animation">
+  <img src="/assets/images/fea-tutorial/animation.gif" alt="simulation animation"></a>
 
   <figcaption>Sensor deformation as a function of surface stress.</figcaption>
 </figure>
@@ -108,11 +107,11 @@ First of all, let's make an animation.
 Once the simulation is complete, one can look at the displacement profile of the sensor. The membrane deforms differently depending on the level of prestrain in the silicon. When there is no prestrain, the profile contour is circular; when there is a high prestrain, the profile contour is a square shape.
 <figure class="half">
 
-  <a href="/assets/images/fea-tutorial/disp-1.png">
-  <img src="/assets/images/fea-tutorial/disp-1.png"></a>
+  <a href="/assets/images/fea-tutorial/disp-1.png" alt="sensor displacement">
+  <img src="/assets/images/fea-tutorial/disp-1.png" alt="sensor displacement"></a>
 
-  <a href="/assets/images/fea-tutorial/disp-2.png">
-  <img src="/assets/images/fea-tutorial/disp-2.png"></a>
+  <a href="/assets/images/fea-tutorial/disp-2.png" alt="buckled sensor displacement">
+  <img src="/assets/images/fea-tutorial/disp-2.png" alt="buckled sensor displacement"></a>
 
   <figcaption>Deformation profile.</figcaption>
 </figure>
@@ -121,11 +120,11 @@ The piezoresistive signal profiles are similar with signals concentrated at the 
 
 <figure class="half">
 
-  <a href="/assets/images/fea-tutorial/out-1.png">
-  <img src="/assets/images/fea-tutorial/out-1.png"></a>
+  <a href="/assets/images/fea-tutorial/out-1.png" alt="sensor output">
+  <img src="/assets/images/fea-tutorial/out-1.png" alt="sensor output"></a>
 
-  <a href="/assets/images/fea-tutorial/out-2.png">
-  <img src="/assets/images/fea-tutorial/out-2.png"></a>
+  <a href="/assets/images/fea-tutorial/out-2.png" alt="buckled sensor output">
+  <img src="/assets/images/fea-tutorial/out-2.png" alt="buckled sensor output"></a>
 
   <figcaption>Piezoresistive signal profile.</figcaption>
 </figure>
@@ -134,11 +133,11 @@ The following line graphs show the dependence of sensor deformation and piezores
 
 <figure class="half">
 
-  <a href="/assets/images/fea-tutorial/disp.png">
-  <img src="/assets/images/fea-tutorial/disp.png"></a>
+  <a href="/assets/images/fea-tutorial/disp.png" alt="sensor displacement">
+  <img src="/assets/images/fea-tutorial/disp.png" alt="sensor displacement"></a>
 
-  <a href="/assets/images/fea-tutorial/output.png">
-  <img src="/assets/images/fea-tutorial/output.png"></a>
+  <a href="/assets/images/fea-tutorial/output.png" alt="sensor output">
+  <img src="/assets/images/fea-tutorial/output.png" alt="sensor output"></a>
 
   <figcaption>The displacement and piezoresistive signals as a function of surface stress loading under different levels of prestress.</figcaption>
 </figure>
