@@ -77,7 +77,7 @@ author:
   name   : "Chao Zhuang"
   avatar : "/assets/images/bio-photo-1.png"
   bio    : "Ph.D. in Materials Science and Engineering"
-  location: "Paris, France"
+  location: "Guangzhou, China"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -91,6 +91,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/Chaozhuang22"
+    - label: "Kaggle"
+    icon: "fab fa-kaggle"
+    url: "https://www.kaggle.com/chaozhuang"
 
 footer:
   links:
@@ -106,6 +109,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-github"
       url: "https://github.com/Chaozhuang22"
+    - label: "Kaggle"
+    icon: "fab fa-kaggle"
+    url: "https://www.kaggle.com/chaozhuang"
 
 
 # Defaults
