@@ -11,7 +11,7 @@ header:
     - label: "Read More"
       url: "https://chaozhuang22.github.io/data-analysis/soccertrack/"
   caption: "The collective motion of two teams during a soccer game."
-excerpt: "A visualization study on the teamplay dynamics of soccer."
+excerpt: "A visualization study on the teamplay dynamics of a soccer game."
 intro: 
   - excerpt: 'This site is used to publish notes about topics that I have learned and read.
   It also serves as a personal portfolio showcasing projects that I have beening working on.
@@ -33,7 +33,7 @@ feature_row:
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: /assets/images/japanese/teaser.jpg
-    alt: "From Zero to Fluent:   My 1300-Hour Commitment to Learning Japanese"
+    alt: "From Zero to Fluent: My 1300-Hour Commitment to Learning Japanese"
     image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
     title: "From Zero to Fluent: My 1300-Hour Commitment to Learning Japanese"
     excerpt: 'A review on my journey in learning Japanese from Duolingo to active/passive immersion.'
