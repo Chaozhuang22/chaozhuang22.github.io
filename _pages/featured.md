@@ -1,22 +1,29 @@
 ---
-title: "Beyond Trial-and-Error: A Scientific Approach to MEMS Sensor Design"
+title: "Soccer Dynamic Analysis"
 layout: splash
 permalink: /featured/
 date: 2023-10-06T11:48:41-04:00
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/to/anime.gif
+  overlay_image: /assets/images/soccertrack/gif1.gif
   actions:
     - label: "Read More"
-      url: "https://chaozhuang22.github.io/fea/to/"
-  caption: "The optimization history of surface stress sensing MEMS sensor."
-excerpt: "A Topology Optimization Study on Piezoresistive MEMS Sensors."
+      url: "https://chaozhuang22.github.io/data-analysis/soccertrack/"
+  caption: "The collective motion of two teams during a soccer game."
+excerpt: "A visualization study on the teamplay dynamics of soccer."
 intro: 
   - excerpt: 'This site is used to publish notes about topics that I have learned and read.
   It also serves as a personal portfolio showcasing projects that I have beening working on.
   Check out [About](https://chaozhuang22.github.io/about/) page for more information.'
 feature_row:
+  - image_path: /assets/images/solidstatephysics.jpg
+    alt: "Solid State Physics: Fundamentals and Modern Developments"
+    title: "Solid State Physics: Fundamentals and Modern Developments"
+    excerpt: 'A summarized study note introducing the fundamentals in solid state physics.'
+    url: "https://chaozhuang22.github.io/fea/to/"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
   - image_path: assets/images/to/teaser.jpg
     alt: "MEMS Sensor Optimization"
     image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
@@ -31,13 +38,6 @@ feature_row:
     title: "From Zero to Fluent: My 1300-Hour Commitment to Learning Japanese"
     excerpt: 'A review on my journey in learning Japanese from Duolingo to active/passive immersion.'
     url: "https://chaozhuang22.github.io/language/japanese/"
-    btn_label: "Read More"
-    btn_class: "btn--primary"
-  - image_path: /assets/images/solidstatephysics.jpg
-    alt: "Solid State Physics: Fundamentals and Modern Developments"
-    title: "Solid State Physics: Fundamentals and Modern Developments"
-    excerpt: 'A summarized study note introducing the fundamentals in solid state physics.'
-    url: "https://chaozhuang22.github.io/physics/solid-state-physics/"
     btn_label: "Read More"
     btn_class: "btn--primary"
 
