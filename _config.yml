@@ -88,11 +88,11 @@ author:
     - label: "Google Scholar"
       icon: "fas fa-graduation-cap"
       url: "https://scholar.google.com/citations?user=fBhceO8AAAAJ&hl=en"
-    - label: "GitHub"
+    - label: " GitHub"
       icon: "fab fa-github"
       url: "https://github.com/Chaozhuang22"
     - label: "Kaggle"
-      icon: "fa-brands fa-kaggle"
+      icon: "fab fa-kaggle"
       url: "https://www.kaggle.com/chaozhuang"
 
 footer:
@@ -110,7 +110,7 @@ footer:
       icon: "fab fa-github"
       url: "https://github.com/Chaozhuang22"
     - label: "Kaggle"
-      icon: "fa-brands fa-kaggle"
+      icon: "fab fa-kaggle"
       url: "https://www.kaggle.com/chaozhuang"
 
 # Defaults
