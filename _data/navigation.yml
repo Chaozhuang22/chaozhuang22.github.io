@@ -1,10 +1,10 @@
 main:
   - title: "Featured"
     url: /featured/
-  - title: "Publications"
-    url: /publications/
   - title: "Blog"
     url: /posts/
+  - title: "Publications"
+    url: /publications/
   - title: "Tags"
     url: /tags/
   - title: "About"
