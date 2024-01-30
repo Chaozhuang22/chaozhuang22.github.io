@@ -88,7 +88,7 @@ The animation below shows that synchronization commonly occurs during ball-chasi
 ### Order Parameter
 Order parameters, akin to those used to describe liquid crystals or bird flocks, quantify the alignment and synchronization of constituent units. A high value indicates uniform movement direction across the group, while a low value signifies divergent movement directions.
 
-We use the directions for all players in `df_direction` to compute the order parameter using the formula: $$\phi(t)=\frac{1}{N}\sum_{n=1}^{11}\frac{v_n(t)}{|v_n(t)|}$$. The time series of the order parameter $$\phi$$ for both teams is visualized below, which reveals that:
+We use the directions for all players in df_direction to compute the order parameter using the formula: $$\phi(t)=\frac{1}{N}\sum_{n=1}^{11}\frac{v_n(t)}{|v_n(t)|}$$. The time series of the order parameter $$\phi$$ for both teams is visualized below, which reveals that:
 - There are unusual periods of desynchronization, where players move in random directions. These periods coincides with shrinking characteristic area observed previously.
 - The autocorrelation plot suggests that Team 1 maintains synchronization slightly longer than Team 2, by about one second, though the difference is not statistically significant, which may indicate that the order parameter is a global feature of the game and does not reflect the strategies or play styles of teams
 
@@ -101,7 +101,7 @@ We use the directions for all players in `df_direction` to compute the order par
 ### Anomaly Detection
 Dips in order parameters, signaling desynchronization, often correspond to short timeouts during injuries, rule infringements, or set pieces like corner or free kicks.
 
-By employing the `ruptures` package in Python with an l2 model, we can systematically detect these anomalies as shifts in the mean of the order parameter.
+By employing the ruptures package in Python with an l2 model, we can systematically detect these anomalies as shifts in the mean of the order parameter.
 
 After adjusting the number of breakpoints, the model effectively identifies timeout periods for both Team 1 and Team 2. Cross-validation with Team 2's data corroborates the identified anomalies, confirming timeouts around 16:15 and 16:28. This aligns with the characteristic area reduction observed in previous analyses.
 
