@@ -14,7 +14,7 @@ $indent-var: 1.3em !default;
 
 /* system typefaces */
 $serif: source-serif-pro, Georgia, Cambria, "Times New Roman", Times, serif !default;
-$sans-serif: "Helvetica", "Lucida Grande", Arial, sans-serif !default;
+$sans-serif: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $monospace: Monaco, Consolas, "Lucida Console", monospace !default;
 
 /* sans serif typefaces */
@@ -29,7 +29,7 @@ $calisto: 'Calisto MT', serif !default;
 $garamond: Garamond, serif !default;
 
 /* general settings */
-$global-font-family: $sans-serif !default;
+$global-font-family: $serif !default;
 $header-font-family: $sans-serif !default;
 $caption-font-family: $sans-serif !default;
 
@@ -45,7 +45,7 @@ $type-size-8: 0.625em !default; // ~10px
 
 /* headline scale */
 $h-size-1: 1.563em !default; // ~25.008px
-$h-size-2: 1.25em !default; // ~20px
+$h-size-2: 1.2em !default; // ~20px
 $h-size-3: 1.125em !default; // ~18px
 $h-size-4: 1.0625em !default; // ~17px
 $h-size-5: 1.03125em !default; // ~16.5px
