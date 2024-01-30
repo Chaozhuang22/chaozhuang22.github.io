@@ -124,8 +124,8 @@
 .author__avatar {
   display: table-cell;
   vertical-align: top;
-  width: 72px;
-  height: 72x;
+  width: 100px;  /* Adjusted width */
+  height: 100px;
 
   @include breakpoint($large) {
     display: block;
@@ -134,7 +134,8 @@
   }
 
   img {
-    max-width: 110px;
+    max-width: 100%;  /* This will make the image responsive to the size of the container */
+    height: auto; 
     // border-radius: 10%;
 
     @include breakpoint($large) {
