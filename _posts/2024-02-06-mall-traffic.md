@@ -10,7 +10,6 @@ header:
 > This post presents a comprehensive data analysis of customer traffic in shopping malls. It explores how customers move, interact, and congregate in different areas within a mall, providing valuable insights for optimizing mall layout for traffic control and strategic advertising.
 
 ## Analysis Goal
-
 This dataset comprises head annotations of individuals captured in a mall over 2000 frames by a surveillance camera. This dataset is originally intended for crowd counting problem, which I have another notebook on this topic: [Crowd Counting via Density Map | Optimized CNN](https://www.kaggle.com/code/chaozhuang/crowd-counting-via-density-map-optimized-cnn). The more I worked on it, the more I noticed the fascinating sub-structure within this dataset. Here, we adopt a perspective of time series analysis, where individuals entering the scene randomly, and their collective behaviors are observed from a statistical standpoint.
 
 The analysis will start with basic temporal features of the total head count. We observe that the patterns of people entering or exiting the scene align with classical stochastic processes, characterized by a stationary time series and an exponential distribution of time intervals between successive entry and exit events. This suggests that the flow of people in and out of the mall occurs in a random and independent manner.

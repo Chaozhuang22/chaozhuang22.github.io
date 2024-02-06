@@ -1,5 +1,5 @@
 ---
-title: "Soccer Dynamic Analysis"
+title: "Soccer Player Dynamics: Player Movements and Team Synchronization"
 layout: splash
 permalink: /featured/
 date: 2023-10-06T11:48:41-04:00
@@ -19,8 +19,8 @@ intro:
 feature_row:
   - image_path: /assets/images/mall/heatmap.gif
     alt: "A log-scale heatmap animation revealing the accumulated activity intensity within the shopping mall scene over 2000 frames."
-    title: "Decoding Customer Behavior in Shopping Malls with Time Series Data Analysis"
-    excerpt: "This post presents a comprehensive data analysis of customer traffic in shopping malls. It explores how customers move, interact, and congregate in different areas within a mall, providing valuable insights for optimizing mall layout for traffic control and strategic advertising."
+    title: "Customer Behavior in Shopping Malls with Time Series Analysis"
+    excerpt: "This post presents a comprehensive data analysis of customer traffic in shopping malls."
     url: "https://chaozhuang22.github.io/data-analysis/mall-traffic//"
     btn_label: "Read More"
     btn_class: "btn--primary"
