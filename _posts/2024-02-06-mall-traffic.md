@@ -1,5 +1,5 @@
 ---
-title: "Decoding Customer Behavior in Shopping Malls with Data Analysis"
+title: "Decoding Customer Behavior in Shopping Malls with Time Series Data Analysis"
 date: 2024-02-06T08:30:00+09:00
 category: Data-Analysis
 tag: Projects
@@ -7,8 +7,7 @@ header:
   teaser: /assets/images/mall/fig0.jpg
 ---
 
-<meta name="description" content="This post presents a comprehensive data analysis of customer traffic in shopping malls. It explores how customers move, interact, and congregate in different areas within a mall, providing valuable insights for optimizing mall layout for traffic control and strategic advertising.">
-<meta name="keywords" content="Data Analysis, Shopping Mall, Customer Traffic, Time Series Analysis, Heatmap, Region of Interest, ROI, Self-Similar Hierarchy, Crowd Counting, Density Map, Traffic Optimization, Strategic Advertising">
+> This post presents a comprehensive data analysis of customer traffic in shopping malls. It explores how customers move, interact, and congregate in different areas within a mall, providing valuable insights for optimizing mall layout for traffic control and strategic advertising.
 
 ## Analysis Goal
 
@@ -45,7 +44,7 @@ Differencing the head count time series yields the net change between consecutiv
 
 The time intervals between successive entries or exits follow an exponential distribution, indicating the stochastic nature of events and there is no memory linkage between them, that is, people's movements can be modeled as a random walk, similar to [basketball scoring](https://www.degruyter.com/document/doi/10.1515/1559-0410.1416/html?lang=en).
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 500px" class="align-center">
   <img src="/assets/images/mall/fig3.png" alt="Scatter plot and exponential fitting showing the relationship between event intervals and frequency in the shopping mall scene.">
   <figcaption>Analysis of event intervals reveals an exponential distribution, indicative of the stochastic nature of people's movements.</figcaption>
 </figure>
@@ -58,7 +57,7 @@ Although the mall has random and discrete inflow/outflow as a whole, there exist
 
 In a commercial context, identifying popular congregation spots is crucial for optimal store and advertisement placement. By integrating density maps across 2000 frames, we obtain an accumulated heatmap indicating the aggregation of people.
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 500px" class="align-center">
   <img src="/assets/images/mall/fig4.png" alt="A log-scale heatmap revealing the activity intensity within the shopping mall scene over 2000 frames.">
   <figcaption>A log-scale heatmap reveals the activity intensity within the shopping mall scene integrated over 2000 frames.</figcaption>
 </figure>
@@ -67,7 +66,7 @@ In a commercial context, identifying popular congregation spots is crucial for o
 
 Here we output a video that overlays head annotations and the accumulated activity heatmap onto the original frames, providing a dynamic visualization of the findings.
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 500px" class="align-center">
   <img src="/assets/images/mall/heatmap.gif" alt="A log-scale heatmap animation revealing the accumulated activity intensity within the shopping mall scene over 2000 frames.">
   <figcaption>A dynamic heatmap reveals the activity intensity within the shopping mall scene.</figcaption>
 </figure>
@@ -76,7 +75,7 @@ Here we output a video that overlays head annotations and the accumulated activi
 
 To have a detailed analysis on these hot spots, we define five ROIs: a reference are (ROI 0), a food stand (ROI 1), and three benches where people tend to stay a long time (ROI 2-4).
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 500px" class="align-center">
   <img src="/assets/images/mall/fig5.png" alt="Five Regions of Interest (ROIs) defined and annotated in a log-scale heatmap of the shopping mall scene.">
   <figcaption>Five Regions of Interest (ROIs) defined for detailed analysis of customer congregation and movement patterns.</figcaption>
 </figure>

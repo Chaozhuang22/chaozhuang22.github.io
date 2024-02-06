@@ -17,11 +17,11 @@ intro:
   It also serves as a personal portfolio showcasing projects that I have beening working on.
   Check out [About](https://chaozhuang22.github.io/about/) page for more information.'
 feature_row:
-  - image_path: /assets/images/solidstatephysics.jpg
-    alt: "Solid State Physics: Fundamentals and Modern Developments"
-    title: "Solid State Physics: Fundamentals and Modern Developments"
-    excerpt: 'A summarized study note introducing the fundamentals in solid state physics.'
-    url: "https://chaozhuang22.github.io/fea/to/"
+  - image_path: /assets/images/mall/heatmap.gif
+    alt: "A log-scale heatmap animation revealing the accumulated activity intensity within the shopping mall scene over 2000 frames."
+    title: "Decoding Customer Behavior in Shopping Malls with Time Series Data Analysis"
+    excerpt: "This post presents a comprehensive data analysis of customer traffic in shopping malls. It explores how customers move, interact, and congregate in different areas within a mall, providing valuable insights for optimizing mall layout for traffic control and strategic advertising."
+    url: "https://chaozhuang22.github.io/data-analysis/mall-traffic//"
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: assets/images/to/teaser.jpg
