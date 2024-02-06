@@ -17,7 +17,7 @@ intro:
   It also serves as a personal portfolio showcasing projects that I have beening working on.
   Check out [About](https://chaozhuang22.github.io/about/) page for more information.'
 feature_row:
-  - image_path: /assets/images/mall/heatmap.gif
+  - image_path: /assets/images/mall/heatmap-cropped.gif
     alt: "A log-scale heatmap animation revealing the accumulated activity intensity within the shopping mall scene over 2000 frames."
     title: "Customer Behavior in Shopping Malls with Time Series Analysis"
     excerpt: "This post presents a comprehensive data analysis of customer traffic in shopping malls."
