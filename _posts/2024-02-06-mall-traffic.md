@@ -63,7 +63,7 @@ In a commercial context, identifying popular congregation spots is crucial for o
 
 #### Video Output
 
-Here we output a video that overlays head annotations and the accumulated activity heatmap onto the original frames, providing a dynamic visualization of the findings.
+Here we generate a video that overlays head annotations and the accumulated activity heatmap onto the original frames, providing a dynamic visualization of the findings. The full version of the generated video is uploaded to [YouTube](https://www.youtube.com/watch?v=4jeDoG39GcI).
 
 <figure style="width: 500px" class="align-center">
   <img src="/assets/images/mall/heatmap.gif" alt="A log-scale heatmap animation revealing the accumulated activity intensity within the shopping mall scene over 2000 frames.">
