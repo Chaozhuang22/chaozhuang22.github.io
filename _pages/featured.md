@@ -33,7 +33,7 @@ feature_row:
   - image_path: /assets/images/japanese/teaser.jpg
     alt: "From Zero to Fluent: My 1300-Hour Commitment to Learning Japanese"
     title: "From Zero to Fluent: My 1300-Hour Commitment to Learning Japanese"
-    # excerpt: "A review on my journey in learning Japanese from Duolingo to active/passive immersion."
+    excerpt: "A review on my journey in learning Japanese from Duolingo to active/passive immersion."
     url: "https://chaozhuang22.github.io/language/japanese/"
     btn_label: "Read More"
     btn_class: "btn--primary"
