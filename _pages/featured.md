@@ -23,11 +23,11 @@ feature_row:
     url: "https://chaozhuang22.github.io/data-analysis/mall-traffic/"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: assets/images/to/teaser.jpg
+  - image_path: assets/images/air-quality/teaser.jpg
     alt: "Data analysis on multisensor calibration for air quality monitoring applications"
     title: "Optimizing Air Quality Monitoring: Sensor-Fusion Calibration"
     excerpt: "A data analysis showcase for multisensor calibration of air quality monitoring."
-    url: "https://chaozhuang22.github.io/language/japanese/"
+    url: "https://chaozhuang22.github.io/data-analysis/air-quality/"
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: /assets/images/japanese/teaser.jpg
