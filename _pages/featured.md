@@ -12,7 +12,7 @@ header:
       url: "https://chaozhuang22.github.io/data-analysis/soccertrack/"
 # excerpt: "A visualization study on the teamplay dynamics of a soccer game."
 intro: 
-  'This site is used to publish notes about topics that I have learned and read.
+  - excerpt: 'This site is used to publish notes about topics that I have learned and read.
   It also serves as a personal portfolio showcasing projects that I have beening working on.
   Check out [About](https://chaozhuang22.github.io/about/) page for more information.'
 feature_row:
