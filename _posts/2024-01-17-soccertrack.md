@@ -57,7 +57,7 @@ We now shift focus to team dynamics by plotting the characteristic areas of both
 
 ### Animation
 
-The motions of the dynamic blobs can be compiled into a movie.
+The motions of the dynamic blobs can be compiled into a movie. The full length video is uploaded to [YouTube](https://youtu.be/MopNiu__YA0).
 
 <figure style="width: 750px" class="align-center">
   <img src="/assets/images/soccertrack/gif1.gif" alt="An animated sequence showing the evolution of characteristic areas of both teams over a span of 100 seconds, represented by two dynamic blobs that move, rotate, expand, and contract in response to the game's flow.">
@@ -90,7 +90,7 @@ Another key aspect of team dynamics is synchronization, which refers to the coor
 
 To visualize synchronization, we use the following criteria: a link is drawn between two players if they move in the same direction for over 2 seconds. This link disappears when their movements diverge for more than 2 seconds, using a 20% tolerance in motion angle to define synchronization.
 
-The animation below shows that synchronization commonly occurs during ball-chasing, often manifesting in waves and involving both teams simultaneously. Conversely, desynchronization typically happens when players from opposing teams converge towards the ball from different directions.
+The animation below shows that synchronization commonly occurs during ball-chasing, often manifesting in waves and involving both teams simultaneously. Conversely, desynchronization typically happens when players from opposing teams converge towards the ball from different directions. The full-length video can be found in [YouTube](https://www.youtube.com/watch?v=nFAJXa5Ajbg).
 
 <figure style="width: 750px" class="align-center">
   <img src="/assets/images/soccertrack/gif2.gif" alt="An animated sequence showing the synchronization of both teams over a span of 100 seconds, with links drawn between players moving in the same direction for over 2 seconds.">

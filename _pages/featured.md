@@ -24,12 +24,12 @@ feature_row:
     url: "https://chaozhuang22.github.io/data-analysis/mall-traffic//"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: assets/images/to/teaser.jpg
-    alt: "MEMS Sensor Optimization"
+  - image_path: assets/images/air-quality/teaser.jpg
+    alt: "Data analysis on multisensor calibration for air quality monitoring applications"
     image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
-    title: "MEMS Sensor Optimization: A COMSOL Walkthrough"
-    excerpt: "A guide for setting up a topology optimization model for MEMS sensor design."
-    url: "https://chaozhuang22.github.io/fea/to-detailed/"
+    title: "Optimizing Air Quality Monitoring: Sensor-Fusion Techniques for Precise Multisensor Calibration"
+    excerpt: "A data analysis showcase for multisensor calibration of air quality monitoring."
+    url: "https://chaozhuang22.github.io/data-analysis/air-quality/"
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: /assets/images/japanese/teaser.jpg
