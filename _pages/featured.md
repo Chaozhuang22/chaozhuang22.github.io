@@ -42,8 +42,8 @@ feature_row1:
   - image_path: assets/images/fea-tutorial/animation.gif
     alt: "Stiffness Fine-tuning in MEMS Sensors"
     title: "Stiffness Fine-tuning in MEMS Sensors"
-    # excerpt: "Nonlinear behavior in MEMS sensor is modeled using FEA in COMSOL Multiphysics.  
-    # The stiffness of these sensors can be altered using a highly stressed thin film, allowing access to zero stiffness and bistability."
+    excerpt: "Nonlinear behavior in MEMS sensor is modeled using FEA in COMSOL Multiphysics.  
+    The stiffness of these sensors can be altered using a highly stressed thin film, allowing access to zero stiffness and bistability."
     url: "https://chaozhuang22.github.io/fea/nonlinear-mss/"
     btn_label: "Read More"
     btn_class: "btn--primary"
@@ -52,8 +52,8 @@ feature_row2:
   - image_path: /assets/images/flow-channel/deformation.gif
     alt: "Microfluidics Fluid-Structure Interaction"
     title: "Microfluidics Fluid-Structure Interaction"
-    # excerpt: "The tutorial provides a detailed COMSOL setup for fluid-structure interaction modeling, simulating the deformation of a microfluidics channel under constant flow rate.  
-    # The model can be extended to study channel deformation caused by different vapors, offering potential as a viscosity sensor."
+    excerpt: "The tutorial provides a detailed COMSOL setup for fluid-structure interaction modeling, simulating the deformation of a microfluidics channel under constant flow rate.  
+    The model can be extended to study channel deformation caused by different vapors, offering potential as a viscosity sensor."
     url: "https://chaozhuang22.github.io/fea/flow-channel/"
     btn_label: "Read More"
     btn_class: "btn--primary"
