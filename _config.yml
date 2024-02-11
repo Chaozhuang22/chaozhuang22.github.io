@@ -130,7 +130,6 @@ defaults:
       mathjax: true
       toc: true
       toc_sticky: true
-      excerpt_separator: "<!--more-->"
 
   # _pages
   - scope:
