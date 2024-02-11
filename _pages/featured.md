@@ -3,6 +3,7 @@ title: "Soccer Player Dynamics: Player Motions and Synchronization"
 layout: splash
 permalink: /featured/
 date: 2023-10-06T11:48:41-04:00
+excerpt: "A visualization study on the teamplay dynamics of a soccer game."
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
@@ -10,7 +11,6 @@ header:
   actions:
     - label: "Read More"
       url: "https://chaozhuang22.github.io/data-analysis/soccertrack/"
-excerpt: "A visualization study on the teamplay dynamics of a soccer game."
 intro: 
   - excerpt: 'This site is used to publish notes about topics that I have learned and read.
   It also serves as a personal portfolio showcasing projects that I have beening working on.
