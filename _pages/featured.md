@@ -1,5 +1,5 @@
 ---
-title: "Soccer Player Dynamics: Player Movements and Team Synchronization"
+title: "Soccer Player Dynamics: Player Motions and Synchronization"
 layout: splash
 permalink: /featured/
 date: 2023-10-06T11:48:41-04:00
@@ -19,21 +19,21 @@ feature_row:
   - image_path: /assets/images/mall/heatmap-cropped.gif
     alt: "A log-scale heatmap animation revealing the accumulated activity intensity within the shopping mall scene over 2000 frames."
     title: "Customer Behavior in Shopping Malls with Time Series Analysis"
-    excerpt: "This post presents a comprehensive data analysis of customer traffic in shopping malls."
+    excerpt: "Analyzing customer traffic and spatial distribution in shopping malls."
     url: "https://chaozhuang22.github.io/data-analysis/mall-traffic/"
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: assets/images/air-quality/teaser.jpg
     alt: "Data analysis on multisensor calibration for air quality monitoring applications"
-    title: "Optimizing Air Quality Monitoring: Sensor-Fusion Calibration"
-    excerpt: "A data analysis showcase for multisensor calibration of air quality monitoring."
+    title: "Effective Air Quality Monitoring: Sensor-Fusion Calibration"
+    excerpt: "Multisensor array calibration using sensor-fusion techniques of air quality monitoring."
     url: "https://chaozhuang22.github.io/data-analysis/air-quality/"
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: /assets/images/japanese/teaser.jpg
     alt: "From Zero to Fluent: My 1300-Hour Commitment to Learning Japanese"
     title: "From Zero to Fluent: My 1300-Hour Commitment to Learning Japanese"
-    excerpt: "A review on my journey in learning Japanese from Duolingo to active/passive immersion."
+    excerpt: "Reviewing my journey in learning Japanese from Duolingo to active/passive immersion."
     url: "https://chaozhuang22.github.io/language/japanese/"
     btn_label: "Read More"
     btn_class: "btn--primary"
