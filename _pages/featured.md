@@ -10,7 +10,7 @@ header:
   actions:
     - label: "Read More"
       url: "https://chaozhuang22.github.io/data-analysis/soccertrack/"
-# excerpt: "A visualization study on the teamplay dynamics of a soccer game."
+excerpt: "A visualization study on the teamplay dynamics of a soccer game."
 intro: 
   - excerpt: 'This site is used to publish notes about topics that I have learned and read.
   It also serves as a personal portfolio showcasing projects that I have beening working on.
@@ -19,14 +19,14 @@ feature_row:
   - image_path: /assets/images/mall/heatmap-cropped.gif
     alt: "A log-scale heatmap animation revealing the accumulated activity intensity within the shopping mall scene over 2000 frames."
     title: "Customer Behavior in Shopping Malls with Time Series Analysis"
-    # excerpt: "This post presents a comprehensive data analysis of customer traffic in shopping malls."
+    excerpt: "This post presents a comprehensive data analysis of customer traffic in shopping malls."
     url: "https://chaozhuang22.github.io/data-analysis/mall-traffic/"
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: assets/images/to/teaser.jpg
     alt: "Data analysis on multisensor calibration for air quality monitoring applications"
     title: "Optimizing Air Quality Monitoring: Sensor-Fusion Calibration"
-    # excerpt: "A data analysis showcase for multisensor calibration of air quality monitoring."
+    excerpt: "A data analysis showcase for multisensor calibration of air quality monitoring."
     url: "https://chaozhuang22.github.io/language/japanese/"
     btn_label: "Read More"
     btn_class: "btn--primary"
