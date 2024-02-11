@@ -111,7 +111,7 @@ A brief summary of MAE scores:
 
 ## Other Pollutants
 
-## CO
+### CO
 
 Calibration for CO concentration is much more difficult. With the same training time as the neural network, the random forest provides the best performance.
 
@@ -136,8 +136,7 @@ MAE scores
   <figcaption>Neural network calibration for CO.</figcaption>
 </figure>
 
-
-## NOx
+### NOx
 
 The calibration for NOx is even more difficult because of the sudden rise in NOx level after August. Notice that although linear regression has the best score, it has high error before and after August, while random forest and neural network have low error before August and high error after it, making them more appropriate compared to linear regression.
 
@@ -162,7 +161,7 @@ MAE scores
   <figcaption>Neural network calibration on NOx.</figcaption>
 </figure>
 
-## NO2
+### NO2
 
 The calibration for NO2 also exhibits two periods: the first period gives reasonable fitting while the second period leads to a sudden rise in error. Here, linear regression is still the best calibration model.
 

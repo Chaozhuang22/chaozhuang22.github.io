@@ -21,7 +21,7 @@ feature_row:
     alt: "A log-scale heatmap animation revealing the accumulated activity intensity within the shopping mall scene over 2000 frames."
     title: "Customer Behavior in Shopping Malls with Time Series Analysis"
     excerpt: "This post presents a comprehensive data analysis of customer traffic in shopping malls."
-    url: "https://chaozhuang22.github.io/data-analysis/mall-traffic//"
+    url: "https://chaozhuang22.github.io/data-analysis/mall-traffic/"
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: assets/images/air-quality/teaser.jpg
