@@ -35,7 +35,7 @@ Weekly averaged data reaffirms matrix observations:
 
 However, the correlation matrix does not capture the sensors' continuously shifting baseline, particularly 'PT08.S4(NO2)'. Additionally, the abrupt NO2 readout increase post-August complicates effective calibration, as will be demonstrated in later sections.
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 500px" class="align-center">
   <img src="/assets/images/air-quality/fig2.png" alt="Yearly trend analysis in air quality sensors capturing fluctuations in NOx and NO2 levels.">
   <figcaption>The entire time series of all sensors reading as well as analyzer ground truth.</figcaption>
 </figure>
@@ -44,12 +44,12 @@ However, the correlation matrix does not capture the sensors' continuously shift
 
 NOx and NO2 levels peak at the start and end of a typical workday. The sensor array effectively captures these fluctuations.
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 500px" class="align-center">
   <img src="/assets/images/air-quality/fig3.png" alt="Daily trends in NOx and NO2 levels captured by air quality sensors, with peaks during workday start and end.">
   <figcaption>A daily average of all time series.</figcaption>
 </figure>
 
-## Sensor Calibration w/ Linear Regression
+## Sensor Calibration
 
 Initially, we apply linear regression using each sensor against all target analytes, training on the dataset's first ten days (~3% of the total dataset) and validating on the remainder. Remarkably, the 'PT08.S2(NMHC)' sensor closely aligns with benzene concentrations, achieving an R-square of 0.96.
 

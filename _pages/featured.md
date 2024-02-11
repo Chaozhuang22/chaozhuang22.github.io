@@ -12,9 +12,7 @@ header:
       url: "https://chaozhuang22.github.io/data-analysis/soccertrack/"
 # excerpt: "A visualization study on the teamplay dynamics of a soccer game."
 intro: 
-  - excerpt: 'This site is used to publish notes about topics that I have learned and read.
-  It also serves as a personal portfolio showcasing projects that I have beening working on.
-  Check out [About](https://chaozhuang22.github.io/about/) page for more information.'
+  - excerpt: 'A personal portfolio showcasing my data analysis and research projects. Check out [About](https://chaozhuang22.github.io/about/) page to find out more.'
 feature_row:
   - image_path: /assets/images/mall/heatmap-cropped.gif
     alt: "A log-scale heatmap animation revealing the accumulated activity intensity within the shopping mall scene over 2000 frames."
