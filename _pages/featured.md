@@ -27,7 +27,7 @@ feature_row:
   - image_path: assets/images/air-quality/teaser.jpg
     alt: "Data analysis on multisensor calibration for air quality monitoring applications"
     image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
-    title: "Optimizing Air Quality Monitoring: Sensor-Fusion Techniques for Precise Multisensor Calibration"
+    title: "Optimizing Air Quality Monitoring: Sensor-Fusion Calibration"
     excerpt: "A data analysis showcase for multisensor calibration of air quality monitoring."
     url: "https://chaozhuang22.github.io/data-analysis/air-quality/"
     btn_label: "Read More"
@@ -36,7 +36,7 @@ feature_row:
     alt: "From Zero to Fluent: My 1300-Hour Commitment to Learning Japanese"
     image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
     title: "From Zero to Fluent: My 1300-Hour Commitment to Learning Japanese"
-    excerpt: 'A review on my journey in learning Japanese from Duolingo to active/passive immersion.'
+    excerpt: "A review on my journey in learning Japanese from Duolingo to active/passive immersion."
     url: "https://chaozhuang22.github.io/language/japanese/"
     btn_label: "Read More"
     btn_class: "btn--primary"
