@@ -61,8 +61,8 @@ feature_row2:
 feature_row3:
   - image_path: /assets/images/wrinkle/anime.gif
     title: "Nonlinear Mechanics in Wrinkle Formation"
-    # excerpt: "The mechanics of wrinkles in bilayer systems is explored through FEA using COMSOL Multiphysics.  
-    # The presented basic model can serve as a base model for advanced simulations, potentially exploring wrinkles on curved surfaces and complex wrinkle patterns."
+    excerpt: "The mechanics of wrinkles in bilayer systems is explored through FEA using COMSOL Multiphysics.  
+    The presented basic model can serve as a base model for advanced simulations, potentially exploring wrinkles on curved surfaces and complex wrinkle patterns."
     url: "https://chaozhuang22.github.io/fea/wrinkle/"
     btn_label: "Read More"
     btn_class: "btn--primary"
