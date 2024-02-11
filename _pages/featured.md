@@ -10,7 +10,6 @@ header:
   actions:
     - label: "Read More"
       url: "https://chaozhuang22.github.io/data-analysis/soccertrack/"
-  caption: "The collective motion of two teams during a soccer game."
 # excerpt: "A visualization study on the teamplay dynamics of a soccer game."
 intro: 
   - excerpt: 'This site is used to publish notes about topics that I have learned and read.
@@ -24,17 +23,15 @@ feature_row:
     url: "https://chaozhuang22.github.io/data-analysis/mall-traffic/"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: assets/images/air-quality/teaser.jpg
+  - image_path: assets/images/to/teaser.jpg
     alt: "Data analysis on multisensor calibration for air quality monitoring applications"
-    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
     title: "Optimizing Air Quality Monitoring: Sensor-Fusion Calibration"
     # excerpt: "A data analysis showcase for multisensor calibration of air quality monitoring."
-    url: "https://chaozhuang22.github.io/data-analysis/air-quality/"
+    url: "https://chaozhuang22.github.io/language/japanese/"
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: /assets/images/japanese/teaser.jpg
     alt: "From Zero to Fluent: My 1300-Hour Commitment to Learning Japanese"
-    image_caption: "Image courtesy of [Unsplash](https://unsplash.com/)"
     title: "From Zero to Fluent: My 1300-Hour Commitment to Learning Japanese"
     # excerpt: "A review on my journey in learning Japanese from Duolingo to active/passive immersion."
     url: "https://chaozhuang22.github.io/language/japanese/"
