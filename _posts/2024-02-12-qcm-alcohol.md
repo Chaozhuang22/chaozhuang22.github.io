@@ -8,6 +8,7 @@ header:
 ---
 
 > Logistic regression, random forest, and gradient boosting are used to perform vapor classification task on QCM electronic nose sensor array. The result challenges the unnecessary complexity in developing neural networks in associated literature.
+
 [Kaggle Notebook](https://www.kaggle.com/code/chaozhuang/alcohol-classification-w-qcm-sensors).
 
 ## Analysis Goal
