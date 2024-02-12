@@ -15,7 +15,8 @@ In this analysis, we will examine 30 minutes of annotated footage from a soccer 
 - Analyze player trajectories, spatial dispersion, and formation changes over time.
 - Investigate the dynamic synchronization of player movements in response to game events.
 - Apply anomaly detection to identify significant events, such as timeouts.
-The original Kaggle notebook with detailed code can be found [here](https://www.kaggle.com/code/chaozhuang/soccertrack-collective-dynamics-analysis#Team-Dynamics).
+
+The full analysis with code can be found in this [Kaggle notebook](https://www.kaggle.com/code/chaozhuang/soccertrack-collective-dynamics-analysis#Team-Dynamics).
 
 ## Individual-level Analysis
 

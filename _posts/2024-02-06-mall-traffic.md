@@ -7,7 +7,7 @@ header:
   teaser: /assets/images/mall/fig0.jpg
 ---
 
-> This post presents a comprehensive data analysis of customer traffic in shopping malls. It explores how customers move, interact, and congregate in different areas within a mall, providing valuable insights for optimizing mall layout for traffic control and strategic advertising. [Kaggle Notebook](https://www.kaggle.com/code/chaozhuang/people-statistics-traffic-control-in-a-mall).
+> This post presents a comprehensive data analysis of customer traffic in shopping malls. It explores how customers move, interact, and congregate in different areas within a mall, providing valuable insights for optimizing mall layout for traffic control and strategic advertising.
 
 ## Analysis Goal
 
@@ -16,6 +16,8 @@ This dataset comprises head annotations of individuals captured in a mall over 2
 The analysis will start with basic temporal features of the total head count. We observe that the patterns of people entering or exiting the scene align with classical stochastic processes, characterized by a stationary time series and an exponential distribution of time intervals between successive entry and exit events. This suggests that the flow of people in and out of the mall occurs in a random and independent manner.
 
 To visualize the collective patterns of customers, we generate a heatmap showing frequent congregation areas and outlining the self-similar hierarchical sub-structures within the mall. Specifically, we will find unique spatial and temporal patterns in regions like the food stand and the benches, where people behave significantly different from those walking down the hallway. By analyzing these areas, we identify typical time scale of aggregation and the associated cluster size, potentially offering a statistical pathway for commercial performance evaluatoin and mall layout optimization for traffic control and strategic advertising.
+
+The full analysis with code can be found in this [Kaggle notebook](https://www.kaggle.com/code/chaozhuang/people-statistics-traffic-control-in-a-mall).
 
 <figure style="width: 750px" class="align-center">
   <img src="/assets/images/mall/fig0.jpg" alt="An image from the dataset showing a bird's eye view of people inside a shopping mall.">

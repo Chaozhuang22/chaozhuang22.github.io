@@ -7,13 +7,16 @@ header:
   teaser: /assets/images/air-quality/teaser.jpg
 ---
 
-> Discover how sensor-fusion techniques enhance multisensor array calibration for precise air quality monitoring. Dive into our analysis for insights on optimizing sensor performance with linear regression, neural networks, and tree-based methods. [Kaggle Notebook](https://www.kaggle.com/code/chaozhuang/multisensor-array-calibration-lr-rf-nn).
+> Discover how sensor-fusion techniques enhance multisensor array calibration for precise air quality monitoring. Dive into our analysis for insights on optimizing sensor performance with linear regression, neural networks, and tree-based methods.
 
 ## Analysis Goal
 
 This dataset encompasses readings from a metal oxide multisensor array, commercial temperature and humidity sensors, alongside ground truth measurements of pollutants: CO, NMHC, C6H6, NOx, and NO2. Our aim is to identify a regression algorithm that calibrates sensor array signals to precisely predict pollutant concentrations, optimizing for minimal training time and prolonged stable operation.
 
 In this analysis, we commence with data cleaning and exploratory data analysis (EDA), followed by simple linear regression to set a baseline. Subsequently, we explore neural networks (as discussed in the original paper) and random forest to ascertain the optimal complexity for this task. Interestingly, linear regression emerged as the most effective, closely followed by tree-based methods, with neural networks trailing.
+
+The full analysis with code can be found in this [Kaggle notebook](https://www.kaggle.com/code/chaozhuang/multisensor-array-calibration-lr-rf-nn).
+
 
 ## Correlation Matrix
 

@@ -9,8 +9,6 @@ header:
 
 > Logistic regression, random forest, and gradient boosting are used to perform vapor classification task on QCM electronic nose sensor array. The result challenges the unnecessary complexity in developing neural networks in associated literature.
 
-[Kaggle Notebook](https://www.kaggle.com/code/chaozhuang/alcohol-classification-w-qcm-sensors).
-
 ## Analysis Goal
 
 This dataset showcases an experiment utilizing 5 QCM sensors, each coated with different materials, aimed at classifying five types of alcohols. The experiments were conducted on alcohol-air mixtures at five distinct mixing ratios: 0.8:0.2, 0.6:0.4, 0.5:0.5, 0.4:0.6, and 0.2:0.8. Each QCM sensor features two channels, resulting in 10 (2 (channels) x 5 (vapor ratios)) columns, with 25 rows (5 (alcohol types) x 5 (repetitions)) of data for each sensor data file.
@@ -20,6 +18,9 @@ In the associated [research paper](https://www.researchgate.net/publication/3345
 Given the size of this dataset (25 x 10 x 5 = 1250 data points, 5 classes), I can't help but feel that training a neural network is such an overkill as this task can be solved much more effectively by less complex machine learning models, or even linear models.
 
 In this analysis, sensor signals from various mixing ratios and sensors are considered independent features, despite many being highly correlated. Consequently, we obtain a 25 x 51 dataframe, with one target column for alcohol type and 50 feature columns.
+
+The full analysis with code can be found in this [Kaggle notebook](https://www.kaggle.com/code/chaozhuang/alcohol-classification-w-qcm-sensors).
+
 
 ## EDA
 
