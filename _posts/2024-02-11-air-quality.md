@@ -7,7 +7,7 @@ header:
   teaser: /assets/images/air-quality/teaser.jpg
 ---
 
-> Discover how sensor-fusion techniques enhance multisensor array calibration for precise air quality monitoring. Dive into our analysis for insights on optimizing sensor performance with linear regression, neural networks, and tree-based methods.
+> Discover how sensor-fusion techniques enhance multisensor array calibration for precise air quality monitoring. Dive into our analysis for insights on optimizing sensor performance with linear regression, neural networks, and tree-based methods. [Kaggle Notebook](https://www.kaggle.com/code/chaozhuang/multisensor-array-calibration-lr-rf-nn).
 
 ## Analysis Goal
 

@@ -6,7 +6,7 @@ tag: Projects
 header:
   teaser: /assets/images/soccertrack/teaser.jpg
 ---
-> Discover how data analysis can reveal key insights into player dynamics and team synchronization in soccer. Learn about player trajectories, characteristic areas, order parameters, and anomaly detection.
+> Discover how data analysis can reveal key insights into player dynamics and team synchronization in soccer. Learn about player trajectories, characteristic areas, order parameters, and anomaly detection. [Kaggle Notebook](https://www.kaggle.com/code/chaozhuang/soccertrack-collective-dynamics-analysis).
 
 ## Analysis Goal
 

@@ -7,7 +7,7 @@ header:
   teaser: /assets/images/mall/fig0.jpg
 ---
 
-> This post presents a comprehensive data analysis of customer traffic in shopping malls. It explores how customers move, interact, and congregate in different areas within a mall, providing valuable insights for optimizing mall layout for traffic control and strategic advertising.
+> This post presents a comprehensive data analysis of customer traffic in shopping malls. It explores how customers move, interact, and congregate in different areas within a mall, providing valuable insights for optimizing mall layout for traffic control and strategic advertising. [Kaggle Notebook](https://www.kaggle.com/code/chaozhuang/people-statistics-traffic-control-in-a-mall).
 
 ## Analysis Goal
 
