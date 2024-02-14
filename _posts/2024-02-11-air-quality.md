@@ -11,6 +11,8 @@ header:
 
 ## Analysis Goal
 
+Urban air quality monitoring requires a dense monitoring network to effectively map out the air quality distribution across regions. However, due to the inherent high cost of certified analyzers, the density of monitoring stations has been low. Low-cost sensors have been proposed to be the solution to this challenge as they are cheap to deploy and they can be calibrated by a certified analyzer for a short time, and then operate in the field for a long time.
+
 This dataset encompasses readings from a metal oxide multisensor array, commercial temperature and humidity sensors, alongside ground truth measurements of pollutants: CO, NMHC, C6H6, NOx, and NO2. Our aim is to identify a regression algorithm that calibrates sensor array signals to precisely predict pollutant concentrations, optimizing for minimal training time and prolonged stable operation.
 
 In this analysis, we commence with data cleaning and exploratory data analysis (EDA), followed by simple linear regression to set a baseline. Subsequently, we explore neural networks (as discussed in the original paper) and random forest to ascertain the optimal complexity for this task. Interestingly, linear regression emerged as the most effective, closely followed by tree-based methods, with neural networks trailing.
