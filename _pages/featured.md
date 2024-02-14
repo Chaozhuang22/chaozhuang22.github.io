@@ -24,15 +24,15 @@ feature_row:
   - image_path: assets/images/air-quality/teaser.jpg
     alt: "Data analysis on multisensor calibration for air quality monitoring applications"
     title: "Effective Air Quality Monitoring: Sensor-Fusion Calibration"
-    excerpt: "Multisensor array calibration using sensor-fusion techniques of air quality monitoring."
+    excerpt: "Multisensor array calibration using sensor-fusion techniques for air quality monitoring."
     url: "https://chaozhuang22.github.io/data-analysis/air-quality/"
     btn_label: "Read More"
     btn_class: "btn--primary"
-  - image_path: /assets/images/japanese/teaser.jpg
-    alt: "From Zero to Fluent: My 1300-Hour Commitment to Learning Japanese"
-    title: "From Zero to Fluent: My 1300-Hour Commitment to Learning Japanese"
-    excerpt: "Reviewing my journey in learning Japanese from Duolingo to active/passive immersion."
-    url: "https://chaozhuang22.github.io/language/japanese/"
+  - image_path: /assets/images/low-cost-sensor/teaser.jpg
+    alt: "Lasso Regression for Electrochemical Low-Cost Sensor Calibration"
+    title: "Lasso Regression for Electrochemical Low-Cost Sensor Calibration"
+    excerpt: "Calibration via Lasso regression on low-cost electrochemical sensors for air quality monitoring."
+    url: "https://chaozhuang22.github.io/data-analysis/low-cost-sensor/"
     btn_label: "Read More"
     btn_class: "btn--primary"
 
