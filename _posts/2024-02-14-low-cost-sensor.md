@@ -7,6 +7,8 @@ header:
   teaser: /assets/images/low-cost-sensor/teaser.jpg
 ---
 
+> This analysis utlizes Lasso regression to explore sparse calibration relationships for electrochemical low-cost sensors developed for air quality monitoring. The performane of Lasso regression is compared with the Python package of lazypredict.
+
 ## Analysis Goal
 
 Urban air quality monitoring requires a dense monitoring network to effectively map out the air quality distribution across regions. However, due to the inherent high cost of certified analyzers, the density of monitoring stations has been low. Low-cost sensors have been proposed to be the solution to this challenge as they are cheap to deploy and they can be calibrated by a certified analyzer for a short time, and then operate in the field for a long time.
