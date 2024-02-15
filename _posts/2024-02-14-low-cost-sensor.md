@@ -59,8 +59,8 @@ The use of Lasso regression requires the optimization of the regularization term
 We will start with generic mutliple linear regression for CO concentration calibration. Since there is no CO sensors in the two sensor ndoes, we are expecting a poor calibration performance. MLR yields a R2 score of -0.36, this means that using the signal average can yield a better fit than this calibration model. Moroever, the fit takes all 18 features, making it difficult to interpret the true relationship between CO level and sensor responses.
 
 ```python
-Root Mean Squared Error (RMSE): 0.09407380054678562
-R-square (R2): -0.36237914239467117
+Root Mean Squared Error (RMSE): 0.09510190232570136
+R-square (R2): -0.36544117762102357
 
 Important features in ranked order:
 T-2-std: -0.030
@@ -92,12 +92,12 @@ RH-2-std: 0.000
 
 When Lasso is used, it takes a bit of optimization to find the best regularization strength that minimizes RMSE. However, it yields much better results compared to MLR
 
-The calibration for CO using Lasso gives an R2 score of 0.31, which is a poor score in terms of calibration, but it is way better than a negative score. In this fit, only 6 features are used, in contrast to the 18 in MLR. The high importance of the NO sensor indicates that the fitting power arises from the correlation between CO and NO. In other words, information about NO can provide information for CO to some extent.
+The calibration for CO using Lasso gives an R2 score of 0.32, which is a poor score in terms of calibration, but it is way better than a negative score. In this fit, only 6 features are used, in contrast to the 18 in MLR. The high importance of the NO sensor indicates that the fitting power arises from the correlation between CO and NO. In other words, information about NO can provide information for CO to some extent.
 
 ```python
 Best Alpha: 0.007663410868007463
-Lowest RMSE: 0.06704093498084798
-R-square (R2): 0.3081041404664757
+Lowest RMSE: 0.06729859740532539
+R-square (R2): 0.3162353989349179
 
 Important features in ranked order:
 NO-1-mean: 0.053
@@ -120,13 +120,13 @@ RH-2-std: -0.008
 
 ### NO
 
-We have a NO sensor in the sensor node, so we expect much better calibration performance for this target. MLR gives an R2 of 0.82, and again with 18 features. In contrast, Lasso gives an R2 score of 0.89 with 14 features.
+We have a NO sensor in the sensor node, so we expect much better calibration performance for this target. MLR gives an R2 of 0.83, and again with 18 features. In contrast, Lasso gives an R2 score of 0.89 with 14 features.
 
 The coefficient strength in MLR is difficult to interpret, with the standard deviation of NO2 and O3 sensors ranked at the top. While for Lasso, the most important feature is, unsurprisingly, the mean NO sensor signals, which is a much more interpretable result compared to generic MLR.
 
 ```python
-Root Mean Squared Error (RMSE): 4.205137710342014
-R-square (R2): 0.824079866484303
+Root Mean Squared Error (RMSE): 4.2264908237788
+R-square (R2): 0.8270971320082721
 
 Important features in ranked order:
 NO2-2-std: -4.818
@@ -157,25 +157,25 @@ RH-2-std: -0.013
 #### Lasso
 
 ```python
-Best Alpha: 0.10353218432956626
-Lowest RMSE: 3.3233438447063244
-R-square (R2): 0.8901232879755219
+Best Alpha: 0.09771241535346502
+Lowest RMSE: 3.351793279224709
+R-square (R2): 0.8912581323139401
 
 Important features in ranked order:
-NO-1-mean: 17.050
-T-1-mean: -2.978
-NO2-2-mean: 2.865
-NO-1-std: 2.623
-NO2-2-std: -2.239
-T-2-std: -1.330
-O3-1-mean: 1.252
-O3-2-std: 1.191
-NO2-1-std: 0.838
-RH-2-mean: 0.793
-RH-1-std: -0.470
-RH-1-mean: 0.360
-T-1-std: 0.319
-T-2-mean: -0.197
+NO-1-mean: 17.074
+T-1-mean: -2.961
+NO2-2-mean: 2.873
+NO-1-std: 2.613
+NO2-2-std: -2.404
+T-2-std: -1.379
+O3-1-mean: 1.292
+O3-2-std: 1.231
+NO2-1-std: 0.977
+RH-2-mean: 0.845
+RH-1-std: -0.486
+RH-1-mean: 0.378
+T-1-std: 0.345
+T-2-mean: -0.180
 ```
 
 <figure style="width: 1000px" class="align-center">
@@ -190,11 +190,11 @@ T-2-mean: -0.197
 
 ### NO2
 
-MLR yields an R2 value of 0.79 using 18 features. On the other hand, Lasso produces an R2 value of 0.86 using only 7 features, while maintaining an interpretable and intuitive feature importance ranking, where the NO2 sensor is ranked as the top feature.
+MLR yields an R2 value of 0.81 using 18 features. On the other hand, Lasso produces an R2 value of 0.88 using only 7 features, while maintaining an interpretable and intuitive feature importance ranking, where the NO2 sensor is ranked as the top feature.
 
 ```python
-Root Mean Squared Error (RMSE): 6.647697994239928
-R-square (R2): 0.7940828257208385
+Root Mean Squared Error (RMSE): 6.440397029953247
+R-square (R2): 0.8093599915341789
 
 Important features in ranked order:
 NO2-2-std: 2.284
@@ -226,8 +226,8 @@ RH-1-std: -0.013
 
 ```python
 Best Alpha: 1.0473708979594507
-Lowest RMSE: 5.541482212190994
-R-square (R2): 0.8569124344981707
+Lowest RMSE: 5.185303509790579
+R-square (R2): 0.876423147284822
 
 Important features in ranked order:
 NO2-1-mean: 14.588
@@ -254,8 +254,8 @@ O3-2-mean: -0.056
 MLR yields an R2 value of 0.94 using 18 features, while Lasso regression yields 0.97 with only 13 features. Both NO and NO2 sensors make significant contributions to the model, which is understandable as NOx includes both NO and NO2.
 
 ```python
-Root Mean Squared Error (RMSE): 6.604424782589308
-R-square (R2): 0.9397916775728876
+Root Mean Squared Error (RMSE): 6.254375354001741
+R-square (R2): 0.9471629963677434
 
 Important features in ranked order:
 O3-2-std: 6.393
@@ -287,8 +287,8 @@ RH-2-std: -0.003
 
 ```python
 Best Alpha: 0.2196385372416547
-Lowest RMSE: 4.638807395477192
-R-square (R2): 0.970297075476178
+Lowest RMSE: 4.07749877548234
+R-square (R2): 0.9775426774815258
 
 Important features in ranked order:
 NO-1-mean: 27.923
@@ -318,11 +318,11 @@ T-1-std: 0.212
 
 ### O3
 
-MLR yields an R2 value of 0.87 using 18 features, while Lasso regression yields 0.94 with only 5 features and O3 sensor is ranked as the top feature.
+MLR yields an R2 value of 0.89 using 18 features, while Lasso regression yields 0.97 with only 5 features and O3 sensor is ranked as the top feature.
 
 ```python
-Root Mean Squared Error (RMSE): 8.406568132845177
-R-square (R2): 0.8704081875775477
+Root Mean Squared Error (RMSE): 7.72672167952889
+R-square (R2): 0.8924033068746766
 
 Important features in ranked order:
 O3-2-mean: 2.171
@@ -353,16 +353,16 @@ RH-2-std: 0.003
 #### Lasso
 
 ```python
-Best Alpha: 0.4937047852839004
-Lowest RMSE: 5.585452993378217
-R-square (R2): 0.9427919832964997
+Best Alpha: 0.5231099308056264
+Lowest RMSE: 4.189159009206892
+R-square (R2): 0.9683727030249096
 
 Important features in ranked order:
-O3-2-mean: 9.233
-NO2-1-mean: -7.326
-O3-1-mean: 6.512
-NO-1-mean: 1.504
-RH-1-mean: -0.157
+O3-2-mean: 9.368
+NO2-1-mean: -7.288
+O3-1-mean: 6.325
+NO-1-mean: 1.425
+RH-1-mean: -0.133
 ```
 
 <figure style="width: 1000px" class="align-center">
@@ -377,11 +377,11 @@ RH-1-mean: -0.157
 
 ### SO2
 
-Another sanity check, aside from CO, is to confirm that the good fit for NO, NO2, NOx, and O3 is a result of the dedicated sensors in the sensor nodes. Not all analytes can be calibrated. In the calibration for SO2, MLR gives an R2 of -0.56, and Lasso gives -0.52 with only two features. Even in this difficult situation where nothing is useful, Lasso still outperforms MLR.
+Another sanity check, aside from CO, is to confirm that the good fit for NO, NO2, NOx, and O3 is a result of the dedicated sensors in the sensor nodes. Not all analytes can be calibrated. In the calibration for SO2, MLR gives an R2 of -0.56, and Lasso gives -0.51 with only two features. Even in this difficult situation where nothing is useful, Lasso still outperforms MLR.
 
 ```python
-Root Mean Squared Error (RMSE): 0.6886273041577045
-R-square (R2): -0.5655306095570658
+Root Mean Squared Error (RMSE): 0.6903626411439422
+R-square (R2): -0.5630798996908482
 
 Important features in ranked order:
 NO2-2-std: -0.060
@@ -413,8 +413,8 @@ RH-1-std: 0.000
 
 ```python
 Best Alpha: 0.025826187606826773
-Lowest RMSE: 0.6775644967412245
-R-square (R2): -0.5156341060941354
+Lowest RMSE: 0.6794162572743656
+R-square (R2): -0.5139045155954158
 
 Important features in ranked order:
 NO-1-mean: 0.048
