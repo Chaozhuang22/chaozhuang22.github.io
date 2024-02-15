@@ -31,7 +31,7 @@ feature_row:
   - image_path: /assets/images/low-cost-sensor/teaser.jpg
     alt: "Lasso Regression for Electrochemical Low-Cost Sensor Calibration"
     title: "Lasso Regression for Electrochemical Low-Cost Sensor Calibration"
-    excerpt: "Calibration via Lasso regression on low-cost electrochemical sensors for air quality monitoring."
+    excerpt: "Calibration via Lasso regression on low-cost sensors for air quality monitoring."
     url: "https://chaozhuang22.github.io/data-analysis/low-cost-sensor/"
     btn_label: "Read More"
     btn_class: "btn--primary"
