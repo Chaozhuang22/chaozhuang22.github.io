@@ -11,13 +11,13 @@ header:
 
 ## Analysis Goal
 
-Urban air quality monitoring requires a dense monitoring network to effectively map out the air quality distribution across regions. However, due to the inherent high cost of certified analyzers, the density of monitoring stations has been low. Low-cost sensors have been proposed to be the solution to this challenge as they are cheap to deploy and they can be calibrated by a certified analyzer for a short time, and then operate in the field for a long time.
+Urban air quality monitoring requires a dense monitoring network to effectively map out the air quality distribution across regions. However, due to the inherent high cost of certified analyzers, the density of monitoring stations has been low. Low-cost sensors have been proposed as the solution to this challenge as they are cheap to deploy, and they can be calibrated by a certified analyzer for a short time, and then operate in the field for a long time.
 
 This dataset contains raw signals from two low-cost sensor nodes and ground truth data from reference stations. The sensor nodes contain NO, O3, NO2, temperature, and relative humidity sensors, as described in the [original paper](https://www.sciencedirect.com/science/article/pii/S2352340922007934#bib0011) publishing the dataset. The reference data contains hourly concentrations of CO, NO, NO2, NOx, O3, and SO2, downloaded from an [online database](https://mediambient.gencat.cat/es/05_ambits_dactuacio/atmosfera/qualitat_de_laire/vols-saber-que-respires/descarrega-de-dades/descarrega-dades-automatiques/). The goal is to develop a calibration/regression model for the low-cost sensors to accurately predict the target gas concentration for efficient air-quality monitoring.
 
-This analysis will showcase one approach for sensor calibration using Lasso regression. This method differs from generic multiple linear regression as it introduces an additional regularization term to control the sparsity of fitting coefficients. By optimizing the regularization strength, we can obtain multiple linear regression models with sparse coefficients, leading to better interpretability. This makes Lasso regression naturally suitable for sensor calibration, where simplicity is desired. The performance of Lasso regression is compared with a series of baseline models from the Python package 'lazypredict' to confirm its good performance.
+This analysis will showcase one approach for sensor calibration using Lasso regression. This method differs from generic multiple linear regression (MLR) as it introduces an additional regularization term to control the sparsity of fitting coefficients. By optimizing the regularization strength, we can obtain MLR models with sparse coefficients, leading to better interpretability. This makes Lasso regression naturally suitable for sensor calibration, where simplicity is desired. The performance of Lasso regression is compared with generic MLR to confirm its good performance.
 
-The calibration results indicate that the calibration for CO and SO2 is understandably poor because the sensor nodes only contain NO, O3, and NO2 sensors. However, with only two weeks of training data, the regression quality for four months of NO, NO2, NOx, and O3 data is very good, with R2 scores around and above 0.85. This validates the idea of using low-cost sensor nodes to increase monitoring network density for improved air quality monitoring performance.
+The calibration results indicate that with only two weeks of training data, the calibration quality for four months of NO, NO2, NOx, and O3 data is very good, with R2 scores around and above 0.85. This validates the idea of using low-cost sensor nodes to increase monitoring network density for improved air quality monitoring performance.
 
 The full analysis with code can be found in this [Kaggle notebook](https://www.kaggle.com/code/chaozhuang/low-cost-sensor-calibration-w-lasso-regression).
 
@@ -52,9 +52,47 @@ The scatter matrix below provides a more detailed representation of the correlat
 
 ## Calibration Models
 
-To calibrate the sensors for air quality monitoring, we will use Lasso regression to calculate the coefficients of all sensor features for all target analytes, starting with CO.
+The use of Lasso regression requires the optimization of the regularization term. When the regularization is weak, Lasso regression is reduced to generic multiple linear regression, where all sensor features are used in the regression. When the regularization strength is high, it promotes sparsity and penalizes the use of unimportant features, significantly reducing the number of features required during calibration. We select the best regularization strength that minimizes the root mean square error (RMSE).
 
-In the following, we have defined a helper function to visualize the optimization of the regularization term. When the regularization is weak, Lasso regression is reduced to generic multiple linear regression, where all sensor features are used in the regression. When the regularization strength is high, it promotes sparsity and penalizes the use of unimportant features, significantly reducing the number of features required during calibration. We select the best regularization strength that minimizes the root mean square error (RMSE).
+### CO
+
+We will start with generic mutliple linear regression for CO concentration calibration. Since there is no CO sensors in the two sensor ndoes, we are expecting a poor calibration performance. MLR yields a R2 score of -0.36, this means that using the signal average can yield a better fit than this calibration model. Moroever, the fit takes all 18 features, making it difficult to interpret the true relationship between CO level and sensor responses.
+
+```python
+Root Mean Squared Error (RMSE): 0.09407380054678562
+R-square (R2): -0.36237914239467117
+
+Important features in ranked order:
+T-2-std: -0.030
+T-1-std: 0.026
+O3-2-std: 0.024
+O3-1-std: -0.014
+RH-1-mean: 0.012
+NO2-2-std: -0.012
+T-2-mean: -0.008
+NO2-1-std: 0.006
+RH-2-mean: -0.005
+NO-1-mean: 0.004
+O3-2-mean: 0.004
+NO2-1-mean: 0.003
+T-1-mean: -0.003
+NO2-2-mean: -0.001
+O3-1-mean: -0.001
+NO-1-std: 0.001
+RH-1-std: -0.001
+RH-2-std: 0.000
+```
+
+<figure style="width: 750px" class="align-center">
+  <img src="/assets/images/low-cost-sensor/img1.png" alt="The results of multiple linear regression.">
+  <figcaption>(Left) True vs. calibrated CO readings using MLR. (Right) Model error as a function of time.</figcaption>
+</figure>
+
+#### Lasso
+
+When Lasso is used, it takes a bit of optimization to find the best regularization strength that minimizes RMSE. However, it yields much better results compared to MLR
+
+The calibration for CO using Lasso gives an R2 score of 0.31, which is a poor score in terms of calibration, but it is way better than a negative score. In this fit, only 6 features are used, in contrast to the 18 in MLR. The high importance of the NO sensor indicates that the fitting power arises from the correlation between CO and NO. In other words, information about NO can provide information for CO to some extent.
 
 ```python
 Best Alpha: 0.007663410868007463
@@ -77,30 +115,46 @@ RH-2-std: -0.008
 
 <figure style="width: 750px" class="align-center">
   <img src="/assets/images/low-cost-sensor/fig4.png" alt="The results of Lasso regression, indicating a decent fit despite of the absence of direct correlation.">
-  <figcaption>(Left) True vs. calibrated CO readings. (Right) Model error as a function of time.</figcaption>
+  <figcaption>(Left) True vs. calibrated CO readings using Lasso. (Right) Model error as a function of time.</figcaption>
 </figure>
-
-#### Machine Learning Models
-
-To obtain an overview of the performance of all other available machine learning models, we use a package called 'lazypredict' to generate baseline performance from a library of models. The list of models below shows that the optimized Lasso regression we use has a similar R2 score to the top-performing OrthogonalMatchingPursuitCV. Notice also that simple linear regression gives a negative R2 score, which means its performance is worse than using the average of all signals for calibration. This further validates the effectiveness of our calibration model.
-
-```python
-Adjusted R-Squared  R-Squared  RMSE  Time Taken
-Model                                                                         
-OrthogonalMatchingPursuitCV                  0.30       0.31  0.07        0.08
-ExtraTreesRegressor                          0.29       0.29  0.07        0.27
-LarsCV                                       0.28       0.29  0.07        0.14
-LassoLarsCV                                  0.28       0.29  0.07        0.15
-GammaRegressor                               0.28       0.29  0.07        0.04
-LassoCV                                      0.28       0.29  0.07        0.22
-ElasticNetCV                                 0.28       0.29  0.07        0.22
-PoissonRegressor                             0.26       0.26  0.07        0.07
-...
-```
 
 ### NO
 
-We have a NO sensor in the low-cost sensor node, so we expect much better calibration performance for this target. Using the same Lasso regressor, we obtain an R2 score of 0.89 with 14 non-zero coefficients out of 18 candidates. The most important feature is, unsurprisingly, the mean NO sensor signals. The optimized Lasso also outperforms the best model provided by lazypredict.
+We have a NO sensor in the sensor node, so we expect much better calibration performance for this target. MLR gives an R2 of 0.82, and again with 18 features. In contrast, Lasso gives an R2 score of 0.89 with 14 features.
+
+The coefficient strength in MLR is difficult to interpret, with the standard deviation of NO2 and O3 sensors ranked at the top. While for Lasso, the most important feature is, unsurprisingly, the mean NO sensor signals, which is a much more interpretable result compared to generic MLR.
+
+```python
+Root Mean Squared Error (RMSE): 4.205137710342014
+R-square (R2): 0.824079866484303
+
+Important features in ranked order:
+NO2-2-std: -4.818
+O3-2-std: 3.994
+T-2-std: -2.652
+T-1-std: 2.082
+NO2-1-std: 2.002
+O3-1-std: -1.764
+O3-2-mean: -1.262
+NO-1-mean: 1.193
+O3-1-mean: 0.751
+NO-1-std: 0.534
+T-1-mean: -0.436
+RH-2-mean: 0.380
+NO2-2-mean: 0.205
+RH-1-mean: 0.149
+T-2-mean: 0.105
+NO2-1-mean: 0.060
+RH-1-std: -0.033
+RH-2-std: -0.013
+```
+
+<figure style="width: 750px" class="align-center">
+  <img src="/assets/images/low-cost-sensor/img2.png" alt="The results of multiple linear regression.">
+  <figcaption>(Left) True vs. calibrated NO readings using MLR. (Right) Model error as a function of time.</figcaption>
+</figure>
+
+#### Lasso
 
 ```python
 Best Alpha: 0.10353218432956626
@@ -130,30 +184,45 @@ T-2-mean: -0.197
 </figure>
 
 <figure style="width: 750px" class="align-center">
-  <img src="/assets/images/low-cost-sensor/fig6.png" alt="The results of Lasso regression, indicating a decent fit despite of the absence of direct correlation.">
-  <figcaption>(Left) True vs. calibrated NO readings. (Right) Model error as a function of time.</figcaption>
+  <img src="/assets/images/low-cost-sensor/fig6.png" alt="The results of Lasso regression.">
+  <figcaption>(Left) True vs. calibrated NO readings using Lasso. (Right) Model error as a function of time.</figcaption>
 </figure>
-
-#### Machine Learning Models
-
-```python
-Adjusted R-Squared  R-Squared  RMSE  Time Taken
-Model                                                                         
-ExtraTreesRegressor                          0.88       0.88  3.42        0.31
-ElasticNetCV                                 0.88       0.88  3.52        0.18
-LinearSVR                                    0.87       0.87  3.64        0.06
-SGDRegressor                                 0.86       0.86  3.78        0.06
-HuberRegressor                               0.86       0.86  3.80        0.07
-LassoCV                                      0.85       0.85  3.82        0.20
-LassoLarsIC                                  0.85       0.85  3.90        0.07
-LarsCV                                       0.85       0.85  3.93        0.13
-RidgeCV                                      0.84       0.85  3.94        0.05
-Ridge                                        0.84       0.85  3.94        0.04
-```
 
 ### NO2
 
-Running the calibration model on NO2 concentration gives an R2 score of 0.86 with 7 features, and the most important feature is NO2 sensor signals. Results from lazypredict indicate that further improvement can be obtained using OrthogonalMatchingPursuitCV.
+MLR yields an R2 value of 0.79 using 18 features. On the other hand, Lasso produces an R2 value of 0.86 using only 7 features, while maintaining an interpretable and intuitive feature importance ranking, where the NO2 sensor is ranked as the top feature.
+
+```python
+Root Mean Squared Error (RMSE): 6.647697994239928
+R-square (R2): 0.7940828257208385
+
+Important features in ranked order:
+NO2-2-std: 2.284
+T-2-std: 2.238
+NO2-2-mean: 1.491
+NO2-1-std: -1.202
+T-1-std: -0.668
+O3-2-mean: 0.499
+O3-1-mean: -0.457
+O3-2-std: 0.438
+RH-1-mean: 0.388
+NO2-1-mean: 0.278
+RH-2-mean: -0.178
+NO-1-mean: 0.129
+NO-1-std: 0.095
+T-1-mean: -0.053
+O3-1-std: 0.045
+T-2-mean: 0.044
+RH-2-std: 0.015
+RH-1-std: -0.013
+```
+
+<figure style="width: 750px" class="align-center">
+  <img src="/assets/images/low-cost-sensor/img3.png" alt="The results of multiple linear regression.">
+  <figcaption>(Left) True vs. calibrated NO2 readings using MLR. (Right) Model error as a function of time.</figcaption>
+</figure>
+
+#### Lasso
 
 ```python
 Best Alpha: 1.0473708979594507
@@ -177,29 +246,44 @@ O3-2-mean: -0.056
 
 <figure style="width: 750px" class="align-center">
   <img src="/assets/images/low-cost-sensor/fig8.png" alt="The results of Lasso regression, indicating a decent fit despite of the absence of direct correlation.">
-  <figcaption>(Left) True vs. calibrated NO2 readings. (Right) Model error as a function of time.</figcaption>
+  <figcaption>(Left) True vs. calibrated NO2 readings using Lasso. (Right) Model error as a function of time.</figcaption>
 </figure>
-
-#### Machine Learning Models
-
-```python
-Adjusted R-Squared  R-Squared   RMSE   Time Taken
-Model                                                                 
-OrthogonalMatchingPursuitCV                  0.87       0.87   5.34   0.08
-LinearSVR                                    0.86       0.86   5.46   0.06
-RANSACRegressor                              0.86       0.86   5.51   0.19
-Lasso                                        0.86       0.86   5.55   0.05
-LassoLars                                    0.86       0.86   5.55   0.06
-LassoCV                                      0.85       0.85   5.62   0.21
-LassoLarsCV                                  0.85       0.85   5.62   0.16
-HuberRegressor                               0.85       0.85   5.65   0.07
-LassoLarsIC                                  0.85       0.85   5.68   0.08
-ExtraTreesRegressor                          0.83       0.84   5.94   0.32
-```
 
 ### NOx
 
-The calibration for NOx is the best so far with an R2 score of 0.97, with strong contributions from both NO and NO2 sensors. This is understandable because NOx includes both NO and NO2.
+MLR yields an R2 value of 0.94 using 18 features, while Lasso regression yields 0.97 with only 13 features. Both NO and NO2 sensors make significant contributions to the model, which is understandable as NOx includes both NO and NO2.
+
+```python
+Root Mean Squared Error (RMSE): 6.604424782589308
+R-square (R2): 0.9397916775728876
+
+Important features in ranked order:
+O3-2-std: 6.393
+NO2-2-std: -5.211
+T-1-std: 3.161
+O3-1-std: -2.601
+T-2-std: -2.463
+NO2-1-std: 1.966
+NO-1-mean: 1.957
+NO2-2-mean: 1.724
+O3-2-mean: -1.503
+NO-1-std: 0.937
+O3-1-mean: 0.743
+T-1-mean: -0.646
+RH-1-mean: 0.570
+NO2-1-mean: 0.424
+RH-2-mean: 0.411
+T-2-mean: 0.167
+RH-1-std: -0.077
+RH-2-std: -0.003
+```
+
+<figure style="width: 750px" class="align-center">
+  <img src="/assets/images/low-cost-sensor/img4.png" alt="The results of multiple linear regression.">
+  <figcaption>(Left) True vs. calibrated NOx readings using MLR. (Right) Model error as a function of time.</figcaption>
+</figure>
+
+#### Lasso
 
 ```python
 Best Alpha: 0.2196385372416547
@@ -229,29 +313,44 @@ T-1-std: 0.212
 
 <figure style="width: 750px" class="align-center">
   <img src="/assets/images/low-cost-sensor/fig10.png" alt="The results of Lasso regression, indicating a decent fit despite of the absence of direct correlation.">
-  <figcaption>(Left) True vs. calibrated NOx readings. (Right) Model error as a function of time.</figcaption>
+  <figcaption>(Left) True vs. calibrated NOx readings using Lasso. (Right) Model error as a function of time.</figcaption>
 </figure>
-
-#### Machine Learning Models
-```python
-                               Adjusted R-Squared  R-Squared    RMSE   Time
-Model                                                                  
-PassiveAggressiveRegressor                   0.97       0.97    4.72   0.05
-LinearSVR                                    0.97       0.97    4.73   0.06
-HuberRegressor                               0.97       0.97    5.00   0.07
-RANSACRegressor                              0.96       0.96    5.07   0.18
-OrthogonalMatchingPursuitCV                  0.96       0.96    5.50   0.08
-LassoCV                                      0.95       0.95    5.83   0.19
-LassoLarsCV                                  0.95       0.95    5.84   0.14
-LassoLars                                    0.95       0.95    6.21   0.06
-Lasso                                        0.95       0.95    6.21   0.06
-ElasticNetCV                                 0.94       0.94    6.53   0.18
-LassoLarsIC                                  0.94       0.94    6.58   0.08
-```
 
 ### O3
 
-The calibration for O3 is also very good (R2 score: 0.94) with the main contributions from O3 sensors, and only five features are used in this calibration. Lazypredict shows that Lasso is the best model for this calibration.
+MLR yields an R2 value of 0.87 using 18 features, while Lasso regression yields 0.94 with only 5 features and O3 sensor is ranked as the top feature.
+
+```python
+Root Mean Squared Error (RMSE): 8.406568132845177
+R-square (R2): 0.8704081875775477
+
+Important features in ranked order:
+O3-2-mean: 2.171
+T-2-std: 1.689
+NO2-2-mean: -1.486
+T-1-std: -1.323
+O3-2-std: -1.200
+T-1-mean: -1.142
+RH-1-mean: -1.066
+NO2-2-std: -0.987
+O3-1-std: 0.831
+NO2-1-mean: 0.293
+NO2-1-std: 0.264
+NO-1-mean: 0.239
+RH-2-mean: -0.180
+T-2-mean: 0.054
+O3-1-mean: 0.044
+NO-1-std: -0.036
+RH-1-std: 0.021
+RH-2-std: 0.003
+```
+
+<figure style="width: 750px" class="align-center">
+  <img src="/assets/images/low-cost-sensor/img5.png" alt="The results of multiple linear regression.">
+  <figcaption>(Left) True vs. calibrated O3 readings using MLR. (Right) Model error as a function of time.</figcaption>
+</figure>
+
+#### Lasso
 
 ```python
 Best Alpha: 0.4937047852839004
@@ -273,29 +372,44 @@ RH-1-mean: -0.157
 
 <figure style="width: 750px" class="align-center">
   <img src="/assets/images/low-cost-sensor/fig12.png" alt="The results of Lasso regression, indicating a decent fit despite of the absence of direct correlation.">
-  <figcaption>(Left) True vs. calibrated O3 readings. (Right) Model error as a function of time.</figcaption>
+  <figcaption>(Left) True vs. calibrated O3 readings using Lasso. (Right) Model error as a function of time.</figcaption>
 </figure>
-
-#### Machine Learning Models
-
-```python
-                               Adjusted R-Squared  R-Squared  RMSE  Time Taken
-Model                                                                         
-LassoCV                                      0.94       0.94  5.92        0.21
-LassoLarsCV                                  0.93       0.94  5.95        0.15
-LassoLars                                    0.93       0.93  5.96        0.05
-Lasso                                        0.93       0.93  5.96        0.06
-LarsCV                                       0.93       0.93  6.24        0.13
-OrthogonalMatchingPursuitCV                  0.93       0.93  6.27        0.08
-PassiveAggressiveRegressor                   0.91       0.91  6.97        0.06
-LinearSVR                                    0.91       0.91  7.03        0.10
-ElasticNetCV                                 0.90       0.90  7.51        0.18
-HuberRegressor                               0.89       0.89  7.68        0.07
-```
 
 ### SO2
 
-Another sanity check, aside from CO, is to confirm that the good fit for NO, NO2, NOx, and O3 is a result of the dedicated sensors in the sensor nodes. Not all analytes can be calibrated. In the calibration for SO2, although the best model has only two features - the mean and standard deviation of the NO sensor - the R2 score is -0.52. This means that using the signal average can yield a better fit than the calibration model. Lazypredict gives the same result, so there is no combination of sensor signals that can be predictive of SO2.
+Another sanity check, aside from CO, is to confirm that the good fit for NO, NO2, NOx, and O3 is a result of the dedicated sensors in the sensor nodes. Not all analytes can be calibrated. In the calibration for SO2, MLR gives an R2 of -0.56, and Lasso gives -0.52 with only two features. Even in this difficult situation where nothing is useful, Lasso still outperforms MLR.
+
+```python
+Root Mean Squared Error (RMSE): 0.6886273041577045
+R-square (R2): -0.5655306095570658
+
+Important features in ranked order:
+NO2-2-std: -0.060
+NO2-1-std: 0.025
+T-2-std: -0.020
+T-1-std: 0.019
+RH-2-mean: 0.008
+NO2-2-mean: 0.008
+NO-1-mean: 0.007
+O3-1-std: 0.006
+NO2-1-mean: -0.005
+T-2-mean: 0.005
+O3-2-mean: -0.005
+O3-1-mean: 0.005
+RH-1-mean: -0.005
+T-1-mean: -0.005
+O3-2-std: -0.004
+NO-1-std: 0.004
+RH-2-std: -0.000
+RH-1-std: 0.000
+```
+
+<figure style="width: 750px" class="align-center">
+  <img src="/assets/images/low-cost-sensor/img6.png" alt="The results of multiple linear regression.">
+  <figcaption>(Left) True vs. calibrated SO2 readings using MLR. (Right) Model error as a function of time.</figcaption>
+</figure>
+
+#### Lasso
 
 ```python
 Best Alpha: 0.025826187606826773
@@ -314,28 +428,20 @@ NO-1-std: 0.010
 
 <figure style="width: 750px" class="align-center">
   <img src="/assets/images/low-cost-sensor/fig14.png" alt="The results of Lasso regression, indicating a decent fit despite of the absence of direct correlation.">
-  <figcaption>(Left) True vs. calibrated SO2 readings. (Right) Model error as a function of time.</figcaption>
+  <figcaption>(Left) True vs. calibrated SO2 readings using Lasso. (Right) Model error as a function of time.</figcaption>
 </figure>
 
-#### Machine Learning Models
+### Summary
 
-```python
-                               Adjusted R-Squared  R-Squared  RMSE  Time Taken
-Model                                                                         
-SVR                                         -0.28      -0.27  0.62        0.08
-NuSVR                                       -0.47      -0.46  0.66        0.18
-OrthogonalMatchingPursuit                   -0.52      -0.51  0.68        0.04
-RandomForestRegressor                       -0.54      -0.53  0.68        0.40
-ExtraTreeRegressor                          -0.54      -0.53  0.68        0.05
-GradientBoostingRegressor                   -0.54      -0.53  0.68        0.32
-XGBRegressor                                -0.54      -0.53  0.68        0.17
-ExtraTreesRegressor                         -0.54      -0.53  0.68        0.20
-LassoLars                                   -0.55      -0.54  0.68        0.05
-Lasso                                       -0.55      -0.54  0.68        0.05
-```
+Here is a brief summary on the model performance between generic MLR and Lasso. Lasso consistently produces better models with high R2 score and good interpretability.
+
+<figure style="width: 750px" class="align-center">
+  <img src="/assets/images/low-cost-sensor/img7.png" alt="A summary barplot comparing the R2 score of multiple linear regression and Lasso regression for different target analyte">
+  <figcaption>A summary on model performance.</figcaption>
+</figure>
 
 ## Conclusions
 
-This dataset consists of two low-cost sensor nodes and ground truth air quality data from an authorized reference station. By using the first two weeks of data for training and the following four months of data for validation, we show that Lasso regression can yield very good sensor calibration for several markers of air quality, including NO, NO2, NOx, and O3. The R2 scores for all these analytes are around and above 0.85, indicating good sensor stability over time. We also tested the calibration performance for non-target analytes CO and SO2, but the calibration accuracy is poor because the two sensor nodes do not contain any sensors that are sensitive to these gases.
+Using the first two weeks of data for training and the following four months of data for validation, we show that Lasso regression can yield excellent sensor calibration for several air quality markers, including NO, NO2, NOx, and O3. The R2 scores for all these analytes are around and above 0.85, indicating good sensor stability over time. Compared with generic MLR, Lasso regression provides a much better calibration performance and better model interpretability.
 
 In conclusion, Lasso regression provides a middle ground between overly simplistic multiple linear regression and uninterpretable machine learning models. Its ability to generate a sparse calibration relationship offers an efficient alternative to conventional calibration methods for low-cost air quality monitoring sensor arrays.
