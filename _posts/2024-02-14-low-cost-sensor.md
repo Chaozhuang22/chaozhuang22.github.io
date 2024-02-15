@@ -7,7 +7,7 @@ header:
   teaser: /assets/images/low-cost-sensor/teaser.jpg
 ---
 
-> This analysis utlizes Lasso regression to explore sparse calibration relationships for electrochemical low-cost sensors developed for air quality monitoring. The performane of Lasso regression is compared with the Python package of lazypredict.
+> This analysis utlizes Lasso regression to explore sparse calibration relationships for electrochemical low-cost sensors developed for air quality monitoring. The performane of Lasso regression is compared with generic multiple linear regression.
 
 ## Analysis Goal
 
@@ -83,7 +83,7 @@ RH-1-std: -0.001
 RH-2-std: 0.000
 ```
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 1000px" class="align-center">
   <img src="/assets/images/low-cost-sensor/img1.png" alt="The results of multiple linear regression.">
   <figcaption>(Left) True vs. calibrated CO readings using MLR. (Right) Model error as a function of time.</figcaption>
 </figure>
@@ -108,12 +108,12 @@ T-2-mean: -0.008
 RH-2-std: -0.008
 ```
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 1000px" class="align-center">
   <img src="/assets/images/low-cost-sensor/fig3.png" alt="Optimizing alpha in Lasso regression to minimize RMSE. The graphs shows the RMSE and coefficient strength as a function of Alpha.">
   <figcaption>(Left) Model RMSE of CO calibration as a function of alpha. (Right) Coefficient strengths as a function of alpha.</figcaption>
 </figure>
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 1000px" class="align-center">
   <img src="/assets/images/low-cost-sensor/fig4.png" alt="The results of Lasso regression, indicating a decent fit despite of the absence of direct correlation.">
   <figcaption>(Left) True vs. calibrated CO readings using Lasso. (Right) Model error as a function of time.</figcaption>
 </figure>
@@ -149,7 +149,7 @@ RH-1-std: -0.033
 RH-2-std: -0.013
 ```
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 1000px" class="align-center">
   <img src="/assets/images/low-cost-sensor/img2.png" alt="The results of multiple linear regression.">
   <figcaption>(Left) True vs. calibrated NO readings using MLR. (Right) Model error as a function of time.</figcaption>
 </figure>
@@ -178,12 +178,12 @@ T-1-std: 0.319
 T-2-mean: -0.197
 ```
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 1000px" class="align-center">
   <img src="/assets/images/low-cost-sensor/fig5.png" alt="Optimizing alpha in Lasso regression to minimize RMSE. The graphs shows the RMSE and coefficient strength as a function of Alpha.">
   <figcaption>(Left) Model RMSE of NO calibration as a function of alpha. (Right) Coefficient strengths as a function of alpha.</figcaption>
 </figure>
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 1000px" class="align-center">
   <img src="/assets/images/low-cost-sensor/fig6.png" alt="The results of Lasso regression.">
   <figcaption>(Left) True vs. calibrated NO readings using Lasso. (Right) Model error as a function of time.</figcaption>
 </figure>
@@ -217,7 +217,7 @@ RH-2-std: 0.015
 RH-1-std: -0.013
 ```
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 1000px" class="align-center">
   <img src="/assets/images/low-cost-sensor/img3.png" alt="The results of multiple linear regression.">
   <figcaption>(Left) True vs. calibrated NO2 readings using MLR. (Right) Model error as a function of time.</figcaption>
 </figure>
@@ -239,12 +239,12 @@ NO2-2-mean: 0.064
 O3-2-mean: -0.056
 ```
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 1000px" class="align-center">
   <img src="/assets/images/low-cost-sensor/fig7.png" alt="Optimizing alpha in Lasso regression to minimize RMSE. The graphs shows the RMSE and coefficient strength as a function of Alpha.">
   <figcaption>(Left) Model RMSE of NO2 calibration as a function of alpha. (Right) Coefficient strengths as a function of alpha.</figcaption>
 </figure>
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 1000px" class="align-center">
   <img src="/assets/images/low-cost-sensor/fig8.png" alt="The results of Lasso regression, indicating a decent fit despite of the absence of direct correlation.">
   <figcaption>(Left) True vs. calibrated NO2 readings using Lasso. (Right) Model error as a function of time.</figcaption>
 </figure>
@@ -278,7 +278,7 @@ RH-1-std: -0.077
 RH-2-std: -0.003
 ```
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 1000px" class="align-center">
   <img src="/assets/images/low-cost-sensor/img4.png" alt="The results of multiple linear regression.">
   <figcaption>(Left) True vs. calibrated NOx readings using MLR. (Right) Model error as a function of time.</figcaption>
 </figure>
@@ -306,12 +306,12 @@ NO2-1-mean: 0.421
 T-1-std: 0.212
 ```
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 1000px" class="align-center">
   <img src="/assets/images/low-cost-sensor/fig9.png" alt="Optimizing alpha in Lasso regression to minimize RMSE. The graphs shows the RMSE and coefficient strength as a function of Alpha.">
   <figcaption>(Left) Model RMSE of NOx calibration as a function of alpha. (Right) Coefficient strengths as a function of alpha.</figcaption>
 </figure>
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 1000px" class="align-center">
   <img src="/assets/images/low-cost-sensor/fig10.png" alt="The results of Lasso regression, indicating a decent fit despite of the absence of direct correlation.">
   <figcaption>(Left) True vs. calibrated NOx readings using Lasso. (Right) Model error as a function of time.</figcaption>
 </figure>
@@ -345,7 +345,7 @@ RH-1-std: 0.021
 RH-2-std: 0.003
 ```
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 1000px" class="align-center">
   <img src="/assets/images/low-cost-sensor/img5.png" alt="The results of multiple linear regression.">
   <figcaption>(Left) True vs. calibrated O3 readings using MLR. (Right) Model error as a function of time.</figcaption>
 </figure>
@@ -365,12 +365,12 @@ NO-1-mean: 1.504
 RH-1-mean: -0.157
 ```
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 1000px" class="align-center">
   <img src="/assets/images/low-cost-sensor/fig11.png" alt="Optimizing alpha in Lasso regression to minimize RMSE. The graphs shows the RMSE and coefficient strength as a function of Alpha.">
   <figcaption>(Left) Model RMSE of O3 calibration as a function of alpha. (Right) Coefficient strengths as a function of alpha.</figcaption>
 </figure>
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 1000px" class="align-center">
   <img src="/assets/images/low-cost-sensor/fig12.png" alt="The results of Lasso regression, indicating a decent fit despite of the absence of direct correlation.">
   <figcaption>(Left) True vs. calibrated O3 readings using Lasso. (Right) Model error as a function of time.</figcaption>
 </figure>
@@ -404,7 +404,7 @@ RH-2-std: -0.000
 RH-1-std: 0.000
 ```
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 1000px" class="align-center">
   <img src="/assets/images/low-cost-sensor/img6.png" alt="The results of multiple linear regression.">
   <figcaption>(Left) True vs. calibrated SO2 readings using MLR. (Right) Model error as a function of time.</figcaption>
 </figure>
@@ -421,12 +421,12 @@ NO-1-mean: 0.048
 NO-1-std: 0.010
 ```
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 1000px" class="align-center">
   <img src="/assets/images/low-cost-sensor/fig13.png" alt="Optimizing alpha in Lasso regression to minimize RMSE. The graphs shows the RMSE and coefficient strength as a function of Alpha.">
   <figcaption>(Left) Model RMSE of SO2 calibration as a function of alpha. (Right) Coefficient strengths as a function of alpha.</figcaption>
 </figure>
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 1000px" class="align-center">
   <img src="/assets/images/low-cost-sensor/fig14.png" alt="The results of Lasso regression, indicating a decent fit despite of the absence of direct correlation.">
   <figcaption>(Left) True vs. calibrated SO2 readings using Lasso. (Right) Model error as a function of time.</figcaption>
 </figure>
@@ -435,7 +435,7 @@ NO-1-std: 0.010
 
 Here is a brief summary on the model performance between generic MLR and Lasso. Lasso consistently produces better models with high R2 score and good interpretability.
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 1000px" class="align-center">
   <img src="/assets/images/low-cost-sensor/img7.png" alt="A summary barplot comparing the R2 score of multiple linear regression and Lasso regression for different target analyte">
   <figcaption>A summary on model performance.</figcaption>
 </figure>
