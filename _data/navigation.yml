@@ -4,7 +4,7 @@ main:
   - title: "Blog"
     url: /posts/
   - title: "Categories"
-  url: /categories/
+    url: /categories/
   - title: "Publications"
     url: /publications/
   - title: "About"
