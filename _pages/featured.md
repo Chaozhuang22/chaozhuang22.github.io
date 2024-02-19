@@ -25,7 +25,7 @@ feature_row:
     alt: "The H2020 Captor project where low-cost sensors are tested across Europe for high-density air quality monitoring"
     title: "Sensor-Fusion Calibration Techniques for Low-Cost Air Quality Monitoring"
     excerpt: "H2020 Captor Project for low-cost air quality monitoring"
-    url: "https://chaozhuang22.github.io/data-analysis/h2020/"
+    url: "https://chaozhuang22.github.io/data-analysis/H2020/"
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: assets/images/air-quality/teaser.jpg
