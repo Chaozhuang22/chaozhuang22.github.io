@@ -14,11 +14,18 @@ header:
 intro: 
   - excerpt: 'A personal portfolio showcasing my data analysis and research projects. Check out [About](https://chaozhuang22.github.io/about/) page to find out more.'
 feature_row:
-  - image_path: /assets/images/mall/heatmap-cropped.gif
-    alt: "A log-scale heatmap animation revealing the accumulated activity intensity within the shopping mall scene over 2000 frames."
-    title: "Customer Behavior in Shopping Malls with Time Series Analysis"
-    excerpt: "Analyzing customer traffic and spatial distribution in shopping malls."
-    url: "https://chaozhuang22.github.io/data-analysis/mall-traffic/"
+  # - image_path: /assets/images/mall/heatmap-cropped.gif
+  #   alt: "A log-scale heatmap animation revealing the accumulated activity intensity within the shopping mall scene over 2000 frames."
+  #   title: "Customer Behavior in Shopping Malls with Time Series Analysis"
+  #   excerpt: "Analyzing customer traffic and spatial distribution in shopping malls."
+  #   url: "https://chaozhuang22.github.io/data-analysis/mall-traffic/"
+  #   btn_label: "Read More"
+  #   btn_class: "btn--primary"
+  - image_path: /assets/images/h2020/teaser.jpg
+    alt: "The H2020 Captor project where low-cost sensors are tested across Europe for high-density air quality monitoring"
+    title: "Sensor-Fusion Calibration Techniques for Low-Cost Air Quality Monitoring"
+    excerpt: "H2020 Captor Project for low-cost air quality monitoring"
+    url: "https://chaozhuang22.github.io/data-analysis/h2020/"
     btn_label: "Read More"
     btn_class: "btn--primary"
   - image_path: assets/images/air-quality/teaser.jpg
