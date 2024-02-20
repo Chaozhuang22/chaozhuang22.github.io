@@ -13,7 +13,7 @@ Nanomechanical sensors have emerged as powerful tools for detecting surface stre
 ## Understanding Sensor Behavior
 Nanomechanical sensors consist of two primary layers: the immobilization layer, often made of gold or polymer, and the silicon layer. When the immobilization layer interacts with external molecules, it can cause a strain mismatch with the silicon layer. This mismatch is associated with the surface stress in the layer, which causes the silicon layer to bend, producing piezoresistive signals at the embedded piezoresistor. These signals can then be harnessed to quantify the extent of the chemical interaction. An example can be found [here](https://www.science.org/doi/10.1126/science.288.5464.316).
 
-<figure style="width: 500px" class="align-center">
+<figure style="width: 50%" class="align-center">
 
   <a href="/assets/images/fea-tutorial/cantilever.jpeg" alt="cantilever SEM">
   <img src="/assets/images/fea-tutorial/cantilever.jpeg" alt="cantilever SEM"></a>
@@ -96,7 +96,7 @@ With everything set up, run the FEA simulation. Because of the nonlinearities in
 
 First of all, let's make an animation.
 
-<figure style="width: 500px" class="align-center">
+<figure style="width: 50%" class="align-center">
 
   <a href="/assets/images/fea-tutorial/animation.gif" alt="simulation animation">
   <img src="/assets/images/fea-tutorial/animation.gif" alt="simulation animation"></a>

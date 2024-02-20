@@ -24,7 +24,7 @@ The full analysis with code can be found in this [Kaggle notebook](https://www.k
 
 Upon compiling the complete time series data, we can plot the trajectories of individual players throughout the 30-minute match.
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 75%" class="align-center">
   <img src="/assets/images/soccertrack/img1.jpg" alt="A scatter plot showing the trajectory of a soccer player in Team 1 during a 30-minute match, plotted on a top-view diagram of a soccer field.">
   <figcaption>A player's trajectory in Team 1.</figcaption>
 </figure>
@@ -51,7 +51,7 @@ We can visualize a player's activity area as an ellipsoid, centered at their mea
 
 We now shift focus to team dynamics by plotting the characteristic areas of both teams. These areas, defined by the standard deviation of player positions at given times, reflect the spatial distribution of players at any given point in time. Visualizing the entire match in this way reveals two dynamic blobs—representing each team—that move, rotate, expand, and contract in response to the game's flow.
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 75%" class="align-center">
   <img src="/assets/images/soccertrack/img5.jpg" alt="A top-view diagram of a soccer field showing the characteristic areas of both teams at the 2000th frame, represented by two dynamic blobs that depict the spatial distribution of players.">
   <figcaption>The spatial distribution of both team at the frame number of 2000.</figcaption>
 </figure>
@@ -60,7 +60,7 @@ We now shift focus to team dynamics by plotting the characteristic areas of both
 
 The motions of the dynamic blobs can be compiled into a movie. The full length video is uploaded to [YouTube](https://youtu.be/MopNiu__YA0).
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 75%" class="align-center">
   <img src="/assets/images/soccertrack/gif1.gif" alt="An animated sequence showing the evolution of characteristic areas of both teams over a span of 100 seconds, represented by two dynamic blobs that move, rotate, expand, and contract in response to the game's flow.">
   <figcaption>The speedup 7.5x evolution of characteristic areas of both teams for 100 s.</figcaption>
 </figure>
@@ -93,7 +93,7 @@ To visualize synchronization, we use the following criteria: a link is drawn bet
 
 The animation below shows that synchronization commonly occurs during ball-chasing, often manifesting in waves and involving both teams simultaneously. Conversely, desynchronization typically happens when players from opposing teams converge towards the ball from different directions. The full-length video can be found in [YouTube](https://www.youtube.com/watch?v=nFAJXa5Ajbg).
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 75%" class="align-center">
   <img src="/assets/images/soccertrack/gif2.gif" alt="An animated sequence showing the synchronization of both teams over a span of 100 seconds, with links drawn between players moving in the same direction for over 2 seconds.">
   <figcaption>The speedup 7.5x evolution of synchronization of both teams for 100 s.</figcaption>
 </figure>
@@ -121,12 +121,12 @@ By employing the ruptures package in Python with an l2 model, we can systematica
 
 After adjusting the number of breakpoints, the model effectively identifies timeout periods for both Team 1 and Team 2. Cross-validation with Team 2's data corroborates the identified anomalies, confirming timeouts around 16:15 and 16:28. This aligns with the characteristic area reduction observed in previous analyses.
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 75%" class="align-center">
   <img src="/assets/images/soccertrack/img10.jpg" alt="A time series plot of Team 1's order parameter with detected change points, indicating potential anomalies or shifts in the mean of the order parameter.">
   <figcaption>Applying change point detection on the time series of order parameter of Team 1.</figcaption>
 </figure>
 
-<figure style="width: 750px" class="align-center">
+<figure style="width: 75%" class="align-center">
   <img src="/assets/images/soccertrack/img11.jpg" alt="A time series plot of Team 2's order parameter with detected change points, indicating potential anomalies or shifts in the mean of the order parameter.">
   <figcaption>Applying change point detection on the time series of order parameter of Team 2.</figcaption>
 </figure>

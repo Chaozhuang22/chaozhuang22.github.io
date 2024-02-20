@@ -28,7 +28,7 @@ Box selection is employed for consistent boundary conditions as the topology evo
 ### Materials
 Silicon is assigned to the large rectangular block, while the immobilization layer, which can be polymer or gold, is assigned to the upper surface of the block. The materials assignment is done by links as the same materials are referenced twice in the two components in this model file.
 
-<figure style="width: 500px" class="align-center">
+<figure style="width: 50%" class="align-center">
   <img src="/assets/images/to-detailed/materials.jpg" alt="Silicon and polymer/gold materials assignment in COMSOL for MEMS sensor structure">
   <figcaption>Materials assignment.</figcaption>
 </figure>
@@ -42,7 +42,7 @@ A detailed discussion of the optimization parameters can be found in a previous 
 - **Volume Fraction**: Determines the initial amount of material in the design domain. This value is often problem-dependent, typically set to 0.5, 0.6, or without limitations.
 - **Prescribed Material**: The density of the piezoresistor region is set to 1, ensuring its presence throughout the optimization process.
 
-<figure style="width: 500px" class="align-center">
+<figure style="width: 50%" class="align-center">
   <img src="/assets/images/to-detailed/topology-settings.jpg" alt="COMSOL interface displaying topology optimization settings for improved MEMS sensor performance">
   <figcaption>Settings for topology optimization.</figcaption>
 </figure>
@@ -67,7 +67,7 @@ A detailed discussion of the optimization parameters can be found in a previous 
 ### Meshing
 A swept method with quad mesh is used to sweep through the thickness direction. Typically, three meshes along the thickness direction are sufficient. The parameter "meshsz" controls the mesh size; smaller sizes give a more detailed design but with an increase in computational cost.
 
-<figure style="width: 500px" class="align-center">
+<figure style="width: 50%" class="align-center">
   <img src="/assets/images/to-detailed/mesh.jpg" alt="COMSOL visualization of meshed geometry with 6 um mesh size for MEMS sensor">
   <figcaption>The meshed geometry with a mesh size of 6 um.</figcaption>
 </figure>
@@ -79,7 +79,7 @@ A swept method with quad mesh is used to sweep through the thickness direction. 
 - **Solution**: For a robust formulation, this is set to "minimum of objectives," aiming to improve the worst design among the three. If the optimization type is set to "minimization", then this section should be set to "maximum of objectives," making it opposite to the optimization type.
 - **Constraints**: The volume fraction constraint is implemented as the upper bound, constraining the maximum amount of materials being used in the design.
 
-<figure style="width: 500px" class="align-center">
+<figure style="width: 50%" class="align-center">
   <img src="/assets/images/to-detailed/optimization.jpg" alt="Solver settings in COMSOL for MEMS sensor topology optimization process">
   <figcaption>Topology optimization solver setting.</figcaption>
 </figure>
@@ -87,7 +87,7 @@ A swept method with quad mesh is used to sweep through the thickness direction. 
 ### Solver Settings
 In the first study, we solve only for shell, solid mechanics, and topology optimization in Component 1. In the auxiliary sweep, a sweep of $$\eta$$ for robust formulation is implemented. This ensures that the worst-performing design is improved upon and is associated with the "Solution" section in the topology optimization study settings. To disable robust formulation, simply uncheck the auxiliary sweep.
 
-<figure style="width: 500px" class="align-center">
+<figure style="width: 50%" class="align-center">
   <img src="/assets/images/to-detailed/solver-setting.jpg" alt="COMSOL Multiphysics solver configuration for MEMS sensor topology optimization">
   <figcaption>Solver setting.</figcaption>
 </figure>
@@ -97,7 +97,7 @@ After the optimization, one clicks the import button in the Mesh part node in th
 
 To construct the verification study, component 2 is built with the optimized geometry while all physics remaining the same. The only difference is the element order, which is changed from first-order (linear) to second-order (quadratic) for accurate FEA evaluation. The verification study node associated with this component calculates the exact performance and stress profile of the optimized design.
 
-<figure style="width: 500px" class="align-center">
+<figure style="width: 50%" class="align-center">
   <img src="/assets/images/to-detailed/import-mesh.jpg" alt="COMSOL setup for importing mesh into a new study post-optimization of MEMS sensor">
   <figcaption>Import mesh to a new study.</figcaption>
 </figure>
@@ -105,7 +105,7 @@ To construct the verification study, component 2 is built with the optimized geo
 ## Optimization Results
 Using the Material Distribution graph, the history of optimization as a function of the iteration number can be observed and animated using the animation functionality in COMSOL. Note that only the optimization history comes directly from the first study; the detailed analysis of the structure and their accurate performance are all obtained from the second verification study.
 
-<figure style="width: 500px" class="align-center">
+<figure style="width: 50%" class="align-center">
   <img src="/assets/images/to/anime.gif" alt="Animated sequence showing evolution of MEMS sensor design during COMSOL optimization iterations">
   <figcaption>Evolution of the optimized design during iterations.</figcaption>
 </figure>

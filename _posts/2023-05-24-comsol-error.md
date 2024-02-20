@@ -11,7 +11,7 @@ Recently, I stumbled upon an unusual error while tweaking an optimization model 
 
 During the process, an unexpected error occurred. Unlike typical errors that highlight relevant nodes with little red markers, this one provided no such convenience. It gave no further information about its origin within the Graphical User Interface.
 
-<figure style="width: 600px" class="align-center">
+<figure style="width: 50%" class="align-center">
   <img src="/assets/images/error.jpg" alt="comsol error">
   <figcaption>The error popup.</figcaption>
 </figure>

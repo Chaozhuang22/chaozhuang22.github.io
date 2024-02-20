@@ -53,7 +53,7 @@ The mesh starts from the narrow channel. The upper and lower surfaces are meshed
 ### Channel deformation
 The deformation of the channel over time can be made into an animation. As the flow rate increases, the channel deforms more and more. When the flow rate gets stable at 5s, the channel deformation becomes constant.
 
-<figure style="width: 500px" class="align-center">
+<figure style="width: 50%" class="align-center">
   <img src="/assets/images/flow-channel/deformation.gif" alt="an animation of flow channel deformation caused by incoming flow">
   <figcaption>Channel deformation as the flow develops.</figcaption>
 </figure>
@@ -81,14 +81,14 @@ The stress profile at the bounding edge has a poor accuracy, and it can be impro
 ### Flow Rate and Pressure
 The flow rate obtained from integrating flow velocity across the inlet cross-section matches closely with the specified piecewise linear flow profile, indicating that the global equation is doing its job in implementing a controlled flow rate.
 
-<figure style="width: 500px" class="align-center">
+<figure style="width: 50%" class="align-center">
   <img src="/assets/images/flow-channel/flow-rate.jpg" alt="the flow rate at the inlet">
   <figcaption>The flow rate simulated at the inlet.</figcaption>
 </figure>
 
 The pressure evolution is nonlinear over time, unlike the flow rate. Therefore, using pressure as the explicit control parameter will not work in generating a flow rate-controlled deformation profile.
 
-<figure style="width: 500px" class="align-center">
+<figure style="width: 50%" class="align-center">
   <img src="/assets/images/flow-channel/pressure-time.jpg" alt="the pressure at the inlet">
   <figcaption>The pressure at the inlet.</figcaption>
 </figure>
