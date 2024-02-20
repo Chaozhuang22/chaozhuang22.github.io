@@ -18,69 +18,118 @@ header:
 </figure>
 
 Quantum mechanics is a statistical theory, which is fundamentally different from deterministic classical mechanics [[Susskind - QM - 1]].
+
 ## Fundamentals
+
 ### Wave function
+
 The state of a quantum object is specified by a complex wave function, whose norm square represents the probability density of the system being in a particular state. Integrating over the probability density yields the expectation value of the quantity [[8.04 QM - 5]], and the standard deviation gives the uncertainty [[8.04 QM - 4]]. As required by the superposition principle, which states that the linear combination of two possible configurations is also a possible configuration of the system [[8.04 QM - 1]], any state can be decomposed into a superposition of eigenstates [[8.04 QM - 3]]. This principle allows quantum systems to have a much higher configuration space compared to classical systems because it not only contains individual states of specific orientation or configuration but also all the linear combinations of them [[Susskind 2014 - 2]].
+
 ### Operators
+
 In matrix language, the set of eigenstates corresponds to the eigenvectors of an operator [[Susskind - QM - 5]], which has to be Hermitian as it ensures that the operation on a quantum state will yield a real result [[8.04 QM - 9]]. The probability of observing a state is given by the inner product between the state vector and the eigenvector, which is known as Born's rule and is equivalent to the projection of the state vector onto the eigenvector [[Susskind - QM - 3]].
 In functional language, moreover, the eigenvectors correspond to eigenfunctions, which can be delta functions for the position operator and sinusoidal functions for the momentum operator [[8.04 QM - 6]], [[Susskind - QM - 9]].
 Unitary operations can be expanded in small increments in the form of a generator. When a generator commutes with the Hamiltonian operator, it often implies the symmetry contained in the operation. For example, the translation operation has the momentum operator as its generator, which commutes with the Hamiltonian of a free particle, and it implies the translational symmetry of the system [[Susskind - AQM - 1]].
+
 ### Uncertainty principle
+
 The non-commutability between position and momentum operators makes them incompatible operations [[8.04 QM - 5]], [[Susskind - QM - 5]], which means an accurate measurement of one will lead to uncertainty in the other. In other words, they do not share common eigenfunctions. The proportional constant in the commutator gives the magnitude of the uncertainty [[8.04 QM - 10]].
 The uncertainty principle can be derived from pure mathematics using the triangle inequality [[Susskind - QM - 10]], and it can be interpreted in two ways. The first interpretation is that the uncertainty principle determines the maximal resolution one can achieve in quantum mechanical experiments [[Shankar - EM - 19]]. The uncertainty principle also requires the energy ground state of particles to be non-zero because zero energy would mean that the particle has simultaneously a definite position and momentum [[Susskind - AQM - 3]]. However, this view does not explain the uncertainty between energy and time, as time is not a measurable value. Therefore, the second interpretation involves Fourier transformation. Since the momentum of a wave is defined over the whole space, a particle with a finite size naturally requires a series of wave functions with various momenta to describe. The superposition required to describe the particle leads to uncertainty in the particle's momentum. The uncertainty between energy and time can be interpreted similarly: a wave that travels for only a limited amount of time will not have a well-defined energy because energy is defined in waves that have traveled infinitely long times [[Shankar - EM - 25]]. The uncertainty between energy and time is the source of spectral broadening in various radiation processes due to the finite emission time [Huygens Optics 2023 - 1](https://www.youtube.com/watch?v=dtcq5b0R65w).
 
 ## Schrodinger equation (SE)
+
 ### Temporal solution
+
 The minus first law states that two orthogonal states will remain orthogonal as time evolves [[Susskind - SM - 1]]. From the minus first law, one can easily derive the general time-dependent SE, which states that the commutator between the Hamiltonian and an operator governs the time evolution of the corresponding observable [[Susskind - QM - 4]], [[Susskind - AQM - 1]]. More generally, the Hamiltonian governs the time evolution of a system [[8.04 QM - 5]]. For an energy eigenstate, the time evolution involves only rotation in phase with the energy eigenvalue remaining constant, which is known as a stationary state. Since any function can be represented as a superposition of energy eigenfunctions, the time evolution of any wave function can then be represented simply as a collective evolution of energy eigenstates. The only important task is to find the coefficients that constitute the superposition [[8.04 QM - 6]]. Since temporal evolution can be separated from spatial evolution, the time-dependent SE can be solved separately by isolating the time and spatial components, yielding an oscillating temporal component modulating the stable spatial component. The oscillating frequency depends on the energy, as indicated by $$e^{-iEt/\hbar}$$ [[Shankar - EM - 24]].
+
 ### Spatial solution
+
 The spatial part of SE is solved by representing the Hamiltonian in terms of operators. By substituting in the representative forms of operators, one solves the partial differential equation and obtains the wave functions that describe the state of the system [[Susskind - QM - 9]]. For 1D systems, the number of nodes equals the energy level, and this can be proven using the screening wall argument [[8.04 QM - 8]].
+
 ### Particle in a box
+
 The particle-in-a-box model places a particle inside a two-step potential energy well. The Hamiltonian of the system contains the kinetic energy of the particle and the potential energy from the well. Without solving the equation, one can deduce the general form of the solution by examining its curvature about the relative energy between the particle and the potential. When the particle has an energy higher than the potential, the solution will be sinusoidal. But when the energy is lower, the solution will be exponential. Since the solution to the SE is fixed given the particle energy and the potential, the solution can take any form, including exponential growth. Therefore, to obtain a physically sensible solution, one has to impose an additional constraint on the solution: it must be a normalizable function such that the particle has a well-defined probability distribution and finite energy [[8.04 QM - 7]]. When the well is infinitely deep, applying the boundary conditions of a vanishing wave function at the wall can easily solve the SE, leading to the quantized wave functions [[Shankar - EM - 23]], [[8.04 QM - 6]]. When the well is finite, the boundary conditions become much more complicated, as the wave function has to be continuous over three regions. The accurate solution requires using a graphical method to solve a transcendental equation. Physically, the widening and deepening of the well lead to more energy levels for the bound states, and it can easily revert to the solution of an infinitely deep well. On the other hand, by narrowing the well while keeping its energy fixed, the limiting case becomes a Dirac delta, which forms an ideal model for atoms and the attractive force between atoms. Here, the energy quantization results from the normalizability constraints on the wave function and the compatibility condition between boundaries [[8.04 QM - 11]].
+
 ### Classical connection
+
 In the particle-in-a-box model, a low-energy particle will have a concentrated probability density at the center. However, when the energy is high, the wave function oscillates with high frequency all over space and has an equal probability of being found everywhere. Therefore, the relative magnitude between the particle's kinetic energy and potential energy determines the transition from quantum to classical systems [[8.04 QM - 7]]. Alternatively, the transition can also be interpreted in terms of the uncertainty principle: When the particle is small, the uncertainty in position is large, which makes it easy to be scattered off from the potential and it behaves quantum mechanically. On the other hand, when the particle is large, its uncertainty in position is small, thus it behaves classically when moving across the potential. These two descriptions are equivalent and the essential measure is the relative magnitude of energies between the particle and potential [[Susskind - QM - 10]].
+
 ### Harmonic oscillator
+
 For a harmonic oscillator, one can either solve the Schrödinger Equation (SE) by brute force using Hermite polynomials, and it is the requirement of the wave function not to explode that gives rise to the quantization in energy levels [[8.04 QM - 8]]. Alternatively, the SE can be solved by the operator method where raising and lowering operators are defined, through which one can solve only the ground state, and the rest follows by using the raising operator. This system cannot have a negative energy ground state as required by the uncertainty principle and the positive Hamiltonian [[8.04 QM - 9]], [[Susskind - AQM - 3]], [[Susskind - AQM - 4]]. The quadratic potential leads to high momentum near the origin due to the large difference in particle energy and potential energy [[Susskind - AQM - 4]].
+
 #### Double-well oscillator
+
 Wave functions in a double-well potential split into symmetric and antisymmetric forms, causing the particle to oscillate and tunnel across the two wells periodically [[Susskind - AQM - 8]].
 
 ## Scattering
+
 The localized wave function of a particle can be represented as a wave packet consisting of a series of plane waves in momentum space, according to Fourier transformation. A wave packet disperses in space with the smearing-out velocity proportional to its initial width. The more concentrated it is, the faster it smears out. Introducing a momentum term into the wave function moves the particle, and it exhibits scattering behavior (transmission and reflection) upon encountering a step function. This treatment is done simply by introducing temporal evolution into the particle in a finite well problem through a time-dependent phase term [[8.04 QM - 12]].
+
 ### Potential step
+
 The scattering of a wave function through a barrier can be generally solved by matching continuity conditions at the boundaries, specifying incident directions, and normalization conditions. Using this set of conditions, one will find particles going down a step have equal chances of being reflected and transmitted, while particles going up a step behave like classical particles with perfect reflection [[8.04 QM - 13]].
+
 ### Potential well/wall
+
 Particles going through a potential well will exhibit resonance when components of particle energy permit perfect transmission. On the other hand, when the potential is a wall, the particle can tunnel through it with a tunneling probability that depends exponentially on the thickness of the well [[8.04 QM - 13]], [[Shankar - EM - 23]]. The perfect transmission through a well is a result of the matching boundary conditions at the well boundaries, or physically, it is the constructive interference of reflected waves within the well. Analysis of energy eigenstates finds that resonance will lead to a slowdown in the propagation of stationary states by a factor of 2 compared to classical expectation due to interference in the well, indicating the potential use of scattering as a way to measure quantum potential [[8.04 QM - 14]].
+
 ### S-matrix
+
 A general formulation of scattering takes the form of an S-matrix equation, where elements in this matrix represent the reflectance and transmittance of waves moving in different directions. The matrix provides a complete description of the quantum system and directly yields bound states in a potential well by lowering the particle energy below the potential [[8.04 QM - 14]].
 
 ## Angular momentum
+
 Symmetry leads to degeneracy, as can be found in 3D free particle and harmonic oscillator systems. The rotational symmetry in 3D requires one to consider operators that involve rotational operations, that is, angular momentum, where there must exist degeneracy due to the rotational symmetry. Using the definition of angular momentum as the cross product of displacement and momentum, one will find that angular momentum along each direction does not commute, while they all commute with the angular momentum squared $$L^2$$. Therefore, $$L^2$$ and any angular momentum form a complete set of commutable observables for a system. Moreover, using angular momentum outside of the set, raising and lowering operators can be constructed, indicating the quantized ladder structure of the system [[8.04 QM - 15]].
+
 ### Eigenfunctions for angular momentum
+
 The generator of angular momentum is the derivative concerning the rotation angle along an arbitrary direction, which is usually the z-direction. This operation has an eigenvalue of the magnetic quantum number $$m$$, and the eigenfunction is of harmonic form, requiring $$m$$ to be an integer [[Susskind - AQM - 2]]. Half-integers are not allowed in this description because they will lead to an identically vanishing wave function everywhere. $$m$$ is bound by $$l$$, an integer, and the angular momentum quantum number, and it is given by the eigenvalue of the $$L^2$$ operator with an eigenvalue of $$l(l+1)$$ for all $$m$$ states. These two quantum numbers determine the wave function of free particles, which is often done by solving the wave function in the ground state and applying the raising or lowering operator [[8.04 QM - 16]]. Assuming a central potential that is rotationally symmetric, the spherical coordinate reduces to a 1D form that can be easily solved by previously developed methods, and the wave function for each combination of $$l$$ and $$m$$ is described by the so-obtained ladders of spherical harmonics [[Susskind - AQM - 3]], [[8.04 QM - 16]].
+
 ### Hydrogen atom
+
 The wave function of an electron in a hydrogen atom can be solved by a Schrödinger equation with kinetic energy in three dimensions and a central potential of Coulomb interaction. Solving the equation through asymptotic analysis and series expansion yields the famous energy ground state of -13.6 eV and the energy level of $$-13.6/n^2$$ eV [[Shankar - EM - 25]]. More importantly, the degeneracy based on the quantum number $$n$$ is not a result of the rotational symmetry [[8.04 QM - 17]]. The large degeneracy from the central potential results from the 4D nature of this problem. Resolving the fine structure inside hydrogen atoms requires relativistic effects and the concept of spin to break the symmetry and lift the degeneracy [[8.04 QM - 18]].
+
 ### Zeeman effect
+
 In light of the Zeeman effect, where the spectral lines of hydrogen split under a magnetic field due to the loss of rotational symmetry, the splitting indicates that atoms carry a magnetic dipole caused by the flux of probability density or the rotating phase of the wave function. The magnetic dipole is proportional to the magnetic quantum number $$m$$ [[8.04 QM - 19]].
 
 ## Identical particles
+
 Since the wave function of two indistinguishable particles must preserve probability under swapping operation, the wave function must then be a linear combination of two possible swapped states, and it can either take a symmetric or antisymmetric form. Particles that take the symmetric form are called Bosons; otherwise, they are Fermions. The vanishing wave function of two Fermions being in the same state leads to the Pauli exclusion principle [[Shankar - EM - 25]], [[8.04 QM - 19]], [[Susskind - AQM - 4]].
+
 ### Topological origin
+
 The swapping operation can be described by 2D rotation in complex space. Since 2D complex rotation is the covering space of 3D real rotation, the sign flipping of Fermions is then in direct analogy to the twisting of a belt where $$4\pi$$ is the full circle instead of $$2\pi$$ [NoahExplainsPhysics 2021](https://www.youtube.com/watch?v=ACZC_XEyg9U). This topological interpretation is a general governing principle for solitons and antimatters [[Susskind - AQM - 5]].
+
 ### Fermi statistics
+
 The distribution function of Fermions is described by $$n_F(\beta(E-\mu))=1/(e^{\beta(E-\mu)}+1)$$, where $$\mu$$ is the chemical potential. The distribution is a step function at zero temperature, and the step becomes less steep as temperature increases, facilitating conducting electrons above the Fermi surface [Simon - SSP - 3](https://chaozhuang22.github.io/physics/solid-state-physics/).
+
 ### Shape of particles
+
 Since bosons have an energy ground state of $$m=0$$, their wave function can have rotational symmetry. In that sense, they can be viewed as a sphere, but this is an average description of the particle. The particle can still have orientation provided one can measure it with fine enough temporal resolution. For Fermions, however, they do not have rotational symmetry because the ground state is half-integer. Therefore, they are in no way spherical [[Susskind - AQM - 8]].
 
 ## Spins
+
 The spins in electrons are described by the spinor matrix notation, with the spin operator in three spatial dimensions represented by the Pauli matrices. According to this formulation, eigenstates of spin in one dimension can be decomposed into a linear combination of up and down spins in z-directions [[Susskind - QM - 2]]. As a result, it provides an experimental means to determine the spin of an electron upon a magnetic field gradient [[8.04 QM - 23]]. Magnetic fields are widely used apparatus to perform unitary operations on spins, as they can rotate the spin from up to down, or the other way around, provided the timing and intensity are appropriate [[8.04 QM - 24]].
+
 ### Quantum computing
+
 The basic idea of quantum computing is to use probabilistic systems in quantum mechanics to construct deterministic outcomes. Utilizing basic operations developed in spin manipulations, one can develop exponentially more efficient algorithms compared to classical computers [[8.04 QM - 24]].
 
 ## Decoherence
+
 One postulate in QM states that the time evolution of a system is governed by the SE, while the other states that when a measurement is made, the wave function collapses to an eigenstate. This contradiction has long been criticized in the Copenhagen interpretation, and in recent years, a new interpretation has been developed to resolve the contradiction, which is known as decoherence. The new theory states that the collapse of the wave function is caused by the interference between the observed system and the observing apparatus, which disturbs the coherent state (time evolution governed by the Schrödinger equation) and makes it decohere (collapse). Therefore, an accurate description of the collapse event should require a full description considering both the observed system and the measurement apparatus [[8.04 QM - 6]].
 
 ## Density functional theory
+
 DFT takes the electronic density distribution as a variable to solve the complex Schrödinger equation involving the kinetic energy of electrons and nuclei, as well as the Coulomb interactions between them. The Born-Oppenheimer approximation treats the nuclei as fixed to reduce the complexity of the problem. The Kohn-Sham equation looks at one electron at a time, which further simplifies the problem such that it can be solved by an iterative process. DFT can be used to calculate the electronic structure of single molecules or large condensed matter systems, which often involves different initial guesses on electronic density, and there are a variety of exchange-correlation functionals to account for the collective effect of electronic interactions [Timm DFT - 1](https://www.youtube.com/watch?v=Ez_Fm4iTUeo).
+
 ### XC functional
+
 The local density approximation is the simplest option, but the accuracy is low. Improvement can be made by including higher-order terms in the Taylor expansion, such as the generalized gradient approximation and hybrid gradient, where both short-range and long-range interactions are taken into consideration. In general, DFT is more accurate in calculating molecular geometry than interaction energy landscapes [Sherrill QC - 2](https://www.youtube.com/watch?v=QGyfGCZT110).
+
 ### Applications
+
 DFT can be used to calculate detailed lattice constants [Timm DFT - 2](https://www.youtube.com/watch?v=ZihEIk4e6tw) as well as molecular geometry [Sherrill QC - 2](https://www.youtube.com/watch?v=QGyfGCZT110). However, generic DFT does not apply to describe excited states of molecules because DFT is an algorithm that assumes ground-state configurations [Sherrill QC - 1](https://www.youtube.com/watch?v=MlbKoXACAx8).

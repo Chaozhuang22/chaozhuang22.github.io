@@ -8,9 +8,11 @@ header:
 ---
 
 ## Introduction
+
 Nanomechanical sensors have emerged as powerful tools for detecting surface stress changes at the nanoscale. Their unparalleled sensitivity and precision have paved the way for advancements in fields such as material science, biology, and medicine. However, accurately modeling their behavior, particularly when dealing with nonlinearities, can be intricate. This tutorial delves into the process of modeling the nonlinear mechanical behavior of these sensors using Finite Element Analysis (FEA) in COMSOL. It serves as a foundational guide to understanding the modeling and implementation of the thin film-based [stiffness tuning methods](https://doi.org/10.1021/acsaenm.3c00034).
 
 ## Understanding Sensor Behavior
+
 Nanomechanical sensors consist of two primary layers: the immobilization layer, often made of gold or polymer, and the silicon layer. When the immobilization layer interacts with external molecules, it can cause a strain mismatch with the silicon layer. This mismatch is associated with the surface stress in the layer, which causes the silicon layer to bend, producing piezoresistive signals at the embedded piezoresistor. These signals can then be harnessed to quantify the extent of the chemical interaction. An example can be found [here](https://www.science.org/doi/10.1126/science.288.5464.316).
 
 <figure style="width: 50%" class="align-center">
@@ -105,6 +107,7 @@ First of all, let's make an animation.
 </figure>
 
 Once the simulation is complete, one can look at the displacement profile of the sensor. The membrane deforms differently depending on the level of prestrain in the silicon. When there is no prestrain, the profile contour is circular; when there is a high prestrain, the profile contour is a square shape.
+
 <figure class="half">
 
   <a href="/assets/images/fea-tutorial/disp-1.jpg" alt="sensor displacement">

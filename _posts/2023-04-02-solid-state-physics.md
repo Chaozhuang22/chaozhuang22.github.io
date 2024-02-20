@@ -17,69 +17,116 @@ header:
 </figure>
 
 ## Classical Theories for Specific Heat
+
 The temperature dependence of specific heat is classically described by the law of Dulong-Petit, which states that the heat capacity of a monatomic gas is \\(3k_B/2T\\), while the solid is \\(3k_BT\\), which is double of that of the former. This phenomenon is explained by Boltzmann's model where atoms in solids are modeled as 1D harmonic oscillators. Atoms in solids have three additional degrees of freedom of position compared to translationally symmetric monatomic gas, in addition to the three directions of momentum that they share. Therefore, solids have twice the heat capacity, as required by the equipartition theorem [1].
+
 ### Einstein's Model
+
 However, at low temperatures or in diamonds, the heat capacity is extremely low and deviates significantly from the Dulong-Petit law. This deviation is explained by Einstein, who introduced quantization to Boltzmann's model. According to Einstein's model, at low temperatures, the thermal energy is not sufficient to excite atoms out of the ground state, resulting in a diminishing heat capacity. Furthermore, the low heat capacity of diamond is a result of its high Einstein frequency, caused by the low atomic mass and strong C-C bonds. Consequently, it requires very high energy to excite from the ground state and diamonds have a low heat capacity even at room temperature. Although Einstein's model explains the temperature dependence of heat capacity, the resulting exponentially decaying heat capacity at low temperatures still differs from the cubic dependence observed in experiments [1].
+
 ### Debye's Model
+
 Debye later expanded on Einstein's model by considering not just one harmonic oscillator, but a collection of oscillators in a crystal lattice. Quantizing vibrational modes in a solid lattice using a density of states description yields the cubic dependence observed at low temperatures. Moreover, the high-temperature limit is fulfilled by introducing a cutoff frequency to the frequency integral, leading to the Dulong-Petit law [2].
 
 ## Fermi Statistics
+
 Sommerfeld theory builds on Debye's model with an additional assumption that electrons, which are responsible for absorbing thermal energy, follow Fermi statistics [3]. Integrating energy over the density of states and the Fermi function yields the total energy in the system, and its derivative provides the specific heat. The specific heat predicted by Sommerfeld's theory resolves all heat capacity problems in classical physics and gives accurate predictions on thermoelectricity [4]. The introduction of Fermi statistics also resolves the ultraviolet catastrophe in blackbody radiation by introducing a cutoff frequency and Planck's constant.
 The issue is, however, that this theory predicts a very large mean free path of electrons traveling in solids due to the high velocity of electrons at the Fermi surface [4]. The large mean free path can be understood by considering electrons as waves in the lattice that travel by hopping between atoms. Since electrons do not scatter with atoms, they can naturally have a large mean free path [8]. The large mean free path is described more rigorously in the later development of band theory [14].
+
 ### Monatomic and Diatomic Harmonic Chain
+
 Aside from using the language of harmonic oscillators developed above, the vibrations of atoms in solids can also be modeled as an infinitely long chain of atoms connected by springs. Using Newton's second law and assuming a wave-like solution, this leads to a dispersion relation as a sinusoidal function. At the low k limit of sound waves, the dispersion relation can be approximated by a linear function of k, plus a cutoff frequency at the maximum of the sinusoid, reproducing results in Debye's model [6].
 When each unit cell consists of two different atoms or the chain is connected by alternating soft and stiff springs, repeating the procedure for the monatomic chain and solving the eigenvalue problem as a result of two spring constants yields a dispersion relation consisting of acoustic and optical modes. The former resembles sound waves at the low k limit, and the latter supports photon-phonon interaction due to the higher intrinsic frequency [7].
+
 ### Phonon
+
 Phonons are the quantized modes of oscillation in the infinite chain model. They follow boson statistics, and there can be an infinite number of phonons in the same state. Using this quantum mechanical description, the exact heat capacity can be calculated by taking the second derivative of the total energy, which is the sum of all phonon mode energy.
 Moreover, momentum conservation is no longer valid in solids [Kivelson-2, recent advances in superconductors](https://www.youtube.com/watch?v=ROwLS0cKUN4) because the transition from continuous symmetry to discrete symmetry breaks the momentum conservation observed in the liquid phase, resulting in limited conservation of momentum in solids [6].
 Phonons can interact with light, but they can only occur in optical modes, as they are the only phonon modes that conserve momentum upon interactions with photons. Furthermore, the need to conserve angular momentum requires that such interactions must occur in a multiple photon-one phonon manner [7].
+
 ### Tight Binding Chain
+
 Introducing Schrodinger's equation (LCAO) to describe the electron orbits of a long chain of atoms, the covalent bonds in previous models become a continuous dispersion relation or an energy band, with each k corresponding to an eigenstate with a defined energy. Metals often have a half-filled band, making them good heat and electricity conductors, as external energy fields can disturb the free Fermi surface and skew the original electronic distribution, causing flows of heat and electricity [8].
 
 ## Band Theory: Modern Solid State Physics
+
 Instead of viewing vibrations in a solid as a long chain where phonon modes emerge, electron behaviors in periodic lattices can also be described as a single electron perturbed by a periodic potential, which is known as the nearly free electron model. The singularity at the BZ boundaries is resolved by degenerate perturbation theory, which treats the two diverging states as interactive states and calculates their mixed state according to the LCAO method. This treatment leads to a bandgap opening with a magnitude twice as large as the periodic potential amplitude. The opening is caused by the splitting energy of states at the BZ boundaries as they interact. Mathematically, it is required by the variational principle, where one function needs to maximize its similarity with the potential, while the other needs to minimize, resulting in the splitting energies [15].
+
 ### Bloch Theorem
+
 The fundamental assumption in solid-state physics, the Bloch theorem, states that the electronic wave function in a lattice takes the form of a modulated plane wave. With such a wave function, electrons move like waves in solids without being scattered by the potential as the electron-lattice interactions and the effect of the periodic potential are already encapsulated in the wave function [14].
+
 ### Band Theory
+
 The band structure obtained from the tight-binding model and Bloch theorem forms the basis of solid-state physics and can explain many optical and electrical properties in solids. Light absorption in solids is mediated by electronic interband transitions. The detailed band structure leads to different colors in metals. The size of the bandgap determines the wavelength of transmitted and absorbed light. Light absorption is dominated by direct absorption because photons have small momentum, while indirect absorption rarely occurs because it requires the participation of phonons to satisfy momentum conservation [16].
 Although the band theory has been successful in predicting optical and electrical properties in solids, it fails to explain Mott insulators and magnetism because it underestimates the interaction energy between electrons [16].
+
 ### Crystal
+
 The crystal structure is described by lattice, unit cell, and basis. The primitive unit cell is the smallest repeating unit of the crystal, often defined by the Wigner-Seitz construction. The lattice defines the translation vector that relates all other unit cells to the original cell, and the basis describes the relative placement of atoms within a unit cell. This description applies to 3D structures as well, but Bravais lattice types are often used instead of primitive unit cells (Wigner-Seitz construction) because they have a more convenient orthogonal shape [9]. Note that as a generalization of the Wigner-Seitz construction, Voronoi cells tessellate space by bisecting lines between irregular lattice points. This partition scheme is particularly useful in applications like pizza delivery [9].
+
 ### Reciprocal Space
+
 The lattice structure in direct space can be transformed into a reciprocal lattice via Fourier transformation. The representation in reciprocal space is similar to the direct space, consisting of a collection of discrete delta functions [10]. Primitive lattice vectors (PLV) in direct space can be transformed into PLV in reciprocal space, and they can be used to construct reciprocal lattices that describe families of planes in real space based on Miller indices and the method of intercepts, providing a language to describe scattering phenomenon [11].
+
 ### Brillouin Zone
+
 Translational symmetry leads to the same symmetry in k-space, making each Brillouin zone separated by period \\(2\pi/a\\) equivalent. This equivalency does not imply infinitely high k modes but should be understood as aliasing since the spatial oscillation describes the positions of atoms, not temporal oscillation [6]. The Brillouin zone (BZ) can be drawn in an extended form where every k corresponds to only one frequency, with acoustic mode called the first BZ, and optical mode called the second BZ. This representation facilitates a smooth transition of description from the diatomic chain to the monatomic chain [7].
 The electronic band can also be represented in the Brillouin zone with a quadratic dispersion relation, distinct from the linear relation in phonons. Moreover, unit cells with multiple orbits lead to different modes in the dispersion relation, analogous to the case of diatomic chains [8].
+
 ### 3D Brillouin Zone
+
 The Brillouin zone is the primitive unit cell in reciprocal space, and it can be drawn in 3D using the Wigner-Seitz construction with BZ walls separated by the reciprocal lattice vector G. Additionally, the 1st, 2nd, 3rd, or higher-order BZs have the same area because k is identical after additions of G [14]. The band structure in 3D can be visualized as a spherical Fermi surface encapsulated by the BZ. The energy reduction near the BZ boundary causes the Fermi surface to deform, leading to various conduction properties of single and double valence materials [16].
+
 ### Scattering
+
 The scattering intensity of a material is determined by Fermi's golden rule, which states that the scattering intensity is determined by the integral of lattice potential and incident/scattered waves. By assuming elastic scattering and periodic potential, the Laue condition (equivalent to Bragg's diffraction) requires scattering signals only when the vector difference between incident and scattered waves equals a reciprocal lattice vector, with a structure factor determining the signal intensity and yielding information on the lattice potential [11]. 
 Since lattice and basis form a complete description of lattice structure, they can also be used to describe scattering. This description leads to selection rules in different lattices, which define the allowable G that describes families of planes in materials [12].
 Single crystals can be analyzed by shooting X-rays or neutrons at the sample, either by rotating the sample or changing the wavelength to obtain a full spectrum. However, experimental samples are often polycrystalline, requiring a different measurement technique known as the Debye-Scherrer method. This method records the scattering pattern and plots scattering intensity against angle. Using Bragg's diffraction formula, one can determine the lattice type by matching peak locations with the corresponding selection rule of a specific lattice, and derive the basis information from the relative peak intensity [13].
 Note that different scattering light sources generate different information about the lattice. Neutrons scatter with atomic nuclei while X-rays scatter with electrons; therefore, their diffraction patterns depend on the nuclear scattering length and electron form factor, respectively [12].
 
 ## Semiconductor
+
 Due to the low carrier density in semiconductors, Fermi statistics can be safely ignored, and carrier kinetics in semiconductors are well-described by the Drude theory. Drude theory describes conductivity in metals through the kinetics of electron motion, where the acceleration of electrons is determined by the Lorentz force and scattering events. Taking the equilibrium limit, meaning the acceleration is zero, the theory yields the relationship between current and Lorentz force. When there is no magnetic field, this relationship defines conductivity [2].
 The addition of dopants can be viewed as the addition of hydrogenic particles into the lattice but have different properties than free-moving ones due to their effective mass and the correction of the relative dielectric constant in their Coulomb interactions. Dopants often create a small energy band near the valence or conduction bands, depending on the type of dopants. Adding dopants is equivalent to adding charge carriers to the conducting band, and this treatment is justified by their small bandgap with other bands compared to thermal excitation [17].
+
 ### Electrical Properties
+
 The conductivity in semiconductors is determined by the electron-hole creation process. As electrons get excited into the conduction band, they leave behind a positively charged hole. Both contribute to conductivity. Introducing impurities with fewer or more electrons than silicon can change the electron and hole balance, altering the electrical properties [16].
+
 ### Law of Nass Action
+
 The carrier density in semiconductors is determined by the law of mass action, where the product of electron and hole density (also called intrinsic carrier concentration, independent of doping level) is an exponential function of temperature and energy gap. On the other hand, the difference between two densities is determined by the doping level. When the n-type doping level increases, it changes the chemical potential, leading to an increase in electron density and a decrease in hole density [17].
+
 ### Carriers Mobility
+
 The mobility of electrons and holes is quantified by their effective mass, defined as the second derivative of their dispersion relations. The higher the hopping energy (atomic interactions), the lower the mass, and the higher the mobility [8]. Holes and electrons have opposite mass and momentum; therefore, currents move in the same direction along atomic orbits [17].
+
 ### Applications
+
 Semiconductors can be used to create quantum wells, where materials with highly similar lattice constants but with different band structures are combined to create step potentials equivalent to a particle in a box [18]. Moreover, a PN junction can be created by putting n- and p-type semiconductors together, which can be used to create solar cells and rectification devices [18].
 
 ## Mott Insulator
+
 Mott insulators are materials, primarily consisting of transition metal oxides, that exhibit strong electronic correlations. The electronic interactions in these materials are significantly stronger than the hopping energy, which contradicts the band theory and results in a halt of electron motion within the lattice, leading to insulating properties. Mott insulators display various properties, including high-temperature superconductivity and metal-insulator transitions [16] The quantum phase transition from insulator to superconductor and then to metal is analogous to the classical solid-liquid-gas transition [Hartnoll-1, superconductor as a quantum liquid](https://www.youtube.com/watch?v=L5WY9xGPjS4), and the transition can be controlled through chemical doping, pressure, and THz light excitation [Cavalleri](https://www.youtube.com/watch?v=-isot515Gb0). In recent years, magic angle twisted bilayer graphene has been suggested as a more efficient system to study quantum phase transition because the doping level can be easily controlled by electrical bias  [Jarillo-Herrero, a talk in MIT](https://www.youtube.com/watch?v=iTrUlC4DbdE).
+
 ### Bose-Hubbard Hamiltonian
+
 Mott insulators can be described by the Bose-Hubbard Hamiltonian, where conductivity is determined by the ratio of two competing interactions. When the ratio is far larger than one, the particles are in deep wells and insulate; when the ratio is far smaller than one, the particles superconduct [Cardy](https://www.youtube.com/watch?v=_jFi531VHaY).
+
 ### Superconductivity
+
 Superconductivity is an emergent phenomenon of electrons because macroscopic superconductivity cannot be predicted by considering the interaction of finite numbers of electrons. It can be considered simply as a charged superfluid and is facilitated by the boson statistics of Cooper pairs mediated by induced attraction. The characteristics of a superconductor include zero resistivity or infinite decay time of the quantized magnetic field. Superconductors exhibit the Josephson effect and the Meissner effect. The former describes the oscillation frequency of current flowing through a superconducting junction as being exactly the same for different samples, and the latter describes the penetration of superconductor under a magnetic field: those that can be fully penetrated are called type I, while those that penetrate through discrete points of defect are called type II [Kivelson-1, an introduction to superconductors](https://www.youtube.com/watch?v=Yx666k2XH8E).
+
 ### Cooper Pair
+
 Under low enough temperatures, electrons with completely time-reversed trajectories constitute a pair that behaves like a boson, forming a condensation-like superfluid and losing the conservation of the number of electrons. In high-temperature superconductors, the formation of Cooper pairs has been hypothesized to result from the half-filled electron state of the materials, where electrons form pairs despite electronic repulsion, as it is energetically favorable [Kivelson-2](https://www.youtube.com/watch?v=ROwLS0cKUN4).
+
 ### Condensate
+
 Electrons in superconductors exist in the form of a condensate, which gives mass to photons and forbids the propagation of an electric field. Since an electric field can no longer pass through the condensate, electrons cannot feel each other through electrostatic interactions. Under these conditions, electrons move past each other without interactions, leading to the phenomenon of superconductivity [Hartnoll-2](https://www.youtube.com/watch?v=RIrZnhHTBS8).
-Superconductors as a state of quantum liquid form a duality pair with black holes. The particles' lifetime in a quantum liquid is proportional to the inverse of temperature, which resembles the diffusivity of matter in black holes [Hartnoll-1](https://www.youtube.com/watch?v=L5WY9xGPjS4). 
+Superconductors as a state of quantum liquid form a duality pair with black holes. The particles' lifetime in a quantum liquid is proportional to the inverse of temperature, which resembles the diffusivity of matter in black holes [Hartnoll-1](https://www.youtube.com/watch?v=L5WY9xGPjS4).
+
 ### Quantum Coherence
+
 When a superconducting ring is exposed to a magnetic field, the quantization of allowable magnetic fields causes the ring to exhibit discretized energy levels, depending on the magnetic field density. The introduction of a junction further induces oscillating potentials, which lower the energy barriers between each energy level. This allows the system to tunnel between states or overcome them through thermal fluctuations, turning the system into a qubit capable of storing information [Kivelson-2](https://www.youtube.com/watch?v=ROwLS0cKUN4).

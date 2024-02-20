@@ -18,81 +18,138 @@ header:
 </figure>
 
 ## Introduction
+
 Plasma physics has been driven by the ultimate goal of controlled fusion. It began to develop systematically in the 1950s and matured by the 1980s when various applications emerged, making it a discipline of plasma engineering [27b]. Plasma is a state of matter where the interaction between particles is primarily electromagnetic forces, which are predominantly long-range and collective, distinct from the two-body interaction in neutral particles in a gas [1a].
 
 ## Single Particle Orbits
+
 Single particle orbits in plasma can be described by various parameters. Despite its highly charged nature, the interaction between charges does not entirely follow the inverse square law from electrostatics because of the Debye shielding effect. This effect describes a layer of polarized charges surrounding a charged particle, which leads to an exponential decay term to the Coulomb force between charges [1b]. The size of devices considered in the lab is often much larger than the Debye length, which allows one to ignore all the electromagnetic interactions within the Debye length and consider the whole plasma as a fluid [2a].
+
 ### Gyromotion
+
 The motion of plasma can be described by momentum conservation, that is, Newton's second law, under the Lorentz force law. Plasma accelerates under an electric field as \\(ma=qE\\), while it gyrates around magnetic field lines as \\(ma=qv\times B\\) in a direction that cancels the original magnetic field. Therefore, they are said to be diamagnetic. The frequency of gyromotion is called the cyclotron frequency, given by \\(\omega_c=qB/m\\), and the gyroradius is given by the velocity over the cyclotron frequency [3a]. With the two motions superposed, charged particles exhibit helical motion along and about the magnetic field line.
 The derivation can be done in Cartesian coordinates, leading to a harmonic oscillator solution describing the gyromotion perpendicular to the magnetic field. The magnetic moment of the gyromotion can be treated as a constant when the magnetic field is homogeneous [3b]. The constant magnetic moment is required by the so-called "adiabatic invariant," which represents the invariant quantity of an oscillating system under the equilibrium assumption, including magnetic moment \\(\mu\\) for gyromotion, \\(J\\) for bouncing motion, and \\(\phi\\) for drift motion [5b].
+
 ### Drifting Motion
+
 When both electric and magnetic fields are present, the electric field not only accelerates particles along magnetic field lines, but it also leads to an \\(E\times B\\) drifting motion away from the field line. This additional drifting term can be generalized to any other force [4a].
+
 ### Inhomogeneous Field
+
 When the gyroradius is small, the inhomogeneity in a magnetic field can be represented as the gradient of the field, which is a tensor that contains the spatial variation of the magnetic field, including divergence, curvature, density gradient, and the twisting of the field [4a]. Particles climbing uphill on the field gradient experience a repulsive force, which slows them down along the field line but with an enhanced gyromotion as required by the adiabatic invariant. When the total energy of particles cannot overcome the energy barrier imposed by the magnetic field, the plasma will be confined and bounce within the magnetic field, constituting the fundamentals of magnetic confinement [4b].
 The inhomogeneous magnetic field leads to the drifting of particles through a curvature \\(\nabla B\\) term and time-dependent contributions from electric and magnetic fields. The drifting motion, bounce motion, and gyromotion are separated in time by two orders of magnitude each [5a].
 
 ## Collective Description
+
 Due to the computational load of tracking the motion of all particles, it is often more efficient to treat plasma as an effective dielectric medium with its dielectric and susceptibility tensor calculated from the current and charge densities. This is done by assuming the plasma as a fluid and averaging particle motion over spatial and velocity space, thereby leading to an averaged description of current and charge densities [6a]. For example, using the polarization-induced drift current, one finds that the resulting dielectric constant is thousands of times larger than that of a vacuum, indicating the highly polarizable nature of plasma. The amplification of polarizability is a result of the large ratio between the gyroradius and Debye length or the large ratio between the speed of light and the Alfven speed [6b].
+
 ### Fluid Description
+
 The fluid description of plasma is built upon the assumptions of constant and uniform temperature and pressure. By replacing particle velocity with fluid velocity, the basic formulation becomes the continuity equation and momentum conservation. The major difference in this description from single-particle orbits is the addition of the continuity equation and a pressure gradient term in the momentum conservation [7a].
+
 ### Perpendicular Motions
+
 Consider the plasma motion in a cylindrical pipe perpendicular to the magnetic field lines. A new term that describes diamagnetic current appears due to the inhomogeneous pressure gradient from the center to the pipe wall, which is not present in single-particle orbits [7a].
+
 ### Parallel Motions
+
 There can be two kinds of plasma response parallel to the magnetic field: adiabatic response and fluid response. The former occurs when particle motion is much faster than the plasma, and the latter is the reverse. The adiabatic response leads to the Boltzmann relation between particle density and electric potential. Under a zero magnetic field, the adiabatic response states that a high density of particles will also lead to a high local potential, constraining the motion of fast-moving plasma and maintaining quasineutrality [7b].
+
 ### Plasma Oscillation
+
 Under zero B field and zero thermal motion, the oscillating plasma wave can be formulated by combining the continuity equation, momentum conservation with force from electric potential and charge density, and Poisson's equation from electrostatics. These equations are generally unsolvable, and they are often solved by numerical computation [8a]. Alternatively, linearization with small perturbation can simplify the problem via the quasineutrality assumption, which leads to a second-order partial differential equation for particle density [8b]. The PDE indicates that the plasma exhibits a fundamental oscillation mode caused by fast electron oscillation, which is coupled with electrons' thermal motion with a velocity given by the Debye length over the oscillation period [9a].
+
 ### Electron Plasma - Thermal Dispersion (Bohn-Gross Dispersion)
+
 By assuming a wave-like equation in one direction, the second-order PDE of electron plasma can be solved exactly, yielding the thermal dispersion relation, which relates the frequency of plasma oscillation and electron thermal motion, known as the Bohn-Gross dispersion [9a]. This dispersion relation is characterized by a quadratic relation between frequency and wavenumber, and it asymptotes to the thermal velocity [10a].
+
 ### Ion Plasma
+
 Compared to sound waves, the ion wave undergoes a force exerted by the electric field. The ion wave has a typical oscillation frequency that is far smaller than that of electrons, resulting in a fluid-like description [10a]. In ion plasma, the plasma oscillates like sound waves provided that the wavenumber is small within the Debye shielding and the electron plasma effectively functions as an adiabatic background. At large wavenumber, the thermal effect sets in, and the plasma exhibits a quadratic dispersion relation again. The transition region between the two is called ion plasma, and it is characterized by the enhanced oscillation of ions under the effect of thermalized electron plasma [10b].
 
 ## Waves in Plasma
+
 In electrodynamics, Gauss' law and no magnetic monopole equation are encompassed in Faraday's law and Ampere's law, respectively. Assuming no magnetic wave, linearizing Maxwell's equations and substituting it into the continuity equation of plasma, yields the dispersion relation of electromagnetic wave in a plasma [11a]. The dispersion relation states that the angular frequency is quadratic to the wavenumber. Moreover, the phase and group velocities tend to the speed of light at large wavenumbers. When the incidence of an EM wave has a frequency smaller than the plasma frequency, the EM wave will decay exponentially fast at the plasma surface, and the penetration depth is known as skin depth, which is similar to the case of a metal surface [11b].
+
 ### EM Wave in Magnetized Plasma
+
 The magnetization of plasma is introduced through the Lorentz force in the momentum conservation equation. Ignoring thermal motion, i.e., in cold plasma, the momentum conservation leads to the conductance tensor as a function of current under the electric field. Substituting this relation into Ampere's law leads to the dispersion relation of EM wave traveling in a magnetized plasma [12a]. At the zero-frequency limit, the dielectric tensor resembles the result derived in the static case, where there is no magnetic field contribution along the parallel direction, and in the perpendicular direction, the polarization-induced drift current arises [12b].
+
 ### Waves in Different Directions
+
 EM wave propagating in magnetized plasma exhibits different dispersion relations for different electric field directions. When the electric field is parallel to the magnetic field, the wave is called an ordinary wave, and it exhibits a dispersion relation as if there is no magnetic field. When the electric field is perpendicular, the wave is called an extraordinary wave, and it is elliptically polarized with a dispersion relation that is associated with the hybrid frequency of ions and electrons [13a]. Extraordinary waves exhibit multiple cutoff frequencies and resonance frequencies that are distinct from ordinary waves [13b].
 
 ## Diffusion and Resistance
+
 Resistance in plasma occurs due to collisions between particles, specifically between electrons and other species, including neutrals, electrons themselves, and ions. Collisions introduce an ionization source term in the density conservation equation and a friction term in the momentum conservation. From this formulation, one can derive the polarization of plasma due to an applied electric field, which leads to Ohm's law, conductivity, and resistivity of plasma. It turns out that the conductivity is higher when the electron temperature is higher because fast-moving electrons have a low collision rate [14a]. The same approach also leads to Ohm's law of magnetized plasma, which is slightly different from the previous case as it can generate Hall current [14b].
+
 ### Collisions
+
 In general, the particle velocity in plasma follows the Maxwellian distribution. However, when a plasma is under an electric field, the electric field tends to accelerate the fastest-moving electrons, leading to an increasingly skewed distribution. Simultaneously, the distribution is prevented from becoming more skewed by the counteracting effect of e-e collisions, which leads to a correction term in the plasma conductance [14b]. The collision rate between particles is calculated based on the collision cross-section derived from the Lorentz collision model, which requires kinetic theory to make an accurate description. Under a high collision rate, the relative velocity between all particles tends to zero exponentially in time, eventually reaching thermal equilibrium. For lab plasma, collision frequency is far smaller than plasma frequency, and they are often ignored [14a].
+
 ### Diffusion
+
 The diffusion of particles in plasma can be derived from momentum conservation under the forces of electric field, density gradient, and friction. The friction force contributes a flux term, and it is related to the electric field and density gradient through mobility and diffusivity. Since electrons and ions have different mobilities while the plasma must remain quasineutral, this condition requires that the outflow or inflow of electrons and ions in a unit volume must be equal. The quasineutral condition gives rise to an internal electric field in plasma to balance the different mobilities. Plugging this relationship into momentum conservation yields an effective diffusivity of plasma being twice that of the ions, which means that the plasma diffusivity is determined by the slow species, the ions [15a].
+
 ### Diffusion in Magnetized Plasmas
+
 In magnetized plasma, the diffusivity is anisotropic, and the diffusivity in the parallel direction is proportional to the mean free path, while in the perpendicular direction, it is proportional to the gyroradius. Therefore, the diffusion in the parallel direction is far larger than in the perpendicular direction [15b]. 
 When comparing the diffusivity of electrons and ions, although one may argue based on a random walk that the electron diffusivity in the perpendicular direction is faster than that of the ions, they have the same diffusivity, as required by the quasineutral condition. This is because the random walk considers only the thermal velocity, and it requires considerations of momentum and density conservation in the fluid to give a full account of the diffusivity of ions and electrons in magnetized plasma [16a].
 
 ## Equilibrium and Instabilities
+
 The ideal magnetohydrodynamics (MHD) equilibrium assumes that the plasma is in equilibrium, with no flow and no time-dependent terms. By coupling these assumptions with Maxwell's equations, the ideal MHD equilibrium equations are obtained. Equilibrium requires the pressure gradient to be perpendicular to the magnetic field and current, and the pressure to be constant along the magnetic field line. In cylindrical coordinates, the relative strength of plasma pressure and magnetic pressure is quantified by \\(\beta\\), and magnetic confinement is only possible when \\(\beta\\) is small [17a].
+
 ### Force Balance
+
 The equilibrium of the plasma is maintained by the counterbalance between the expanding pressure term, which includes plasma pressure and magnetic pressure, and the field line curvature-induced tension force [17b], [Kunz](https://www.youtube.com/watch?v=A9pUXEI128U). Electromagnetic waves propagating along the magnetic field result in shear Alfvén waves, while perpendicular waves result in compressional Alfvén waves [13b].
+
 ### Frozen Flux Theorem
+
 The frozen flux theorem states that in a superconducting plasma, magnetic field lines and plasma motions are bound together, and the expansion of the plasma will also lead to the expansion of field lines [17b]. When resistivity is introduced to the plasma, magnetic field lines start to diffuse and are no longer frozen to the plasma [18a].
+
 ### Instabilities
+
 - **Interchange Instability**: Analogous to Rayleigh-Taylor instability caused by gravity at the interface between two fluids, the inhomogeneity in the magnetic field plays the same role as gravity and governs the instability in plasma called interchange instability [18a]. This instability requires the plasma to be located at valleys of the magnetic field or regions with large magnetic field curvature [18b].
 - **Two-Stream Instability**: The two-stream instability describes instability that occurs when the electron density is larger than the product of the wavenumber of the fundamental mode and fluid velocity. This instability sets an upper limit on the plasma density that can be held by the given boundary conditions [19a].
 - **Drift Instability**: This instability is known as microturbulence. It arises from the drift current and exists in almost all plasma. Due to its small length scale, it is also far less consequential compared to interchange and two-stream instability [19a].
 
 ## Kinetic Theory
+
 Instead of using the continuity equation and momentum conservation, the kinetic theory begins by describing the plasma in 6-dimensional phase space and deriving plasma properties by assuming a distribution function [19b].
+
 ### Kinetic Equation
+
 The kinetic equation of plasma describes the time evolution of the distribution function as a result of some collision operator acting on the distribution function. The most commonly used operator is the Fokker-Planck operator, which consists of a dynamic friction term and a diffusion term in velocity space [20a].
+
 ### Vlasov Equation
+
 If one neglects collisions, it yields the Vlasov equation. Taking moments of the Vlasov equation yields the density and momentum conservations in tensor form. However, the issue with the Vlasov equation is that there is no closure relation to yield a closed-form solution [20a]. This equation conserves entropy, which is equivalent to saying that the plasma is incompressible in 6-D phase space. Moreover, a distribution function is stable only when it is a monotonically decreasing function of energy [20b].
+
 ### Landau Damping
+
 Another consequence of the collisionless assumption is that the plasma exhibits a singularity at \\(\omega=kv\\) in its dispersion relation [21a]. Performing Laplace transformation on the Vlasov equation and Gauss' law leads to a dielectric function that contains a singularity. The singularity becomes an imaginary residual term via inverse Laplace transformation, and it is the source of Landau damping [21b]. Essentially, Landau damping is a result of the resonance between plasma particles and waves. Since the Maxwellian distribution has more slow-moving particles than fast-moving ones, particles tend to take energy from the wave instead of contributing, which leads to a boundary layer of particles near the resonance point (as the resonance tries to smooth out the velocity difference) and the damping of the propagating waves. Experimental measurements confirm that the damping is small, at around 1% in laboratory plasma [22a]. The same phenomenon occurs for ions but at a far smaller velocity [22b].
 When there are two bumps in the distribution function, bump-on-tail instability occurs where Landau damping can enhance wave energy, as a small portion of the distribution has a non-negative slope [22b].
+
 ### Magnetized Plasma
+
 To apply kinetic theory to magnetized plasma, one starts from the Vlasov equation again and perturbs it to solve the resulting 7-variable partial differential equation by the method of characteristics, where the particle motion is governed by gyromotion [23a]. Through the dispersion relation, one finds that the effect of the magnetic field is determined by the ratio of perpendicular velocity and cyclotron frequency. In special cases of zero parallel velocity, the plasma exhibits cyclotron resonance with Bernstein modes of integer multiples of cyclotron frequency [23b].
 
 ## Nonlinear Processes
+
 In general, the nonlinear terms can be taken into account by an iterating process, and in special cases where the wave amplitude is small enough, the solution will converge [25].
 ### Plasma Sheath
+
 When a plasma is contained in a container, electrons move away from the ions due to the high thermal velocity, which results in a positively charged center at the bulk plasma and a sheath of negative potential at the container wall. The potential sheath is formed such that the sheath potential is strong enough to repel incoming electrons and accelerate ions to move faster than the speed of sound in the plasma [24a]. The maximum current that can be drawn from the plasma is proportional to 3/2 power of applied negative voltage, which is known as the Child-Langmuir law [25].
+
 ### Langmuir Probe
+
 Langmuir probe, especially the two-probe version is often used to measure electron temperature in plasmas. The floating potential, that is, the required bias to set the current in the probe to be zero, is the wall potential in the plasma sheath. Further, the area of the probe is determined by the physical radius of the probe, Debye length, and the gyroradius if a magnetic field exists [24b].
+
 ### Wave-Particle Interactions
+
 When particles interact only with one wave, the interaction is called coherent. In general, perturbation theory is not useful for nonlinearities in wave-particle interactions, and it often requires complicated methods like the use of quadrature and elliptic integrals to solve for the particle motions. In these nonlinear interactions, nonlinear phenomena such as soliton arise [26a].
+
 ### Turbulence
+
 Similar to turbulence in fluid dynamics, the turbulence in plasma is characterized by the Lundquist number that quantifies the ratio of diffusion and convection of magnetic field. The many-body interactions in turbulent regimes require a statistical description of turbulent behaviors [26b].
