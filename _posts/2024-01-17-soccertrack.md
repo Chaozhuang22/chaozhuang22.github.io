@@ -75,10 +75,14 @@ The characteristic area's evolution shows non-stationarity, evident from signifi
 
 Notably, a significant dip in Team 1's characteristic area around the 15-minute mark corresponds to a timeout before a corner kick, where Team 1 players formed a small circle for strategy discussion. A similar pattern is observed at the 28th minute, marking another short timeout. The timeouts are also apparent in the histogram as the small peak left of the main peak.
 
-<figure class="half">
+<figure style="width: 75%" class="align-center">
   <img src="/assets/images/soccertrack/img6.jpg" alt="A time series plot with associated diagnostics showing the evolution of Team 1's characteristic area over the 30-minute match, revealing non-stationarity and significant correlations at small lags.">
+  <figcaption>The time series of the characteristic areas of Team 1.</figcaption>
+</figure>
+
+<figure style="width: 75%" class="align-center">
   <img src="/assets/images/soccertrack/img7.jpg" alt="A time series plot with associated diagnostics showing the evolution of Team 2's characteristic area over the 30-minute match, revealing non-stationarity and significant correlations at small lags.">
-  <figcaption>The time series of the characteristic areas of (left) Team 1 and (right) Team 2.</figcaption>
+  <figcaption>The time series of the characteristic areas of Team 2.</figcaption>
 </figure>
 
 ### Synchronization
@@ -111,10 +115,14 @@ The time series of the order parameter $$\phi$$ for both teams is visualized bel
 - There are unusual periods of desynchronization, where players move in random directions. These periods coincides with shrinking characteristic area observed previously.
 - The autocorrelation plot suggests that Team 1 maintains synchronization slightly longer than Team 2, by about one second, though the difference is not statistically significant, which may indicate that the order parameter is a global feature of the game and does not reflect the strategies or play styles of teams
 
-<figure class="half">
+<figure style="width: 75%" class="align-center">
   <img src="/assets/images/soccertrack/img8.jpg" alt="A time series plot with associated diagnostics showing the evolution of the order parameter of Team 1 over the 30-minute match, which quantifies the alignment and synchronization of player movements.">
+  <figcaption>The time series of the order parameter of Team 1.</figcaption>
+</figure>
+
+<figure style="width: 75%" class="align-center">
   <img src="/assets/images/soccertrack/img9.jpg" alt="A time series plot with associated diagnostics showing the evolution of the order parameter of Team 2 over the 30-minute match, which quantifies the alignment and synchronization of player movements.">
-  <figcaption>The time series of the order parameter of (left) Team 1 and (right) Team 2.</figcaption>
+  <figcaption>The time series of the order parameter of Team 2.</figcaption>
 </figure>
 
 #### Anomaly Detection
