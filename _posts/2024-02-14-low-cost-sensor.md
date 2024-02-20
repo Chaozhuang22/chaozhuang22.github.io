@@ -437,7 +437,7 @@ Here is a brief summary on the model performance between generic MLR and Lasso. 
 
 <figure style="width: 100%" class="align-center">
   <img src="/assets/images/low-cost-sensor/img7.jpg" alt="A summary barplot comparing the R2 score of multiple linear regression and Lasso regression for different target analyte">
-  <figcaption>A summary on model performance.</figcaption>
+  <figcaption>A summary on model performance in terms of R2 score.</figcaption>
 </figure>
 
 ## Conclusions

@@ -40,7 +40,7 @@ Weekly averaged data reaffirms matrix observations:
 
 However, the correlation matrix does not capture the sensors' continuously shifting baseline, particularly 'PT08.S4(NO2)'. Additionally, the abrupt NO2 readout increase post-August complicates effective calibration, as will be demonstrated in later sections.
 
-<figure style="width: 500px" class="align-center">
+<figure style="width: 50%" class="align-center">
   <img src="/assets/images/air-quality/fig2.jpg" alt="Yearly trend analysis in air quality sensors capturing fluctuations in NOx and NO2 levels.">
   <figcaption>The entire time series of all sensors reading as well as analyzer ground truth.</figcaption>
 </figure>
@@ -49,7 +49,7 @@ However, the correlation matrix does not capture the sensors' continuously shift
 
 NOx and NO2 levels peak at the start and end of a typical workday. The sensor array effectively captures these fluctuations.
 
-<figure style="width: 500px" class="align-center">
+<figure style="width: 50%" class="align-center">
   <img src="/assets/images/air-quality/fig3.jpg" alt="Daily trends in NOx and NO2 levels captured by air quality sensors, with peaks during workday start and end.">
   <figcaption>A daily average of all time series.</figcaption>
 </figure>
@@ -76,7 +76,7 @@ The scatter matrix reveals that the strong correlation between 'C6H6' and 'PT08.
 
 A detailed examination of linear regression results highlights classical underfitting due to the model's limited flexibility. This suggests the potential for a higher-order fit.
 
-<figure style="width: 75%" class="align-center">
+<figure style="width: 100%" class="align-center">
   <img src="/assets/images/air-quality/fig6.jpg" alt="Linear regression analysis of C6H6 concentration vs. PT08.S2(NMHC) readings, indicating potential underfitting.">
   <figcaption>The fitting result of C6H6 using first-order linear regression.</figcaption>
 </figure>
@@ -85,7 +85,7 @@ A detailed examination of linear regression results highlights classical underfi
 
 Given linear regression's inadequacy for benzene readouts, a quadratic function provides a near-perfect fit. A simple quadratic regression, with a 10-day training period, effectively calibrates the 'PT08.S2(NMHC)' sensor for year-long benzene level monitoring.
 
-<figure style="width: 75%" class="align-center">
+<figure style="width: 100%" class="align-center">
   <img src="/assets/images/air-quality/fig7.jpg" alt="Quadratic regression fitting for C6H6 concentration calibration using PT08.S2(NMHC), showing near-perfect fit.">
   <figcaption>The fitting result of C6H6 using second-order linear regression.</figcaption>
 </figure>
@@ -94,7 +94,7 @@ Given linear regression's inadequacy for benzene readouts, a quadratic function 
 
 While polynomial regression yields impressive results, the original study employed a 'sensor fusion' approach, which feeds all sensor data into a neural network model to provide the calibration. Replicating this approach, we observed a mean absolute error (MAE) of 0.52, significantly higher than the 0.06 achieved with polynomial regression, suggesting neural networks may not be a suitable choice given the dataset's size and feature count.
 
-<figure style="width: 75%" class="align-center">
+<figure style="width: 100%" class="align-center">
   <img src="/assets/images/air-quality/fig8.jpg" alt="Neural network calibration results for C6H6 with prediction error over time.">
   <figcaption>The fitting result of C6H6 using neural network.</figcaption>
 </figure>
@@ -109,7 +109,7 @@ A brief summary of MAE scores:
 - Random Forest: 0.2284405194727994
 - Neural network: 0.4388882121784993
 
-<figure style="width: 75%" class="align-center">
+<figure style="width: 100%" class="align-center">
   <img src="/assets/images/air-quality/fig9.jpg" alt="Graph showing the calibration results for benzene concentration using random forest, illustrating the model's prediction accuracy over time.">
   <figcaption>Random Forest Calibration for Benzene.</figcaption>
 </figure>
@@ -126,17 +126,17 @@ MAE scores
 - Random Forest: 0.5451608378533798
 - Neural network: 1.021655128654683
 
-<figure style="width: 75%" class="align-center">
+<figure style="width: 100%" class="align-center">
   <img src="/assets/images/air-quality/fig10.jpg" alt="Linear regression calibration results for CO, highlighting error trends and model's fit over the course of the year.">
   <figcaption>Linear regression calibration for CO.</figcaption>
 </figure>
 
-<figure style="width: 75%" class="align-center">
+<figure style="width: 100%" class="align-center">
   <img src="/assets/images/air-quality/fig11.jpg" alt="The fitting result of CO using random forest and the error as a function of time.">
   <figcaption>Random forest calibration for CO.</figcaption>
 </figure>
 
-<figure style="width: 75%" class="align-center">
+<figure style="width: 100%" class="align-center">
   <img src="/assets/images/air-quality/fig12.jpg" alt="The fitting result of CO using neural network and the error as a function of time.">
   <figcaption>Neural network calibration for CO.</figcaption>
 </figure>
@@ -151,17 +151,17 @@ MAE scores
 - Random forest: 131.48320603220608
 - Neural network: 173.69570071251604
 
-<figure style="width: 75%" class="align-center">
+<figure style="width: 100%" class="align-center">
   <img src="/assets/images/air-quality/fig13.jpg" alt="The fitting result of NOx using linear regression and the error as a function of time.">
   <figcaption>Linear regression calibration on NOx.</figcaption>
 </figure>
 
-<figure style="width: 75%" class="align-center">
+<figure style="width: 100%" class="align-center">
   <img src="/assets/images/air-quality/fig14.jpg" alt="The fitting result of NOx using random forest and the error as a function of time.">
   <figcaption>Random forest calibration on NOx.</figcaption>
 </figure>
 
-<figure style="width: 75%" class="align-center">
+<figure style="width: 100%" class="align-center">
   <img src="/assets/images/air-quality/fig15.jpg" alt="The fitting result of NOx using neural network and the error as a function of time.">
   <figcaption>Neural network calibration on NOx.</figcaption>
 </figure>
@@ -176,17 +176,17 @@ MAE scores
 - Random Forest: 28.167480404958546
 - Neural network: 35.027760191767776
 
-<figure style="width: 75%" class="align-center">
+<figure style="width: 100%" class="align-center">
   <img src="/assets/images/air-quality/fig16.jpg" alt="The fitting result of NO2 using linear regression and the error as a function of time.">
   <figcaption>Linear regression calibration for NO2.</figcaption>
 </figure>
 
-<figure style="width: 75%" class="align-center">
+<figure style="width: 100%" class="align-center">
   <img src="/assets/images/air-quality/fig17.jpg" alt="The fitting result of NO2 using random forest and the error as a function of time.">
   <figcaption>Random forest calibration for NO2.</figcaption>
 </figure>
 
-<figure style="width: 75%" class="align-center">
+<figure style="width: 100%" class="align-center">
   <img src="/assets/images/air-quality/fig18.jpg" alt="The fitting result of NO2 using neural network and the error as a function of time.">
   <figcaption>Neural network calibration for NO2.</figcaption>
 </figure>
