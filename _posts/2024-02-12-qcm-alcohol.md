@@ -27,7 +27,7 @@ The full analysis with code can be found in this [Kaggle notebook](https://www.k
 Principal Component Analysis (PCA) was conducted to reduce the feature dimensions from 50 to 2 based on the first two eigenvectors of the standardized data matrix. Visualization on the principal axes shows that each alcohol type can be distinctly separated. This separation confirms that we can proceed with developing classification models without the need for further feature engineering.
 
 <figure style="width: 750px" class="align-center">
-  <img src="/assets/images/qcm-alcohol/fig1.png" alt="PCA scatter plot showing clear separation among five alcohol types, illustrating the effectiveness of dimensional reduction in distinguishing vapor signatures.">
+  <img src="/assets/images/qcm-alcohol/fig1.jpg" alt="PCA scatter plot showing clear separation among five alcohol types, illustrating the effectiveness of dimensional reduction in distinguishing vapor signatures.">
   <figcaption>PCA Visualization Highlighting Distinct Alcohol Clusters.</figcaption>
 </figure>
 
@@ -72,7 +72,7 @@ weighted avg       1.00      1.00      1.00         5
 ```
 
 <figure style="width: 750px" class="align-center">
-  <img src="/assets/images/qcm-alcohol/fig2.png" alt="Bar graph depicting feature importance as identified by a random forest model, with significant emphasis on certain QCM sensors over others.">
+  <img src="/assets/images/qcm-alcohol/fig2.jpg" alt="Bar graph depicting feature importance as identified by a random forest model, with significant emphasis on certain QCM sensors over others.">
   <figcaption>Feature importance ranking from random forest.</figcaption>
 </figure>
 
@@ -97,7 +97,7 @@ weighted avg       1.00      1.00      1.00         5
 ```
 
 <figure style="width: 750px" class="align-center">
-  <img src="/assets/images/qcm-alcohol/fig3.png" alt="Feature importance ranking from gradient boosting highlights 'QCM7' as pivotal, with a sharp distinction between influential and negligible sensors.">
+  <img src="/assets/images/qcm-alcohol/fig3.jpg" alt="Feature importance ranking from gradient boosting highlights 'QCM7' as pivotal, with a sharp distinction between influential and negligible sensors.">
   <figcaption>Feature importance ranking from gradient boosting.</figcaption>
 </figure>
 
