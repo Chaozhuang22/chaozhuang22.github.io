@@ -15,8 +15,8 @@ Nanomechanical sensors consist of two primary layers: the immobilization layer, 
 
 <figure style="width: 50%" class="align-center">
 
-  <a href="/assets/images/fea-tutorial/cantilever.jpeg" alt="cantilever SEM">
-  <img src="/assets/images/fea-tutorial/cantilever.jpeg" alt="cantilever SEM"></a>
+  <a href="/assets/images/fea-tutorial/cantilever.jpg" alt="cantilever SEM">
+  <img src="/assets/images/fea-tutorial/cantilever.jpg" alt="cantilever SEM"></a>
 
   <figcaption>A SEM image of a typical cantilever. Reproduced with permission from The American Association for the Advancement of Science.</figcaption>
 </figure>

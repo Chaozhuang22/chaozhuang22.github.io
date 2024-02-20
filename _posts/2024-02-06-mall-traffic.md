@@ -11,7 +11,9 @@ header:
 
 ## Analysis Goal
 
-This dataset comprises head annotations of individuals captured in a mall over 2000 frames by a surveillance camera. This dataset is originally intended for crowd counting problem, which I have another notebook on this topic: [Crowd Counting via Density Map | Optimized CNN](https://www.kaggle.com/code/chaozhuang/crowd-counting-via-density-map-optimized-cnn). The more I worked on it, the more I noticed the fascinating sub-structure within this dataset. Here, we adopt a perspective of time series analysis, where individuals entering the scene randomly, and their collective behaviors are observed from a statistical standpoint.
+This dataset comprises head annotations of individuals captured in a mall over 2000 frames by a surveillance camera. This dataset is originally intended for crowd counting problem, which I have another notebook on this topic: [Crowd Counting via Density Map](https://www.kaggle.com/code/chaozhuang/crowd-counting-via-density-map-optimized-cnn).
+
+The more I worked on it, the more I noticed the fascinating sub-structure within this dataset. Here, we adopt a perspective of time series analysis, where individuals entering the scene randomly, and their collective behaviors are observed from a statistical standpoint.
 
 The analysis will start with basic temporal features of the total head count. We observe that the patterns of people entering or exiting the scene align with classical stochastic processes, characterized by a stationary time series and an exponential distribution of time intervals between successive entry and exit events. This suggests that the flow of people in and out of the mall occurs in a random and independent manner.
 
@@ -19,7 +21,7 @@ To visualize the collective patterns of customers, we generate a heatmap showing
 
 The full analysis with code can be found in this [Kaggle notebook](https://www.kaggle.com/code/chaozhuang/people-statistics-traffic-control-in-a-mall).
 
-<figure style="width: 75%" class="align-center">
+<figure style="width: 100%" class="align-center">
   <img src="/assets/images/mall/fig0.jpg" alt="An image from the dataset showing a bird's eye view of people inside a shopping mall.">
   <figcaption>A sample image from the dataset showing the bird's eye view of people inside a shopping mall.</figcaption>
 </figure>
@@ -28,7 +30,7 @@ The full analysis with code can be found in this [Kaggle notebook](https://www.k
 
 Time series analysis on the number of people in each frame reveals that it has a rough Gaussian distribution. The autocorrelation plot reveals that the head count in one frame correlates with counts up to 40 frames prior. This temporal correlation is intuitive as it takes time for an individual to exit the scene after entering.
 
-<figure style="width: 75%" class="align-center">
+<figure style="width: 100%" class="align-center">
   <img src="/assets/images/mall/fig1.jpg" alt="Graphs depicting a time series analysis of the number of people appearing in the shopping mall scene.">
   <figcaption>Time series analysis reveals patterns in the number of people appearing in the shopping mall scene.</figcaption>
 </figure>
@@ -37,7 +39,7 @@ Time series analysis on the number of people in each frame reveals that it has a
 
 Differencing the head count time series yields the net change between consecutive frames. This series can have positive (people entering) and negative values (exiting), and it more closely approximates a Gaussian distribution. It lacks temporal correlation with preceding frames from the autocorrelation plot, implying that the movement of people in and out of the scene is random and independent of previous frames.
 
-<figure style="width: 75%" class="align-center">
+<figure style="width: 100%" class="align-center">
   <img src="/assets/images/mall/fig2.jpg" alt="Graphs showing a time series analysis of the first difference in the number of people appearing in the shopping mall scene.">
   <figcaption>First differencing of the time series data reveals net changes in the number of people appearing in the shopping mall scene.</figcaption>
 </figure>
@@ -90,7 +92,7 @@ After defining the ROIs, we analyze the number of people within each region over
 - ROI 1: The head counts around the food stand exhibit discrete steps, with people passing through the scene as random noise. This region exhibits people building up and clustering behaviors.
 - ROI 2-4: For the three benches, they exhibit similar temporal behaviors to that in the food stand with people building up over time. Note that ROI 4 is further away from the camera, therefore, it is significantly noisier than the other two, which is because it locates in the background with a high density of people walking by, obsucring the actual count. By adjusting the smoothing coefficient, we can get a reasonable idea of the dynamics of people building up in this region.
 
-<figure style="width: 75%" class="align-center">
+<figure style="width: 100%" class="align-center">
   <img src="/assets/images/mall/fig6.jpg" alt="Graphs showing head count time series in the five ROIs smoothed with the LOWESS algorithm.">
   <figcaption>LOWESS-smoothed time series data of head counts in the five ROIs reveal distinct patterns of customer congregation and movement.</figcaption>
 </figure>
@@ -99,7 +101,7 @@ After defining the ROIs, we analyze the number of people within each region over
 
 A closer look at the reference area (ROI 0) reveals that the head count distribution is a familiar exponential distribution. It has temporal correlation only over several frame, indicating people do not tend to stay in this region.
 
-<figure style="width: 75%" class="align-center">
+<figure style="width: 100%" class="align-center">
   <img src="/assets/images/mall/fig7.jpg" alt="A time series analysis on the number of people appearing in the hallway region (ROI 0).">
   <figcaption>Time series analysis of the number of people in ROI 0 (hallway area) reveals a familiar exponential distribution.</figcaption>
 </figure>
@@ -108,7 +110,7 @@ A closer look at the reference area (ROI 0) reveals that the head count distribu
 
 The net change in ROI 0 is a Gaussian distribution, implying the randomness and the independent nature of people flow. Note that the net change has significant negative autocorrelation components, which probably is a result of the small sample size and the discrete nature of head count. The negative component is ubiquitous in data from all ROIs. If the ROIs are large enough, these negative components should vanish.
 
-<figure style="width: 75%" class="align-center">
+<figure style="width: 100%" class="align-center">
   <img src="/assets/images/mall/fig8.jpg" alt="A time series analysis on the net change of number of people appearing in the hallway region (ROI 0).">
   <figcaption>The net change in the number of people in ROI 0 (hallway area).</figcaption>
 </figure>
@@ -133,17 +135,17 @@ For the benches, we can readout the cluster lifetime of around 1 min similar to 
 
 The first differencing yields time series of net change similar to the food stand, therefore, they are omitted in the following plots.
 
-<figure style="width: 75%" class="align-center">
+<figure style="width: 100%" class="align-center">
   <img src="/assets/images/mall/fig11.jpg" alt="A time series analysis on the number of people appearing in the first bench region (ROI 2).">
   <figcaption>Time series analysis of the number of people in ROI 2 (first bench) shows a cluster lifetime of around 1 minute.</figcaption>
 </figure>
 
-<figure style="width: 75%" class="align-center">
+<figure style="width: 100%" class="align-center">
   <img src="/assets/images/mall/fig12.jpg" alt="A time series analysis on the number of people appearing in the second bench region (ROI 3).">
   <figcaption>Time series analysis of the number of people in ROI 3 (second bench) shows a reduced cluster lifetime probably due to occlution."</figcaption>
 </figure>
 
-<figure style="width: 75%" class="align-center">
+<figure style="width: 100%" class="align-center">
   <img src="/assets/images/mall/fig13.jpg" alt="A time series analysis on the number of people appearing in the third bench region (ROI 4).">
   <figcaption>Time series analysis of the number of people in ROI 4 (third bench) shows a similar cluster lifetime as the first bench.</figcaption>
 </figure>
