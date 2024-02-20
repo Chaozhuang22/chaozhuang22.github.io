@@ -4,7 +4,7 @@ date: 2023-08-09T16:30:00+09:00
 category: FEA
 tag: Projects
 header:
-  teaser: /assets/images/fea-tutorial/disp-2.png
+  teaser: /assets/images/fea-tutorial/disp-2.jpg
 ---
 
 ## Introduction
@@ -39,11 +39,11 @@ Due to the symmetrical design of the sensor, only a quarter of its geometry is m
 
 <figure class="half">
 
-  <a href="/assets/images/fea-tutorial/solid.png" alt="solid selection">
-  <img src="/assets/images/fea-tutorial/solid.png" alt="solid selection"></a>
+  <a href="/assets/images/fea-tutorial/solid.jpg" alt="solid selection">
+  <img src="/assets/images/fea-tutorial/solid.jpg" alt="solid selection"></a>
 
-  <a href="/assets/images/fea-tutorial/shell.png" alt="shell selection">
-  <img src="/assets/images/fea-tutorial/shell.png" alt="shell selection"></a>
+  <a href="/assets/images/fea-tutorial/shell.jpg" alt="shell selection">
+  <img src="/assets/images/fea-tutorial/shell.jpg" alt="shell selection"></a>
 
   <figcaption>Physics interface setup.</figcaption>
 </figure>
@@ -60,14 +60,14 @@ The end of four piezoresistive sensing beams are fixed, and the two-fold symmetr
 
 <figure class="third">
 
-  <a href="/assets/images/fea-tutorial/fixed.png" alt="fixed boundary condition">
-  <img src="/assets/images/fea-tutorial/fixed.png" alt="fixed boundary condition"></a>
+  <a href="/assets/images/fea-tutorial/fixed.jpg" alt="fixed boundary condition">
+  <img src="/assets/images/fea-tutorial/fixed.jpg" alt="fixed boundary condition"></a>
 
-  <a href="/assets/images/fea-tutorial/sym1.png" alt="sym1 boundary condition">
-  <img src="/assets/images/fea-tutorial/sym1.png" alt="sym1 boundary condition"></a>
+  <a href="/assets/images/fea-tutorial/sym1.jpg" alt="sym1 boundary condition">
+  <img src="/assets/images/fea-tutorial/sym1.jpg" alt="sym1 boundary condition"></a>
 
-  <a href="/assets/images/fea-tutorial/sym2.png" alt="sym2 boundary condition">
-  <img src="/assets/images/fea-tutorial/sym2.png" alt="sym2 boundary condition"></a>
+  <a href="/assets/images/fea-tutorial/sym2.jpg" alt="sym2 boundary condition">
+  <img src="/assets/images/fea-tutorial/sym2.jpg" alt="sym2 boundary condition"></a>
 
   <figcaption>Physics interface setup.</figcaption>
 </figure>
@@ -107,11 +107,11 @@ First of all, let's make an animation.
 Once the simulation is complete, one can look at the displacement profile of the sensor. The membrane deforms differently depending on the level of prestrain in the silicon. When there is no prestrain, the profile contour is circular; when there is a high prestrain, the profile contour is a square shape.
 <figure class="half">
 
-  <a href="/assets/images/fea-tutorial/disp-1.png" alt="sensor displacement">
-  <img src="/assets/images/fea-tutorial/disp-1.png" alt="sensor displacement"></a>
+  <a href="/assets/images/fea-tutorial/disp-1.jpg" alt="sensor displacement">
+  <img src="/assets/images/fea-tutorial/disp-1.jpg" alt="sensor displacement"></a>
 
-  <a href="/assets/images/fea-tutorial/disp-2.png" alt="buckled sensor displacement">
-  <img src="/assets/images/fea-tutorial/disp-2.png" alt="buckled sensor displacement"></a>
+  <a href="/assets/images/fea-tutorial/disp-2.jpg" alt="buckled sensor displacement">
+  <img src="/assets/images/fea-tutorial/disp-2.jpg" alt="buckled sensor displacement"></a>
 
   <figcaption>Deformation profile.</figcaption>
 </figure>
@@ -120,11 +120,11 @@ The piezoresistive signal profiles are similar with signals concentrated at the 
 
 <figure class="half">
 
-  <a href="/assets/images/fea-tutorial/out-1.png" alt="sensor output">
-  <img src="/assets/images/fea-tutorial/out-1.png" alt="sensor output"></a>
+  <a href="/assets/images/fea-tutorial/out-1.jpg" alt="sensor output">
+  <img src="/assets/images/fea-tutorial/out-1.jpg" alt="sensor output"></a>
 
-  <a href="/assets/images/fea-tutorial/out-2.png" alt="buckled sensor output">
-  <img src="/assets/images/fea-tutorial/out-2.png" alt="buckled sensor output"></a>
+  <a href="/assets/images/fea-tutorial/out-2.jpg" alt="buckled sensor output">
+  <img src="/assets/images/fea-tutorial/out-2.jpg" alt="buckled sensor output"></a>
 
   <figcaption>Piezoresistive signal profile.</figcaption>
 </figure>
@@ -133,11 +133,11 @@ The following line graphs show the dependence of sensor deformation and piezores
 
 <figure class="half">
 
-  <a href="/assets/images/fea-tutorial/disp.png" alt="sensor displacement">
-  <img src="/assets/images/fea-tutorial/disp.png" alt="sensor displacement"></a>
+  <a href="/assets/images/fea-tutorial/disp.jpg" alt="sensor displacement">
+  <img src="/assets/images/fea-tutorial/disp.jpg" alt="sensor displacement"></a>
 
-  <a href="/assets/images/fea-tutorial/output.png" alt="sensor output">
-  <img src="/assets/images/fea-tutorial/output.png" alt="sensor output"></a>
+  <a href="/assets/images/fea-tutorial/output.jpg" alt="sensor output">
+  <img src="/assets/images/fea-tutorial/output.jpg" alt="sensor output"></a>
 
   <figcaption>The displacement and piezoresistive signals as a function of surface stress loading under different levels of prestress.</figcaption>
 </figure>

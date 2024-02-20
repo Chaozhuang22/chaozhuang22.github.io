@@ -4,7 +4,7 @@ date: 2023-05-24T16:30:00+09:00
 category: FEA
 tag: Debug
 header:
-  teaser: /assets/images/error.png
+  teaser: /assets/images/error.jpg
 ---
 
 Recently, I stumbled upon an unusual error while tweaking an optimization model in COMSOL when I was turning a model from a quarter-symmetry to its full geometry. This modification was necessary as I was switching the material model from isotropy to anisotropy.
@@ -12,7 +12,7 @@ Recently, I stumbled upon an unusual error while tweaking an optimization model 
 During the process, an unexpected error occurred. Unlike typical errors that highlight relevant nodes with little red markers, this one provided no such convenience. It gave no further information about its origin within the Graphical User Interface.
 
 <figure style="width: 600px" class="align-center">
-  <img src="/assets/images/error.png" alt="comsol error">
+  <img src="/assets/images/error.jpg" alt="comsol error">
   <figcaption>The error popup.</figcaption>
 </figure>
 

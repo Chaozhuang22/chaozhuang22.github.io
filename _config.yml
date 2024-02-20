@@ -21,7 +21,7 @@ url: "https://chaozhuang22.github.io"
 repository: "Chaozhuang22/Chaozhuang22.github.io"
 words_per_minute: 200
 search: true
-teaser: "/assets/images/default-teaser.png"
+teaser: "/assets/images/default-teaser.jpg"
 logo: "apple-touch-icon.png"
 atom_feed:
   hide: true
@@ -75,7 +75,7 @@ analytics:
 
 author:
   name   : "Chao Zhuang"
-  avatar : "/assets/images/bio-photo-1.png"
+  avatar : "/assets/images/bio-photo-1.jpg"
   bio    : "Ph.D. in Materials Science and Engineering"
   location: "Guangzhou, China"
   links:

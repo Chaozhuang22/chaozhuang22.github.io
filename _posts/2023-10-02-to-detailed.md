@@ -20,8 +20,8 @@ The whole geometry consists of a large rectangular block representing the sensor
 Box selection is employed for consistent boundary conditions as the topology evolves, a technique also used in this [COMSOL tutorial](https://www.comsol.jp/model/shape-optimization-of-an-mbb-beam-75301).
 
 <figure class="half">
-  <img src="/assets/images/to-detailed/geometry.png" alt="COMSOL model showing geometrical setup for MEMS sensor topology optimization">
-  <img src="/assets/images/to-detailed/geometry-details.png" alt="Detailed view of box selection technique in COMSOL geometry specification for MEMS sensor">
+  <img src="/assets/images/to-detailed/geometry.jpg" alt="COMSOL model showing geometrical setup for MEMS sensor topology optimization">
+  <img src="/assets/images/to-detailed/geometry-details.jpg" alt="Detailed view of box selection technique in COMSOL geometry specification for MEMS sensor">
   <figcaption>(Left) The geometry of the present design problem. (Right) Box selections are used in geometry selections.</figcaption>
 </figure>
 
@@ -29,7 +29,7 @@ Box selection is employed for consistent boundary conditions as the topology evo
 Silicon is assigned to the large rectangular block, while the immobilization layer, which can be polymer or gold, is assigned to the upper surface of the block. The materials assignment is done by links as the same materials are referenced twice in the two components in this model file.
 
 <figure style="width: 500px" class="align-center">
-  <img src="/assets/images/to-detailed/materials.png" alt="Silicon and polymer/gold materials assignment in COMSOL for MEMS sensor structure">
+  <img src="/assets/images/to-detailed/materials.jpg" alt="Silicon and polymer/gold materials assignment in COMSOL for MEMS sensor structure">
   <figcaption>Materials assignment.</figcaption>
 </figure>
 
@@ -43,7 +43,7 @@ A detailed discussion of the optimization parameters can be found in a previous 
 - **Prescribed Material**: The density of the piezoresistor region is set to 1, ensuring its presence throughout the optimization process.
 
 <figure style="width: 500px" class="align-center">
-  <img src="/assets/images/to-detailed/topology-settings.png" alt="COMSOL interface displaying topology optimization settings for improved MEMS sensor performance">
+  <img src="/assets/images/to-detailed/topology-settings.jpg" alt="COMSOL interface displaying topology optimization settings for improved MEMS sensor performance">
   <figcaption>Settings for topology optimization.</figcaption>
 </figure>
 
@@ -59,8 +59,8 @@ A detailed discussion of the optimization parameters can be found in a previous 
 - **Multiphysics coupling:** The shell and solid mechanics interfaces are coupled through the "Solid-Thin Structure Connection" in the "Multiphysics" node.
 
 <figure class="half">
-  <img src="/assets/images/to-detailed/variables.png" alt="COMSOL screen showing optimization variables setup for MEMS sensor topology enhancement">
-  <img src="/assets/images/to-detailed/physics.png" alt="Configuration of surface stress implementation in COMSOL for MEMS sensor model">
+  <img src="/assets/images/to-detailed/variables.jpg" alt="COMSOL screen showing optimization variables setup for MEMS sensor topology enhancement">
+  <img src="/assets/images/to-detailed/physics.jpg" alt="Configuration of surface stress implementation in COMSOL for MEMS sensor model">
   <figcaption>(Left) The weighted surface stress and materials stiffness by elemental density. (Right) Settings to implement surface stress.</figcaption>
 </figure>
 
@@ -68,7 +68,7 @@ A detailed discussion of the optimization parameters can be found in a previous 
 A swept method with quad mesh is used to sweep through the thickness direction. Typically, three meshes along the thickness direction are sufficient. The parameter "meshsz" controls the mesh size; smaller sizes give a more detailed design but with an increase in computational cost.
 
 <figure style="width: 500px" class="align-center">
-  <img src="/assets/images/to-detailed/mesh.png" alt="COMSOL visualization of meshed geometry with 6 um mesh size for MEMS sensor">
+  <img src="/assets/images/to-detailed/mesh.jpg" alt="COMSOL visualization of meshed geometry with 6 um mesh size for MEMS sensor">
   <figcaption>The meshed geometry with a mesh size of 6 um.</figcaption>
 </figure>
 
@@ -80,7 +80,7 @@ A swept method with quad mesh is used to sweep through the thickness direction. 
 - **Constraints**: The volume fraction constraint is implemented as the upper bound, constraining the maximum amount of materials being used in the design.
 
 <figure style="width: 500px" class="align-center">
-  <img src="/assets/images/to-detailed/optimization.png" alt="Solver settings in COMSOL for MEMS sensor topology optimization process">
+  <img src="/assets/images/to-detailed/optimization.jpg" alt="Solver settings in COMSOL for MEMS sensor topology optimization process">
   <figcaption>Topology optimization solver setting.</figcaption>
 </figure>
 
@@ -88,7 +88,7 @@ A swept method with quad mesh is used to sweep through the thickness direction. 
 In the first study, we solve only for shell, solid mechanics, and topology optimization in Component 1. In the auxiliary sweep, a sweep of $$\eta$$ for robust formulation is implemented. This ensures that the worst-performing design is improved upon and is associated with the "Solution" section in the topology optimization study settings. To disable robust formulation, simply uncheck the auxiliary sweep.
 
 <figure style="width: 500px" class="align-center">
-  <img src="/assets/images/to-detailed/solver-setting.png" alt="COMSOL Multiphysics solver configuration for MEMS sensor topology optimization">
+  <img src="/assets/images/to-detailed/solver-setting.jpg" alt="COMSOL Multiphysics solver configuration for MEMS sensor topology optimization">
   <figcaption>Solver setting.</figcaption>
 </figure>
 
@@ -98,7 +98,7 @@ After the optimization, one clicks the import button in the Mesh part node in th
 To construct the verification study, component 2 is built with the optimized geometry while all physics remaining the same. The only difference is the element order, which is changed from first-order (linear) to second-order (quadratic) for accurate FEA evaluation. The verification study node associated with this component calculates the exact performance and stress profile of the optimized design.
 
 <figure style="width: 500px" class="align-center">
-  <img src="/assets/images/to-detailed/import-mesh.png" alt="COMSOL setup for importing mesh into a new study post-optimization of MEMS sensor">
+  <img src="/assets/images/to-detailed/import-mesh.jpg" alt="COMSOL setup for importing mesh into a new study post-optimization of MEMS sensor">
   <figcaption>Import mesh to a new study.</figcaption>
 </figure>
 
