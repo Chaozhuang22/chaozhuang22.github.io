@@ -9,112 +9,147 @@
 
 <url>
   <loc>https://chaozhuang22.github.io/</loc>
-  <lastmod>2024-01-20T19:06:21+00:00</lastmod>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://chaozhuang22.github.io/featured/</loc>
-  <lastmod>2024-01-20T19:06:21+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://chaozhuang22.github.io/publications/</loc>
-  <lastmod>2024-01-20T19:06:21+00:00</lastmod>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://chaozhuang22.github.io/posts/</loc>
-  <lastmod>2024-01-20T19:06:21+00:00</lastmod>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://chaozhuang22.github.io/tags/</loc>
-  <lastmod>2024-01-20T19:06:21+00:00</lastmod>
+  <loc>https://chaozhuang22.github.io/categories/</loc>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chaozhuang22.github.io/publications/</loc>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://chaozhuang22.github.io/about/</loc>
-  <lastmod>2024-01-20T19:06:21+00:00</lastmod>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://chaozhuang22.github.io/data-analysis/soccertrack/</loc>
-  <lastmod>2024-01-20T19:06:21+00:00</lastmod>
+  <loc>https://chaozhuang22.github.io/data-analysis/supercon/</loc>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://chaozhuang22.github.io/fea/to-detailed/</loc>
-  <lastmod>2024-01-20T19:06:21+00:00</lastmod>
+  <loc>https://chaozhuang22.github.io/data-analysis/llms/</loc>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://chaozhuang22.github.io/fea/flow-channel/</loc>
-  <lastmod>2024-01-20T19:06:21+00:00</lastmod>
+  <loc>https://chaozhuang22.github.io/data-analysis/H2020/</loc>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://chaozhuang22.github.io/fea/to/</loc>
-  <lastmod>2024-01-20T19:06:21+00:00</lastmod>
+  <loc>https://chaozhuang22.github.io/data-analysis/low-cost-sensor/</loc>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://chaozhuang22.github.io/fea/wrinkle/</loc>
-  <lastmod>2024-01-20T19:06:21+00:00</lastmod>
+  <loc>https://chaozhuang22.github.io/data-analysis/qcm-alcohol/</loc>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://chaozhuang22.github.io/language/japanese/</loc>
-  <lastmod>2024-01-20T19:06:21+00:00</lastmod>
+  <loc>https://chaozhuang22.github.io/data-analysis/air-quality/</loc>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://chaozhuang22.github.io/page2/</loc>
-  <lastmod>2024-01-20T19:06:21+00:00</lastmod>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>https://chaozhuang22.github.io/page3/</loc>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chaozhuang22.github.io/page4/</loc>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://chaozhuang22.github.io/data-analysis/soccertrack/</loc>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
   <loc>https://chaozhuang22.github.io/fea/nonlinear-mss/</loc>
-  <lastmod>2024-01-20T19:06:21+00:00</lastmod>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chaozhuang22.github.io/fea/flow-channel/</loc>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chaozhuang22.github.io/fea/wrinkle/</loc>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chaozhuang22.github.io/data-analysis/mall-traffic/</loc>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chaozhuang22.github.io/fea/to-detailed/</loc>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chaozhuang22.github.io/fea/to/</loc>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://chaozhuang22.github.io/language/japanese/</loc>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://chaozhuang22.github.io/fea/topology-optimization/</loc>
-  <lastmod>2024-01-20T19:06:21+00:00</lastmod>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://chaozhuang22.github.io/fea/comsol-error/</loc>
-  <lastmod>2024-01-20T19:06:21+00:00</lastmod>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://chaozhuang22.github.io/physics/quantum-physics/</loc>
-  <lastmod>2024-01-20T19:06:21+00:00</lastmod>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://chaozhuang22.github.io/physics/solid-state-physics/</loc>
-  <lastmod>2024-01-20T19:06:21+00:00</lastmod>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://chaozhuang22.github.io/physics/plasma-physics/</loc>
-  <lastmod>2024-01-20T19:06:21+00:00</lastmod>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
-  <loc>https://chaozhuang22.github.io/categories/</loc>
-  <lastmod>2024-01-20T19:06:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chaozhuang22.github.io/assets/pdfs/Resume.pdf</loc>
-  <lastmod>2024-01-20T19:06:21+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://chaozhuang22.github.io/assets/pdfs/CV.pdf</loc>
-  <lastmod>2024-01-20T19:06:21+00:00</lastmod>
+  <loc>https://chaozhuang22.github.io/tags/</loc>
+  <lastmod>2024-03-14T14:30:05+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
